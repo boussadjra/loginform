@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family:Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+    
+}
+
+html, body{
+    height: 100vh;
+    margin: 0;
+}
+
+
+body{
+    background: #c61951;
+    font-family: Montserrat;
+    color:#f8f7aa;
+}
+
+
+#bg{
+    clip-path: circle(79% at 21% 3%);
+    background: #f0f0f0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    z-index: -1;    
+    
+}
+
+
+.page-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    margin-top: 3%;
+    height: 80%;
+    width:49.44%;
+    box-shadow: 0px 0px 73px #050505;
+    
+}
+
+.form-header{
+
+    width: 100%;
+    background: #C61951;
+    display: block;
+    padding-top: 12px;
+    
+    
+    
+}
+
+.login-txt{
+    font-size: 33pt;
+    background: #1b083d;
+    padding: 12px;
+    margin-left: -37px;
+    width: 70%;
+    text-align: center;
+    clip-path: polygon(0 0,100% 0,80% 100%, 0% 100%)
+}
+
+.dark-side{
+    width: 37px;
+    height: 37px;
+    /* margin-top: -41px; */
+    margin-left: -37px;
+    background-color: #170731;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%)
+}
+
+
+.form-body{
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-body > input{
+    margin: 10px;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 9px;
+    border: none;
+    /* border-radius: 4px; */
+    border:none;
+    background: transparent;
+   box-shadow: 0 0 2px #1b083d;
+ font-family: inherit;
+   border-radius:4px;
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: #673AB7;
+    box-shadow: 1px 0px 2px #c61951
+ 
+
+}
+
+
+input[type="button"]{
+  background: #1b083d;
+  color: #e2e2e2;
+  border: none;
+  border-radius: 4px;
+  font-size: 12pt;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px #1b1b1b;
+}
+
+
+
+.forg-pwd{
+    color:#1b083d;
+    align-self: center;
+    padding: 11px;
+    font-size:9pt;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    .login-container{
+      
+        width:80%;
+        
+    }
+    .login-txt{
+        font-size: 24pt;
+    }
+}
