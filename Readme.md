@@ -8,7 +8,7 @@ Just clone the project and use it.
 
 # Screenshot
 
-![login form](https://imgur.com/gHSD0a6)
+![login form](https://i.imgur.com/gHSD0a6.jpg)
 
 
 # Demo 
