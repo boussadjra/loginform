@@ -1,9 +1,4 @@
-
-@font-face {
-    font-family:Montserrat;
-    src: url(assets/fonts/Montserrat-Regular.ttf);
-    
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html, body{
     height: 100vh;
