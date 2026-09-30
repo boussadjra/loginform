@@ -1,0 +1,62 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#0b2545] px-4 py-10 font-['DM_Sans',sans-serif] text-[#0b2545] sm:px-8">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,#13315c_0,transparent_55%),radial-gradient(circle_at_85%_90%,#134074_0,transparent_45%)]"></div>
+
+  <div class="grid w-full max-w-4xl overflow-hidden rounded-[2rem] bg-[#f8f4ec] shadow-[0_30px_80px_-20px_#000a] md:grid-cols-[1.05fr_1fr]">
+    <div class="relative flex min-h-60 items-center justify-center overflow-hidden bg-[#134074] md:min-h-[30rem]">
+      <div aria-hidden="true" class="absolute top-8 left-8 flex gap-1.5">
+        <span class="size-1.5 rounded-full bg-[#8fb8de]/60"></span><span class="size-1.5 rounded-full bg-[#8fb8de]/40"></span><span class="size-1.5 rounded-full bg-[#8fb8de]/20"></span>
+      </div>
+      <svg aria-hidden="true" viewBox="0 0 320 320" class="relative z-10 w-52 -translate-y-4 transition-transform duration-700 hover:-translate-y-7 hover:rotate-6 md:w-72">
+        <circle cx="160" cy="150" r="96" fill="none" stroke="#f8f4ec" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" opacity=".7" />
+        <circle cx="160" cy="150" r="70" fill="none" stroke="#f8f4ec" stroke-width="40" />
+        <circle cx="160" cy="150" r="70" fill="none" stroke="#e63946" stroke-width="40" stroke-dasharray="54.98 54.98" transform="rotate(-22.5 160 150)" />
+        <circle cx="160" cy="150" r="90" fill="none" stroke="#0b2545" stroke-opacity=".15" stroke-width="1.5" />
+        <circle cx="160" cy="150" r="50" fill="none" stroke="#0b2545" stroke-opacity=".2" stroke-width="1.5" />
+        <path d="M110 110 q50 -30 100 0 M110 190 q50 30 100 0" fill="none" stroke="#c9a66b" stroke-width="5" stroke-linecap="round" />
+        <path d="M86 118 a78 78 0 0 1 36 -38" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="6" stroke-linecap="round" />
+      </svg>
+      <svg aria-hidden="true" viewBox="0 0 400 120" preserveAspectRatio="none" class="absolute inset-x-0 bottom-0 h-28 w-full md:h-40">
+        <path d="M0 40 q25 -18 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 V120 H0Z" fill="#8fb8de" opacity=".55" />
+        <path d="M0 62 q25 -16 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 V120 H0Z" fill="#1d5a96" />
+        <path d="M0 86 q25 -14 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 V120 H0Z" fill="#0b2545" />
+      </svg>
+      <p class="absolute bottom-5 left-0 right-0 z-10 text-center text-xs font-medium tracking-[0.3em] text-[#8fb8de] uppercase">Harbor · Crew Portal</p>
+    </div>
+
+    <div class="flex flex-col justify-center px-6 py-10 sm:px-12">
+      <div data-lifebuoy-request>
+        <p class="mb-3 inline-flex items-center gap-2 rounded-full bg-[#e63946]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#c1121f] uppercase">
+          <span class="size-1.5 rounded-full bg-[#e63946]"></span> Man overboard? No problem.
+        </p>
+        <h1 class="font-['Fraunces',serif] text-4xl leading-tight font-semibold sm:text-[2.6rem]">Lost your password?</h1>
+        <p class="mt-3 text-[#0b2545]/70">It happens to the best sailors. Tell us the email on your account and we'll throw you a line to get back aboard.</p>
+
+        <form data-lifebuoy-form class="mt-8 flex flex-col gap-4">
+          <div>
+            <label for="lifebuoy-email" class="mb-1.5 block text-sm font-semibold">Email address</label>
+            <input id="lifebuoy-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="captain@harbor.co"
+              class="w-full rounded-xl border-2 border-[#0b2545]/15 bg-white px-4 py-3 text-base outline-none transition placeholder:text-[#0b2545]/35 focus:border-[#134074] focus:ring-4 focus:ring-[#8fb8de]/40" />
+          </div>
+          <button type="submit"
+            class="cursor-pointer rounded-xl bg-[#e63946] px-5 py-3.5 font-semibold text-white shadow-[0_6px_0_#a4161a] transition hover:-translate-y-0.5 hover:shadow-[0_8px_0_#a4161a] active:translate-y-1 active:shadow-[0_2px_0_#a4161a] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[#134074] disabled:cursor-wait disabled:opacity-75">
+            Send me a reset link
+          </button>
+        </form>
+      </div>
+
+      <div data-lifebuoy-sent hidden class="text-center md:text-left">
+        <span class="mx-auto mb-5 grid size-14 place-items-center rounded-full bg-[#134074] text-[#f8f4ec] md:mx-0">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9 6 9-6" /><rect x="3" y="5" width="18" height="14" rx="2" /></svg>
+        </span>
+        <h2 class="font-['Fraunces',serif] text-3xl font-semibold">Line thrown!</h2>
+        <p class="mt-3 text-[#0b2545]/70">We sent a reset link to <strong data-lifebuoy-address class="text-[#0b2545]">your inbox</strong>. It stays afloat for 30 minutes.</p>
+        <button type="button" data-lifebuoy-retry class="mt-5 cursor-pointer text-sm font-semibold text-[#c1121f] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#134074]">Use a different email</button>
+      </div>
+
+      <a href="#" class="mt-8 inline-flex items-center gap-2 self-start text-sm font-semibold text-[#134074] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#134074]">
+        <svg aria-hidden="true" viewBox="0 0 20 20" class="size-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5l-5 5 5 5" /></svg>
+        Back to sign in
+      </a>
+    </div>
+  </div>
+</section>

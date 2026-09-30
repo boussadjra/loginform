@@ -1,0 +1,57 @@
+<section class="flex min-h-screen items-center justify-center bg-[#0b0c0f] bg-[linear-gradient(135deg,#f5a52408_25%,transparent_25%,transparent_50%,#f5a52408_50%,#f5a52408_75%,transparent_75%)] bg-size-[28px_28px] px-4 py-12 font-['IBM_Plex_Sans',sans-serif] text-[#e7e9ee]">
+  <div class="w-full max-w-4xl overflow-hidden rounded-2xl border border-[#262a33] bg-[#15171c] shadow-[0_40px_80px_-30px_#000]">
+    <div class="flex items-center justify-between border-b border-[#262a33] px-5 py-3 text-xs sm:px-8">
+      <span class="flex items-center gap-2 font-semibold tracking-wide">
+        <span class="grid size-6 place-items-center rounded-md bg-[#f5a524] text-[#0b0c0f]"><svg aria-hidden="true" viewBox="0 0 16 16" class="size-3.5" fill="currentColor"><path d="M8 1 2 3.5V8c0 3.3 2.6 6.2 6 7 3.4-.8 6-3.7 6-7V3.5Z" /></svg></span>
+        Northstack Console
+      </span>
+      <span class="rounded-full border border-[#f5a524]/40 px-2.5 py-0.5 font-['JetBrains_Mono',monospace] text-[10px] tracking-widest text-[#f5a524] uppercase">Account recovery</span>
+    </div>
+
+    <div class="grid md:grid-cols-[1.25fr_1fr]">
+      <div class="p-6 sm:p-10">
+        <h1 class="text-3xl font-semibold tracking-tight">Lost your authenticator?</h1>
+        <p class="mt-3 text-[15px] leading-relaxed text-[#9aa1ad]">Enter one of the 10 backup codes you saved when you turned on two-factor authentication for <span class="text-[#e7e9ee]">ops@northstack.io</span>.</p>
+
+        <form data-rc-form class="mt-8">
+          <label for="recovery-codes-code" class="flex items-baseline justify-between text-sm font-medium">Recovery code <span class="font-['JetBrains_Mono',monospace] text-xs text-[#6b7280]">xxxx-xxxx</span></label>
+          <input id="recovery-codes-code" name="code" type="text" inputmode="text" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" required maxlength="9" pattern="[A-Za-z0-9]{4}-[A-Za-z0-9]{4}" placeholder="7K2Q-M9XD" aria-describedby="recovery-codes-hint"
+            class="mt-2 w-full rounded-xl border border-[#2d323c] bg-[#0b0c0f] px-5 py-4 text-center font-['JetBrains_Mono',monospace] text-2xl tracking-[0.35em] text-[#f5a524] uppercase outline-none transition placeholder:text-[#3a3f4a] focus:border-[#f5a524] focus:shadow-[0_0_0_4px_#f5a5241f] sm:text-3xl" />
+          <p id="recovery-codes-hint" data-rc-hint class="mt-2 text-xs text-[#6b7280]">Letters and numbers only. The dash is added for you.</p>
+
+          <div role="note" class="mt-6 flex gap-3 rounded-xl border border-[#f5a524]/35 bg-[#f5a524]/8 p-4 text-sm text-[#f3d9a4]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="mt-0.5 size-5 shrink-0 text-[#f5a524]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0ZM12 9v4M12 17h.01" /></svg>
+            <p><strong class="font-semibold text-[#f5a524]">Each code works only once.</strong> Using it removes 2FA from your lost device. Anyone with your codes can do the same, so keep the rest offline.</p>
+          </div>
+
+          <button type="submit" disabled
+            class="mt-6 w-full cursor-pointer rounded-xl bg-[#f5a524] px-5 py-3.5 font-semibold text-[#0b0c0f] transition hover:bg-[#ffb940] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#f5a524] disabled:cursor-not-allowed disabled:bg-[#2d323c] disabled:text-[#6b7280]">
+            Verify recovery code
+          </button>
+          <p data-rc-status role="status" class="mt-3 text-center text-sm text-[#86efac] empty:hidden"></p>
+        </form>
+      </div>
+
+      <aside class="border-t border-[#262a33] bg-[#111317] p-6 sm:p-10 md:border-t-0 md:border-l">
+        <h2 class="font-['JetBrains_Mono',monospace] text-xs tracking-[0.2em] text-[#6b7280] uppercase">What happens next</h2>
+        <ol class="mt-6 space-y-6">
+          <li class="flex gap-4">
+            <span class="grid size-7 shrink-0 place-items-center rounded-full border border-[#f5a524] font-['JetBrains_Mono',monospace] text-xs text-[#f5a524]">1</span>
+            <div><p class="font-medium">We verify your code</p><p class="mt-1 text-sm text-[#9aa1ad]">It's checked against your saved set and burned immediately.</p></div>
+          </li>
+          <li class="flex gap-4">
+            <span class="grid size-7 shrink-0 place-items-center rounded-full border border-[#3a3f4a] font-['JetBrains_Mono',monospace] text-xs text-[#9aa1ad]">2</span>
+            <div><p class="font-medium">Your old device is unlinked</p><p class="mt-1 text-sm text-[#9aa1ad]">All other sessions are signed out and your team admins are notified.</p></div>
+          </li>
+          <li class="flex gap-4">
+            <span class="grid size-7 shrink-0 place-items-center rounded-full border border-[#3a3f4a] font-['JetBrains_Mono',monospace] text-xs text-[#9aa1ad]">3</span>
+            <div><p class="font-medium">You set up 2FA again</p><p class="mt-1 text-sm text-[#9aa1ad]">Scan a fresh QR code and download a new set of backup codes.</p></div>
+          </li>
+        </ol>
+        <div class="mt-8 border-t border-[#262a33] pt-6 text-sm text-[#9aa1ad]">
+          No codes? <a href="#" class="font-medium text-[#f5a524] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f5a524]">Start identity verification</a> — takes 1–3 business days.
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
