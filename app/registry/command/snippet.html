@@ -1,0 +1,78 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#0b0b10] px-4 py-16 font-['Inter',sans-serif] text-[#e4e4e7]">
+  <div aria-hidden="true" class="absolute top-1/2 left-1/2 -z-10 size-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,.32),transparent_65%)]"></div>
+  <div aria-hidden="true" class="absolute inset-x-0 top-0 -z-10 flex h-12 items-center gap-2 border-b border-white/5 px-5 text-xs text-[#52525b]"><span class="size-2.5 rounded-full bg-[#27272a]"></span><span class="size-2.5 rounded-full bg-[#27272a]"></span><span class="size-2.5 rounded-full bg-[#27272a]"></span><span class="ml-3 font-['JetBrains_Mono',monospace]">forge.dev / sign-in</span></div>
+
+  <div data-cmd class="w-full max-w-[560px] overflow-hidden rounded-2xl border border-white/10 bg-[#17171f]/95 shadow-[0_0_0_1px_rgba(0,0,0,.6),0_30px_80px_-20px_rgba(0,0,0,.9),inset_0_1px_0_rgba(255,255,255,.06)] backdrop-blur-xl">
+    <div class="flex items-center gap-3 border-b border-white/[.08] px-4">
+      <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 shrink-0 text-[#71717a]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label for="command-search" class="sr-only">Sign in with…</label>
+      <input id="command-search" type="text" role="combobox" aria-expanded="true" aria-controls="command-list" aria-activedescendant="command-opt-github" autocomplete="off" spellcheck="false" placeholder="Sign in with…"
+        class="h-14 min-w-0 flex-1 bg-transparent text-[15px] text-[#fafafa] caret-[#8b5cf6] outline-none placeholder:text-[#71717a]" />
+      <kbd class="shrink-0 rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a]">esc</kbd>
+    </div>
+
+    <div id="command-list" role="listbox" aria-label="Sign-in methods" class="max-h-[500px] overflow-y-auto p-2">
+      <p class="px-3 pt-2 pb-1.5 text-[11px] font-medium tracking-wide text-[#52525b] uppercase" data-cmd-group>Providers</p>
+      <ul class="flex flex-col" role="presentation">
+        <li id="command-opt-github" role="option" aria-selected="true" data-cmd-item data-name="github recommended for forge" data-key="1"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="#fafafa"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Continue with GitHub</span><span class="block truncate text-xs text-[#71717a]">Recommended for Forge</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">1</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+        <li id="command-opt-gitlab" role="option" aria-selected="false" data-cmd-item data-name="gitlab self-managed or gitlab.com" data-key="2"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4"><path fill="#E24329" d="M12 22.5 16.4 9H7.6z"/><path fill="#FC6D26" d="M12 22.5 7.6 9H1.5zM12 22.5 16.4 9h6.1z"/><path fill="#FCA326" d="M1.5 9 .2 13c-.1.4 0 .8.4 1.1L12 22.5zM22.5 9l1.3 4c.1.4 0 .8-.4 1.1L12 22.5z"/><path fill="#E24329" d="M1.5 9h6.1L5 1.2c-.1-.4-.7-.4-.9 0zM22.5 9h-6.1L19 1.2c.1-.4.7-.4.9 0z"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Continue with GitLab</span><span class="block truncate text-xs text-[#71717a]">Self-managed or gitlab.com</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">2</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+        <li id="command-opt-google" role="option" aria-selected="false" data-cmd-item data-name="google personal or workspace" data-key="3"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 0 1-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.9-3c-1.1.7-2.5 1.2-4.1 1.2-3.1 0-5.8-2.1-6.7-5H1.3v3.1A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 0 1 0-4.6V6.6H1.3a12 12 0 0 0 0 10.8l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 1.3 6.6l4 3.1c.9-2.9 3.6-4.9 6.7-4.9z"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Continue with Google</span><span class="block truncate text-xs text-[#71717a]">Personal or Workspace</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">3</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+        <li id="command-opt-microsoft" role="option" aria-selected="false" data-cmd-item data-name="microsoft entra id and personal accounts" data-key="4"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4"><rect x="1" y="1" width="10.5" height="10.5" fill="#F25022"/><rect x="12.5" y="1" width="10.5" height="10.5" fill="#7FBA00"/><rect x="1" y="12.5" width="10.5" height="10.5" fill="#00A4EF"/><rect x="12.5" y="12.5" width="10.5" height="10.5" fill="#FFB900"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Continue with Microsoft</span><span class="block truncate text-xs text-[#71717a]">Entra ID and personal accounts</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">4</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+        <li id="command-opt-apple" role="option" aria-selected="false" data-cmd-item data-name="apple hide my email supported" data-key="5"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="#fafafa"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.8-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.6-1-2.6-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Continue with Apple</span><span class="block truncate text-xs text-[#71717a]">Hide my email supported</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">5</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+      </ul>
+      <p class="px-3 pt-4 pb-1.5 text-[11px] font-medium tracking-wide text-[#52525b] uppercase" data-cmd-group>Other</p>
+      <ul class="flex flex-col" role="presentation">
+        <li id="command-opt-email" role="option" aria-selected="false" data-cmd-item data-name="email magic link we send a one-tap link" data-key="e"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="none" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Email magic link</span><span class="block truncate text-xs text-[#71717a]">We send a one-tap link</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">E</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+        <li id="command-opt-sso" role="option" aria-selected="false" data-cmd-item data-name="single sign-on saml or oidc for your org" data-key="s"
+          class="group flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-[#a1a1aa] transition-colors aria-selected:bg-white/[.07] aria-selected:text-[#fafafa]">
+          <span class="grid size-8 shrink-0 place-items-center rounded-md border border-white/10 bg-[#1f1f29] group-aria-selected:border-[#8b5cf6]/60"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="none" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-medium text-[#e4e4e7]">Single sign-on</span><span class="block truncate text-xs text-[#71717a]">SAML or OIDC for your org</span></span>
+          <kbd class="hidden shrink-0 gap-1 font-['JetBrains_Mono',monospace] text-[11px] text-[#71717a] sm:flex"><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5 font-['Inter',sans-serif]">⌘</span><span class="rounded border border-white/10 bg-white/5 px-1.5 py-0.5">S</span></kbd>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-4 shrink-0 text-[#8b5cf6] group-aria-selected:block sm:group-aria-selected:hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10 4 15l5 5"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg>
+        </li>
+      </ul>
+      <p data-cmd-empty class="hidden px-3 py-10 text-center text-sm text-[#71717a]">No sign-in method matches. Try “email”.</p>
+    </div>
+
+    <div class="flex items-center justify-between gap-3 border-t border-white/[.08] bg-black/20 px-4 py-2.5 text-[11px] text-[#71717a]">
+      <span class="flex min-w-0 items-center gap-2 font-medium text-[#a1a1aa]"><span aria-hidden="true" class="grid size-5 shrink-0 place-items-center rounded bg-[#8b5cf6] text-[10px] font-bold text-white">F</span><span data-cmd-status aria-live="polite" class="truncate">Forge</span></span>
+      <span class="flex items-center gap-3 font-['JetBrains_Mono',monospace]"><span class="hidden sm:inline">↑↓ navigate</span><span>↵ select</span></span>
+    </div>
+  </div>
+</section>

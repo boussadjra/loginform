@@ -1,0 +1,76 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#07060d] px-4 py-12 font-['Space_Grotesk',sans-serif] text-white">
+  <div aria-hidden="true" class="absolute top-[8%] left-[12%] -z-10 size-[420px] rounded-full bg-[#7c3aed]/30 blur-[120px]"></div>
+  <div aria-hidden="true" class="absolute right-[8%] bottom-[5%] -z-10 size-[380px] rounded-full bg-[#14b8a6]/25 blur-[120px]"></div>
+  <div aria-hidden="true" class="absolute top-[40%] right-[30%] -z-10 size-[260px] rounded-full bg-[#ec4899]/20 blur-[100px]"></div>
+
+  <div role="dialog" aria-modal="true" aria-labelledby="wallet-title" class="w-full max-w-[760px] rounded-[28px] bg-[conic-gradient(from_140deg,#a78bfa,#5eead4,#fde68a,#f472b6,#818cf8,#a78bfa)] p-px shadow-[0_40px_120px_-30px_rgba(124,58,237,.6)]">
+    <div class="grid overflow-hidden rounded-[27px] bg-[#0d0b16]/95 md:grid-cols-[320px_1fr]">
+      <div class="p-4 sm:p-5">
+        <div class="mb-4 flex items-center justify-between gap-2 px-1.5">
+          <h1 id="wallet-title" class="text-lg font-semibold tracking-tight">Connect a wallet</h1>
+          <button type="button" class="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-white/10 bg-white/5 py-1 pr-2 pl-2.5 text-xs font-medium text-white/80 transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#a78bfa]" aria-label="Network: Ethereum. Change network">
+            <span class="relative flex size-2"><span class="absolute inline-flex size-full animate-ping rounded-full bg-[#34d399] opacity-60"></span><span class="relative size-2 rounded-full bg-[#34d399]"></span></span>
+            Ethereum
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-3.5 text-white/50" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+        </div>
+
+        <p class="mb-1 px-2.5 text-[11px] font-medium tracking-[0.12em] text-[#a78bfa] uppercase">Installed</p>
+        <ul class="mb-3">
+          <li><button type="button" class="group flex w-full cursor-pointer items-center gap-3 rounded-2xl px-2.5 py-2.5 text-left transition hover:bg-white/[.06] focus-visible:bg-white/[.06] focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#a78bfa]">
+            <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[#fff4ea]"><svg viewBox="0 0 24 24" class="size-7"><path fill="#f6851b" d="M3.5 3.5 10 8.5h4l6.5-5-1.2 9.2-3.1 5.8L12 21l-4.2-2.5-3.1-5.8z"/><path fill="#e2761b" d="M3.5 3.5 10 8.5l-3 4.5zM20.5 3.5 14 8.5l3 4.5z"/><path fill="#c0ad9e" d="M9 17.5h6L12 21z"/><circle cx="9.3" cy="12.8" r="1.1" fill="#233447"/><circle cx="14.7" cy="12.8" r="1.1" fill="#233447"/></svg></span>
+            <span class="min-w-0 flex-1"><span class="block text-[15px] font-medium">Foxhole</span><span class="block text-xs text-white/45">Browser extension</span></span>
+            <span class="rounded-full bg-[#34d399]/15 px-2 py-0.5 text-[10px] font-semibold text-[#6ee7b7]">Detected</span>
+          </button></li>
+        </ul>
+
+        <p class="mb-1 px-2.5 text-[11px] font-medium tracking-[0.12em] text-white/40 uppercase">Popular</p>
+        <ul class="flex flex-col">
+          <li><button type="button" class="group flex w-full cursor-pointer items-center gap-3 rounded-2xl px-2.5 py-2.5 text-left transition hover:bg-white/[.06] focus-visible:bg-white/[.06] focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#a78bfa]">
+            <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[linear-gradient(160deg,#174299,#001e59)]"><svg viewBox="0 0 24 24" class="size-8" fill="none" stroke-width="2.6"><path stroke="#ff4d4d" d="M3 21A17 17 0 0 1 20 4"/><path stroke="#ff9f1a" d="M3 21A14 14 0 0 1 17 7"/><path stroke="#ffe14d" d="M3 21A11 11 0 0 1 14 10"/><path stroke="#4dd97a" d="M3 21a8 8 0 0 1 8-8"/><path stroke="#4dc3ff" d="M3 21a5 5 0 0 1 5-5"/></svg></span>
+            <span class="min-w-0 flex-1"><span class="block text-[15px] font-medium">Prism</span><span class="block text-xs text-white/45">Mobile and extension</span></span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 text-white/30 transition group-hover:translate-x-0.5 group-hover:text-white/70" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+          </button></li>
+          <li><button type="button" class="group flex w-full cursor-pointer items-center gap-3 rounded-2xl px-2.5 py-2.5 text-left transition hover:bg-white/[.06] focus-visible:bg-white/[.06] focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#a78bfa]">
+            <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[#1652f0]"><svg viewBox="0 0 24 24" class="size-7"><circle cx="12" cy="12" r="9" fill="#fff"/><rect x="9" y="9" width="6" height="6" rx="1.2" fill="#1652f0"/></svg></span>
+            <span class="min-w-0 flex-1"><span class="block text-[15px] font-medium">Orbit Wallet</span><span class="block text-xs text-white/45">Self-custody app</span></span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 text-white/30 transition group-hover:translate-x-0.5 group-hover:text-white/70" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+          </button></li>
+          <li><button type="button" class="group flex w-full cursor-pointer items-center gap-3 rounded-2xl px-2.5 py-2.5 text-left transition hover:bg-white/[.06] focus-visible:bg-white/[.06] focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#a78bfa]">
+            <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[#3b99fc]"><svg viewBox="0 0 24 24" class="size-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10.5c3.9-3.8 10.1-3.8 14 0"/><path d="m4 13 3.5 3.5L12 12l4.5 4.5L20 13"/></svg></span>
+            <span class="min-w-0 flex-1"><span class="block text-[15px] font-medium">Relay</span><span class="block text-xs text-white/45">Scan a QR code</span></span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 text-white/30 transition group-hover:translate-x-0.5 group-hover:text-white/70" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+          </button></li>
+          <li><button type="button" class="group flex w-full cursor-pointer items-center gap-3 rounded-2xl px-2.5 py-2.5 text-left transition hover:bg-white/[.06] focus-visible:bg-white/[.06] focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#a78bfa]">
+            <span aria-hidden="true" class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl border border-white/10 bg-[#1b1a22]"><svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="#e4e4e7" stroke-width="1.8"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 7v10"/><circle cx="15" cy="12" r="1.6" fill="#e4e4e7"/></svg></span>
+            <span class="min-w-0 flex-1"><span class="block text-[15px] font-medium">Hardware key</span><span class="block text-xs text-white/45">USB or Bluetooth</span></span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 text-white/30 transition group-hover:translate-x-0.5 group-hover:text-white/70" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+          </button></li>
+        </ul>
+
+        <p class="mt-4 border-t border-white/[.07] px-2.5 pt-4 text-xs text-white/45 md:hidden">New to wallets? <a href="#" class="font-medium text-[#a78bfa] hover:text-[#c4b5fd]">Learn more</a></p>
+      </div>
+
+      <div class="relative hidden flex-col justify-between border-l border-white/[.07] bg-[radial-gradient(circle_at_100%_0%,rgba(167,139,250,.14),transparent_55%),radial-gradient(circle_at_0%_100%,rgba(94,234,212,.1),transparent_55%)] p-8 md:flex">
+        <div>
+          <p class="text-[11px] font-medium tracking-[0.12em] text-white/40 uppercase">Tidepool</p>
+          <h2 class="mt-2 text-2xl leading-tight font-semibold tracking-tight">What is a wallet?</h2>
+          <ul class="mt-7 flex flex-col gap-6">
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="grid size-11 shrink-0 place-items-center rounded-xl bg-[linear-gradient(135deg,#a78bfa,#5eead4)] text-[#0d0b16]"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.5 12 4l8 5.5V20H4z"/><path d="M10 20v-5h4v5"/></svg></span>
+              <span><span class="block font-medium">A home for your digital assets</span><span class="mt-1 block text-sm leading-relaxed text-white/50">Send, receive, store and display tokens and collectibles.</span></span>
+            </li>
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="grid size-11 shrink-0 place-items-center rounded-xl bg-[linear-gradient(135deg,#f472b6,#fde68a)] text-[#0d0b16]"><svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg></span>
+              <span><span class="block font-medium">A new way to sign in</span><span class="mt-1 block text-sm leading-relaxed text-white/50">No accounts or passwords. Just sign a message to prove it’s you.</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-10 flex items-center gap-4">
+          <a href="#" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0d0b16] transition hover:bg-[#ede9fe] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa]">Get a wallet</a>
+          <a href="#" class="text-sm font-medium text-[#a78bfa] hover:text-[#c4b5fd]">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

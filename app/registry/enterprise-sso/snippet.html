@@ -1,0 +1,58 @@
+<section class="flex min-h-screen items-center justify-center bg-[#0b1f44] bg-[linear-gradient(rgba(255,255,255,.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.035)_1px,transparent_1px)] [background-size:48px_48px] px-4 py-12 font-['IBM_Plex_Sans',sans-serif] text-[#0b1f44]">
+  <div class="grid w-full max-w-[960px] overflow-hidden rounded-2xl bg-white shadow-[0_40px_80px_-30px_rgba(0,0,0,.6)] md:grid-cols-[5fr_7fr]">
+    <aside class="relative flex flex-col justify-between gap-8 overflow-hidden bg-[#102a5c] p-7 text-white md:p-10">
+      <div aria-hidden="true" class="absolute -right-24 -bottom-24 size-72 rounded-full border-[40px] border-white/[.04]"></div>
+      <div class="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight">
+        <span aria-hidden="true" class="grid size-8 place-items-center rounded-md bg-white text-[#102a5c]"><svg viewBox="0 0 24 24" class="size-[18px]" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg></span>
+        Meridian
+      </div>
+      <div class="relative">
+        <p class="font-['IBM_Plex_Mono',monospace] text-xs tracking-[0.14em] text-[#7fa6ff] uppercase">Workspace sign-in</p>
+        <h1 class="mt-3 text-[30px] leading-[1.15] font-semibold tracking-[-0.01em] md:text-[34px]">Your company account, one click away.</h1>
+        <ul class="mt-6 hidden flex-col gap-3 text-sm text-[#c9d6f0] md:flex">
+          <li class="flex items-center gap-2.5"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 text-[#7fa6ff]" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>SAML 2.0 and OpenID Connect</li>
+          <li class="flex items-center gap-2.5"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 text-[#7fa6ff]" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>SCIM user provisioning</li>
+          <li class="flex items-center gap-2.5"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 text-[#7fa6ff]" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>SOC 2 Type II and ISO 27001</li>
+        </ul>
+      </div>
+      <p class="relative hidden text-xs text-[#8aa0c8] md:block">Trusted by 4,200 security teams.</p>
+    </aside>
+
+    <div class="p-7 md:p-12">
+      <h2 class="text-xl font-semibold">Sign in to Meridian</h2>
+      <p class="mt-1 text-sm text-[#5a6b8c]">Enter your work email and we’ll find your company’s sign-in.</p>
+
+      <form data-sso-form class="mt-7">
+        <label for="enterprise-sso-email" class="text-sm font-medium">Work email</label>
+        <input id="enterprise-sso-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="jordan@acme.com"
+          class="mt-1.5 h-12 w-full rounded-lg border border-[#cfd8e6] bg-white px-4 text-[15px] outline-none placeholder:text-[#9aa8c0] focus:border-[#2f6bff] focus:shadow-[0_0_0_3px_rgba(47,107,255,.18)]" />
+
+        <div data-sso-match hidden class="mt-3 flex items-center gap-3 rounded-lg border border-[#bcd0ff] bg-[#eef3ff] px-3.5 py-3 text-sm">
+          <span aria-hidden="true" class="grid size-8 shrink-0 place-items-center rounded-full bg-white shadow-[0_0_0_1px_#bcd0ff]"><svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="#2f6bff" stroke-width="2.4"><circle cx="12" cy="12" r="7.5"/></svg></span>
+          <p class="min-w-0 flex-1"><span class="block font-semibold" data-sso-org>Acme</span><span class="block text-xs text-[#5a6b8c]" data-sso-idp>Single sign-on via Okta</span></p>
+          <span class="rounded bg-[#2f6bff] px-1.5 py-0.5 font-['IBM_Plex_Mono',monospace] text-[10px] font-medium text-white" data-sso-proto>SAML</span>
+        </div>
+
+        <button type="submit" data-sso-submit class="mt-4 flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#0b1f44] text-[15px] font-medium text-white transition hover:bg-[#16336b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6bff] disabled:cursor-wait disabled:opacity-70">Continue with SSO</button>
+      </form>
+
+      <div class="my-7 flex items-center gap-3 text-xs text-[#8a97ad]"><span class="h-px flex-1 bg-[#e6ecf5]"></span>or use your identity provider<span class="h-px flex-1 bg-[#e6ecf5]"></span></div>
+
+      <div class="grid gap-3 sm:grid-cols-2">
+        <button type="button" class="flex h-11 cursor-pointer items-center justify-center gap-2.5 rounded-lg border border-[#cfd8e6] text-sm font-medium transition hover:border-[#9aa8c0] hover:bg-[#f6f8fc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6bff]">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-[18px]"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 0 1-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.9-3c-1.1.7-2.5 1.2-4.1 1.2-3.1 0-5.8-2.1-6.7-5H1.3v3.1A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 0 1 0-4.6V6.6H1.3a12 12 0 0 0 0 10.8l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 1.3 6.6l4 3.1c.9-2.9 3.6-4.9 6.7-4.9z"/></svg>
+          Google Workspace
+        </button>
+        <button type="button" class="flex h-11 cursor-pointer items-center justify-center gap-2.5 rounded-lg border border-[#cfd8e6] text-sm font-medium transition hover:border-[#9aa8c0] hover:bg-[#f6f8fc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6bff]">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4"><rect x="1" y="1" width="10.5" height="10.5" fill="#F25022"/><rect x="12.5" y="1" width="10.5" height="10.5" fill="#7FBA00"/><rect x="1" y="12.5" width="10.5" height="10.5" fill="#00A4EF"/><rect x="12.5" y="12.5" width="10.5" height="10.5" fill="#FFB900"/></svg>
+          Microsoft Entra ID
+        </button>
+      </div>
+
+      <p class="mt-7 flex gap-2.5 rounded-lg bg-[#f3f6fb] px-3.5 py-3 text-xs leading-relaxed text-[#5a6b8c]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="mt-px size-4 shrink-0 text-[#2f6bff]" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/></svg>
+        <span>Supports SAML 2.0 and OIDC with any IdP. Admins can connect Okta, OneLogin, Ping or a custom provider under <strong class="font-medium text-[#0b1f44]">Settings → Security</strong>. <a href="#" class="font-medium text-[#2f6bff] hover:underline">Sign in with password</a></span>
+      </p>
+    </div>
+  </div>
+</section>
