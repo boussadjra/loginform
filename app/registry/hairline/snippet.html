@@ -1,0 +1,47 @@
+<section class="flex min-h-screen flex-col bg-white px-6 py-7 font-['Inter_Tight',sans-serif] text-[13px] text-[#111111] antialiased sm:px-12 sm:py-10">
+  <header class="flex items-center justify-between text-[11px] tracking-[0.08em] uppercase">
+    <span class="font-semibold">Ondo</span>
+    <a href="#" class="text-black/50 transition hover:text-black focus-visible:rounded focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black">Create account</a>
+  </header>
+
+  <div class="flex flex-1 items-center justify-center py-20">
+    <div class="w-full max-w-[18rem]">
+      <h1 class="text-[13px] font-medium">Sign in</h1>
+      <p class="mt-1 text-black/45">Welcome back. Enter your details.</p>
+
+      <form data-auth-form class="mt-16 space-y-10">
+        <div class="relative pt-4">
+          <input id="hairline-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder=" "
+            class="peer block w-full border-0 border-b border-black/15 bg-transparent px-0 pt-1 pb-2 text-[13px] outline-none" />
+          <label for="hairline-email" class="pointer-events-none absolute top-0 left-0 text-[10px] tracking-[0.08em] text-black/45 uppercase transition-all duration-300 peer-placeholder-shown:top-5 peer-placeholder-shown:text-[13px] peer-placeholder-shown:tracking-normal peer-placeholder-shown:normal-case peer-focus:top-0 peer-focus:text-[10px] peer-focus:tracking-[0.08em] peer-focus:text-black peer-focus:uppercase">Email</label>
+          <span aria-hidden="true" class="absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-black transition-transform duration-500 peer-focus:scale-x-100"></span>
+        </div>
+
+        <div class="relative pt-4">
+          <input id="hairline-password" name="password" type="password" autocomplete="current-password" required placeholder=" "
+            class="peer block w-full border-0 border-b border-black/15 bg-transparent px-0 pt-1 pr-14 pb-2 text-[13px] outline-none" />
+          <label for="hairline-password" class="pointer-events-none absolute top-0 left-0 text-[10px] tracking-[0.08em] text-black/45 uppercase transition-all duration-300 peer-placeholder-shown:top-5 peer-placeholder-shown:text-[13px] peer-placeholder-shown:tracking-normal peer-placeholder-shown:normal-case peer-focus:top-0 peer-focus:text-[10px] peer-focus:tracking-[0.08em] peer-focus:text-black peer-focus:uppercase">Password</label>
+          <span aria-hidden="true" class="absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-black transition-transform duration-500 peer-focus:scale-x-100"></span>
+          <button type="button" data-toggle-password aria-controls="hairline-password" aria-pressed="false" aria-label="Show password" data-show="Show" data-hide="Hide"
+            class="absolute right-0 bottom-2 text-[11px] text-black/40 transition hover:text-black focus-visible:rounded focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-black">Show</button>
+        </div>
+
+        <div class="flex items-center justify-between pt-4">
+          <a href="#" class="text-[11px] text-black/45 transition hover:text-black focus-visible:rounded focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black">Forgot password?</a>
+          <button type="submit" data-pending="Signing in" data-done="Done"
+            class="group inline-flex items-center gap-3 rounded-full bg-[#111111] py-3 pr-4 pl-6 text-[12px] font-medium text-white transition hover:gap-4 focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-black disabled:cursor-wait disabled:opacity-70">
+            <span data-label>Continue</span>
+            <svg aria-hidden="true" viewBox="0 0 16 16" class="size-3.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <p class="mt-20 text-[11px] text-black/45">No account? <a href="#" class="text-black underline decoration-black/20 underline-offset-4 transition hover:decoration-black focus-visible:rounded focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-black">Create one</a></p>
+    </div>
+  </div>
+
+  <footer class="flex items-center justify-between text-[11px] text-black/35">
+    <span>© 2026</span>
+    <span>Privacy · Terms</span>
+  </footer>
+</section>

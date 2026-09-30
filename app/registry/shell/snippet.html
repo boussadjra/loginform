@@ -1,0 +1,63 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#050705] px-4 py-14 font-['JetBrains_Mono',monospace] text-[#b6f5c3]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_40%,rgba(74,222,128,0.12),transparent_60%)]"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[repeating-linear-gradient(0deg,rgba(255,255,255,0.025)_0px,rgba(255,255,255,0.025)_1px,transparent_1px,transparent_3px)]"></div>
+
+  <div class="w-full max-w-2xl overflow-hidden rounded-xl border border-[#1f2a1f] bg-[#0b0f0b] shadow-[0_0_0_1px_rgba(74,222,128,0.06),0_40px_100px_-20px_rgba(0,0,0,0.9),0_0_80px_-30px_rgba(74,222,128,0.35)]">
+    <div class="flex items-center gap-2 border-b border-[#1f2a1f] bg-[#111711] px-4 py-3">
+      <span aria-hidden="true" class="size-3 rounded-full bg-[#ff5f57]"></span>
+      <span aria-hidden="true" class="size-3 rounded-full bg-[#febc2e]"></span>
+      <span aria-hidden="true" class="size-3 rounded-full bg-[#28c840]"></span>
+      <p class="flex-1 truncate text-center text-xs text-[#6b7f6b]">brick@deploy: ~/api — zsh — 80×24</p>
+      <span aria-hidden="true" class="w-12"></span>
+    </div>
+
+    <div class="space-y-1 px-4 py-6 text-[13px] leading-6 sm:px-7 sm:text-sm">
+      <p class="text-[#5f735f]">Last login: Tue Sep 30 09:41:07 on ttys002</p>
+      <pre aria-hidden="true" class="overflow-hidden pt-2 pb-3 text-[10px] leading-[1.15] text-[#4ade80] sm:text-xs">  ____  _____ ____  _     _____   __
+ |  _ \| ____|  _ \| |   / _ \ \ / /
+ | | | |  _| | |_) | |  | | | \ V /
+ | |_| | |___|  __/| |__| |_| || |
+ |____/|_____|_|   |_____\___/ |_|</pre>
+      <p><span class="text-[#fbbf24]">~/api</span> <span class="text-[#4ade80]">$</span> <span class="text-white">deploy auth login</span></p>
+      <h1 class="text-[#6b7f6b]"># Authenticate this machine to push builds to production.</h1>
+
+      <form data-auth-form class="space-y-1 pt-3">
+        <div class="flex flex-wrap items-center gap-x-2 rounded-md px-2 -mx-2 transition focus-within:bg-[#4ade80]/[0.07]">
+          <span aria-hidden="true" class="text-[#fbbf24]">?</span>
+          <label for="shell-email" class="text-white">Email address</label>
+          <span aria-hidden="true" class="text-[#4ade80]">›</span>
+          <input id="shell-email" name="email" type="email" autocomplete="email" inputmode="email" required spellcheck="false" placeholder="you@company.dev"
+            class="min-w-0 flex-1 basis-40 bg-transparent py-1 text-[#4ade80] caret-[#4ade80] outline-none placeholder:text-[#3a4a3a]" />
+        </div>
+        <div class="flex flex-wrap items-center gap-x-2 rounded-md px-2 -mx-2 transition focus-within:bg-[#4ade80]/[0.07]">
+          <span aria-hidden="true" class="text-[#fbbf24]">?</span>
+          <label for="shell-password" class="text-white">Password</label>
+          <span aria-hidden="true" class="text-[#4ade80]">›</span>
+          <input id="shell-password" name="password" type="password" autocomplete="current-password" required placeholder="********"
+            class="min-w-0 flex-1 basis-24 bg-transparent py-1 text-[#4ade80] caret-[#4ade80] outline-none placeholder:text-[#3a4a3a]" />
+          <button type="button" data-toggle-password aria-controls="shell-password" aria-pressed="false" data-show="[--show]" data-hide="[--hide]" aria-label="Show password"
+            class="rounded px-1.5 text-xs text-[#6b7f6b] hover:text-[#fbbf24] focus-visible:outline-1 focus-visible:outline-[#fbbf24] aria-pressed:text-[#fbbf24]">[--show]</button>
+        </div>
+        <label class="-mx-2 flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 text-[#9fb59f] select-none has-focus-visible:bg-[#4ade80]/[0.07]">
+          <input type="checkbox" name="remember" class="peer sr-only" />
+          <span aria-hidden="true" class="text-[#4ade80] peer-checked:hidden">[ ]</span>
+          <span aria-hidden="true" class="hidden text-[#4ade80] peer-checked:inline">[x]</span>
+          Remember this machine for 30 days
+        </label>
+
+        <div class="pt-4">
+          <button type="submit" data-pending="authenticating…" data-done="✓ token saved to ~/.deploy/credentials"
+            class="group inline-flex max-w-full items-center gap-2 rounded-md border border-[#4ade80]/50 bg-[#4ade80] px-4 py-2 font-bold text-[#052e12] shadow-[0_0_24px_-4px_rgba(74,222,128,0.7)] transition hover:bg-[#86efac] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fbbf24] disabled:cursor-wait disabled:opacity-80">
+            <span aria-hidden="true">⏎</span><span data-label class="truncate">authenticate</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="space-y-0.5 pt-5 text-[#6b7f6b]">
+        <p><span class="text-[#fbbf24]">hint:</span> forgot it? run <a href="#" class="text-[#b6f5c3] underline decoration-dotted underline-offset-4 hover:text-[#4ade80] focus-visible:outline-1 focus-visible:outline-[#fbbf24]">deploy auth reset</a></p>
+        <p><span class="text-[#fbbf24]">hint:</span> no account? run <a href="#" class="text-[#b6f5c3] underline decoration-dotted underline-offset-4 hover:text-[#4ade80] focus-visible:outline-1 focus-visible:outline-[#fbbf24]">deploy auth signup</a></p>
+      </div>
+      <p class="pt-3"><span class="text-[#fbbf24]">~/api</span> <span class="text-[#4ade80]">$</span> <span aria-hidden="true" class="inline-block h-4 w-2 translate-y-0.5 animate-pulse bg-[#4ade80]"></span></p>
+    </div>
+  </div>
+</section>
