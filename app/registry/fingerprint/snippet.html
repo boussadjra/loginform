@@ -1,0 +1,53 @@
+<section data-fingerprint data-state="idle" class="group relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#05070d] px-4 py-12 font-['Space_Grotesk',sans-serif] text-[#e6ecff]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_38%,#0d2a6b_0%,transparent_45%),linear-gradient(#0c1222_1px,transparent_1px),linear-gradient(90deg,#0c1222_1px,transparent_1px)] bg-[size:100%_100%,32px_32px,32px_32px]"></div>
+
+  <div class="w-full max-w-sm text-center">
+    <p class="font-['JetBrains_Mono',monospace] text-[11px] tracking-[0.3em] text-[#3d8bff] uppercase">Vaultline · Secure sign-in</p>
+
+    <div class="relative mx-auto mt-8 size-52 sm:size-60">
+      <div aria-hidden="true" class="absolute inset-0 rounded-full bg-[#3d8bff]/10 blur-2xl transition-opacity duration-700 group-data-[state=idle]:opacity-40"></div>
+      <div aria-hidden="true" class="absolute inset-0 rounded-full border border-[#1f2a44]"></div>
+      <div aria-hidden="true" class="absolute inset-3 rounded-full border border-dashed border-[#1f2a44] group-data-[state=scanning]:animate-spin group-data-[state=scanning]:border-[#3d8bff]/50 [animation-duration:6s]"></div>
+
+      <div class="absolute inset-8 overflow-hidden transition duration-500 group-data-[state=success]:scale-75 group-data-[state=success]:opacity-0">
+        <svg aria-hidden="true" viewBox="0 0 120 120" fill="none" stroke-width="3.2" stroke-linecap="round" class="size-full">
+      <path data-ridge d="M55 64V58A5 5 0 0 1 65 58V68" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M50 72V58A10 10 0 0 1 70 58V62" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M45 78V58A15 15 0 0 1 75 58V74" stroke-dasharray="18 6" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M40 68V58A20 20 0 0 1 80 58V82" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M35 84V58A25 25 0 0 1 85 58V70" stroke-dasharray="40 7" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M30 74V58A30 30 0 0 1 90 58V88" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M25 88V58A35 35 0 0 1 95 58V64" stroke-dasharray="30 5 60 8" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M20 66V58A40 40 0 0 1 100 58V84" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M15 58V58A45 45 0 0 1 105 58V72" stroke-dasharray="50 10" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+      <path data-ridge d="M10 58V58A50 50 0 0 1 110 58V58" stroke-dasharray="22 12 70 10" class="stroke-[#2c3e6b] transition-colors duration-300 data-lit:stroke-[#3d8bff]" />
+        </svg>
+        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-0.5 bg-[#8fd3ff] opacity-0 shadow-[0_0_18px_4px_#3d8bff] transition-[top,opacity] duration-[2200ms] ease-linear group-data-[state=scanning]:top-full group-data-[state=scanning]:opacity-100"></div>
+      </div>
+
+      <div aria-hidden="true" class="absolute inset-12 flex scale-50 items-center justify-center rounded-full bg-[#3d8bff] opacity-0 shadow-[0_0_60px_#3d8bff] transition duration-500 group-data-[state=success]:scale-100 group-data-[state=success]:opacity-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#05070d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="size-1/2"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+      </div>
+    </div>
+
+    <h1 class="mt-8 text-3xl font-semibold tracking-tight">
+      <span class="group-data-[state=scanning]:hidden group-data-[state=success]:hidden">Touch to sign in</span>
+      <span class="hidden group-data-[state=scanning]:inline">Verifying…</span>
+      <span class="hidden group-data-[state=success]:inline">Welcome back</span>
+    </h1>
+    <p data-status aria-live="polite" class="mt-2 text-sm text-[#8b97b8]">Use your fingerprint or device passkey. No password required.</p>
+
+    <form data-passkey-form class="mt-8 space-y-3 text-left">
+      <label for="fingerprint-email" class="font-['JetBrains_Mono',monospace] text-[11px] tracking-[0.2em] text-[#8b97b8] uppercase">Email</label>
+      <input id="fingerprint-email" name="email" type="email" autocomplete="username webauthn" placeholder="ada@vaultline.io"
+        class="w-full rounded-lg border border-[#1f2a44] bg-[#0a0f1c] px-4 py-3 text-[#e6ecff] outline-none placeholder:text-[#4a5677] focus:border-[#3d8bff] focus:shadow-[0_0_0_3px_#3d8bff33]" />
+      <button type="submit"
+        class="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#3d8bff] px-4 py-3.5 font-semibold text-[#05070d] shadow-[0_0_32px_#3d8bff66] transition hover:bg-[#62a2ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8fd3ff] disabled:cursor-wait disabled:opacity-70">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="size-5"><path d="M7 11a5 5 0 0 1 10 0v2M12 11v4m-8-4a8 8 0 0 1 16 0M9.5 17.5c.3-1 .5-2.3.5-4v-2a2 2 0 1 1 4 0v1.5" /></svg>
+        Sign in with passkey
+      </button>
+    </form>
+
+    <p class="mt-6 text-sm text-[#8b97b8]">No passkey on this device? <a href="#" class="font-medium text-[#8fd3ff] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#8fd3ff]">Email me a sign-in link</a></p>
+  </div>
+</section>

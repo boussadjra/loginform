@@ -1,0 +1,48 @@
+<section data-passkey-first data-state="idle" class="group flex min-h-screen items-center justify-center bg-[#f6f5f3] px-4 py-12 font-['Geist',system-ui,sans-serif] text-[#1c1917] antialiased">
+  <div class="w-full max-w-[25rem]">
+    <div class="mb-6 flex items-center justify-center gap-2 text-[15px] font-semibold tracking-tight">
+      <span aria-hidden="true" class="grid size-7 grid-cols-2 gap-0.5 rounded-md bg-[#1c1917] p-1.5"><span class="rounded-[2px] bg-white"></span><span class="rounded-[2px] bg-white/40"></span><span class="rounded-[2px] bg-white/40"></span><span class="rounded-[2px] bg-white"></span></span>
+      Ledgerly
+    </div>
+
+    <div class="rounded-2xl border border-[#e7e5e4] bg-white p-6 shadow-[0_1px_0_#0000000a,0_12px_32px_-16px_#1c191726] sm:p-8">
+      <h1 class="text-xl font-semibold tracking-tight">Sign in to Ledgerly</h1>
+      <p class="mt-1.5 text-sm text-[#78716c]">Welcome back. Use your passkey for the fastest, most secure sign-in.</p>
+
+      <button type="button" data-passkey-button
+        class="mt-6 flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#1c1917] px-4 py-3.5 text-[15px] font-medium text-white shadow-[inset_0_1px_0_#ffffff26,0_1px_2px_#0000004d] transition hover:bg-[#292524] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1917] disabled:cursor-wait group-data-[state=success]:bg-[#15803d] group-data-[state=success]:hover:bg-[#15803d]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="size-5 group-data-[state=pending]:hidden group-data-[state=success]:hidden"><circle cx="9" cy="7" r="4" /><path d="M2 21v-1a6 6 0 0 1 9.5-4.9M18 10.5a2.5 2.5 0 1 0-1 4.9V21l1.5 1 1.5-1.5-1-1 1-1-1-1v-1.1a2.5 2.5 0 0 0-1-4.9z" /></svg>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hidden size-4 animate-spin group-data-[state=pending]:block"><circle cx="12" cy="12" r="9" class="opacity-25" /><path d="M21 12a9 9 0 0 0-9-9" stroke-linecap="round" /></svg>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="hidden size-4 group-data-[state=success]:block"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+        <span data-label>Sign in with passkey</span>
+      </button>
+      <p data-status aria-live="polite" class="mt-3 text-center text-xs text-[#a8a29e]">Touch ID, Face ID, Windows Hello or a security key</p>
+
+      <details class="group/more mt-6 border-t border-[#f0eeec] pt-4">
+        <summary class="flex cursor-pointer list-none items-center justify-between rounded-md py-1 text-sm font-medium text-[#57534e] hover:text-[#1c1917] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1917] [&::-webkit-details-marker]:hidden">
+          Other ways to sign in
+          <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor" class="size-4 transition-transform group-open/more:rotate-180"><path d="M5.2 7.2a.75.75 0 0 1 1.06 0L10 10.94l3.74-3.74a.75.75 0 1 1 1.06 1.06l-4.27 4.27a.75.75 0 0 1-1.06 0L5.2 8.26a.75.75 0 0 1 0-1.06z" /></svg>
+        </summary>
+        <form data-auth-form class="mt-4 space-y-3">
+          <div>
+            <label for="passkey-first-email" class="mb-1.5 block text-xs font-medium text-[#57534e]">Email</label>
+            <input id="passkey-first-email" name="email" type="email" autocomplete="username webauthn" required placeholder="you@company.com"
+              class="w-full rounded-lg border border-[#e7e5e4] bg-[#fafaf9] px-3 py-2.5 text-sm outline-none placeholder:text-[#a8a29e] focus:border-[#1c1917] focus:bg-white focus:ring-4 focus:ring-[#1c1917]/5" />
+          </div>
+          <div>
+            <div class="mb-1.5 flex items-center justify-between">
+              <label for="passkey-first-password" class="text-xs font-medium text-[#57534e]">Password</label>
+              <a href="#" class="text-xs text-[#78716c] hover:text-[#1c1917] hover:underline">Forgot?</a>
+            </div>
+            <input id="passkey-first-password" name="password" type="password" autocomplete="current-password" required
+              class="w-full rounded-lg border border-[#e7e5e4] bg-[#fafaf9] px-3 py-2.5 text-sm outline-none focus:border-[#1c1917] focus:bg-white focus:ring-4 focus:ring-[#1c1917]/5" />
+          </div>
+          <button type="submit" class="w-full cursor-pointer rounded-lg border border-[#e7e5e4] bg-white px-4 py-2.5 text-sm font-medium transition hover:bg-[#fafaf9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c1917] disabled:cursor-wait disabled:opacity-60">Sign in with password</button>
+          <a href="#" class="block rounded-lg py-1 text-center text-sm text-[#57534e] hover:text-[#1c1917] hover:underline">Email me a magic link instead</a>
+        </form>
+      </details>
+    </div>
+
+    <p class="mt-6 text-center text-sm text-[#78716c]">New to Ledgerly? <a href="#" class="font-medium text-[#1c1917] underline decoration-[#d6d3d1] underline-offset-4 hover:decoration-[#1c1917]">Create an account</a></p>
+  </div>
+</section>

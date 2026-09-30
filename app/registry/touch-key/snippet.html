@@ -1,0 +1,64 @@
+<section data-touch-key data-state="idle" class="group flex min-h-screen items-center justify-center bg-[#17181b] bg-[repeating-linear-gradient(45deg,#1b1c20_0_2px,transparent_2px_9px)] px-4 py-12 font-['Archivo',sans-serif] text-[#e7e8ec]">
+  <div class="grid w-full max-w-4xl overflow-hidden rounded-xl border border-[#34353b] bg-[#1f2024] shadow-[0_30px_80px_-20px_#000,inset_0_1px_0_#ffffff0d] md:grid-cols-[1fr_1.15fr]">
+    <div class="relative flex items-center justify-center border-b border-[#34353b] bg-[radial-gradient(circle_at_50%_55%,#3a2f1a_0%,transparent_60%)] px-6 py-10 md:border-r md:border-b-0">
+      <span class="absolute top-4 left-4 font-['IBM_Plex_Mono',monospace] text-[10px] tracking-[0.2em] text-[#7c7f89] uppercase">FIDO2 · USB-A</span>
+      <span class="absolute top-4 right-4 flex items-center gap-1.5 font-['IBM_Plex_Mono',monospace] text-[10px] tracking-[0.2em] text-[#7c7f89] uppercase">
+        <span class="size-1.5 rounded-full bg-[#7c7f89] group-data-[state=touch]:animate-ping group-data-[state=touch]:bg-[#d9a441] group-data-[state=success]:bg-[#6fcf97]"></span>
+        <span data-led>Standby</span>
+      </span>
+      <svg aria-hidden="true" viewBox="0 0 120 250" class="h-56 w-auto -rotate-12 drop-shadow-[0_20px_30px_#000] transition duration-500 group-data-[state=insert]:translate-y-3 group-data-[state=touch]:translate-y-3 group-data-[state=success]:translate-y-3 md:h-72">
+        <defs>
+          <linearGradient id="touch-key-metal" x1="0" x2="1"><stop offset="0" stop-color="#8d9199" /><stop offset=".5" stop-color="#e3e5ea" /><stop offset="1" stop-color="#7d8189" /></linearGradient>
+          <radialGradient id="touch-key-gold" cx=".4" cy=".35"><stop offset="0" stop-color="#ffe6a8" /><stop offset=".55" stop-color="#d9a441" /><stop offset="1" stop-color="#8a6420" /></radialGradient>
+        </defs>
+        <rect x="36" y="6" width="48" height="66" rx="3" fill="url(#touch-key-metal)" />
+        <rect x="46" y="18" width="10" height="8" fill="#3b3d42" /><rect x="64" y="18" width="10" height="8" fill="#3b3d42" />
+        <rect x="18" y="64" width="84" height="178" rx="24" fill="#2a2b30" stroke="#44464d" stroke-width="2" />
+        <rect x="24" y="70" width="72" height="4" rx="2" fill="#ffffff" opacity=".06" />
+        <circle cx="60" cy="140" r="36" fill="#d9a441" opacity=".25" class="animate-pulse group-data-[state=success]:hidden" />
+        <circle cx="60" cy="140" r="27" fill="#1a1b1e" stroke="#50525a" stroke-width="2" />
+        <circle cx="60" cy="140" r="21" fill="url(#touch-key-gold)" />
+        <path d="M52 133c4-4 12-4 16 0M49 140c6-7 16-7 22 0M53 147c3-3 11-3 14 0" fill="none" stroke="#8a6420" stroke-width="1.6" stroke-linecap="round" opacity=".7" />
+        <text x="60" y="196" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" letter-spacing="2" fill="#6b6e77">KEYSTONE</text>
+        <circle cx="60" cy="220" r="8" fill="#17181b" stroke="#44464d" stroke-width="2" />
+      </svg>
+    </div>
+
+    <div class="p-7 sm:p-10">
+      <p class="font-['IBM_Plex_Mono',monospace] text-[11px] tracking-[0.25em] text-[#d9a441] uppercase">Anvil Cloud · Hardware sign-in</p>
+      <h1 class="mt-3 text-3xl leading-[1.05] font-extrabold tracking-tight sm:text-4xl">Insert and touch<br />your key</h1>
+      <p data-status aria-live="polite" class="mt-3 text-sm text-[#9a9da6]">Your security key holds a passkey for this account. Nothing to type, nothing to phish.</p>
+
+      <ol class="mt-7 space-y-2.5 font-['IBM_Plex_Mono',monospace] text-[13px]">
+        <li data-step class="group/step flex items-center gap-3 rounded-md border border-[#34353b] bg-[#1a1b1f] px-3 py-2.5 text-[#9a9da6] transition data-[state=active]:border-[#d9a441] data-[state=active]:text-[#f3e2bd] data-[state=done]:text-[#c9ccd3]">
+          <span class="flex size-6 shrink-0 items-center justify-center rounded border border-[#44464d] text-[11px] group-data-[state=active]/step:border-[#d9a441] group-data-[state=active]/step:text-[#d9a441] group-data-[state=done]/step:border-[#6fcf97] group-data-[state=done]/step:bg-[#6fcf97] group-data-[state=done]/step:text-[#17181b]">01</span>
+          Plug the key into a USB port
+        </li>
+        <li data-step class="group/step flex items-center gap-3 rounded-md border border-[#34353b] bg-[#1a1b1f] px-3 py-2.5 text-[#9a9da6] transition data-[state=active]:border-[#d9a441] data-[state=active]:text-[#f3e2bd] data-[state=done]:text-[#c9ccd3]">
+          <span class="flex size-6 shrink-0 items-center justify-center rounded border border-[#44464d] text-[11px] group-data-[state=active]/step:border-[#d9a441] group-data-[state=active]/step:text-[#d9a441] group-data-[state=done]/step:border-[#6fcf97] group-data-[state=done]/step:bg-[#6fcf97] group-data-[state=done]/step:text-[#17181b]">02</span>
+          Touch the gold contact when it glows
+        </li>
+        <li data-step class="group/step flex items-center gap-3 rounded-md border border-[#34353b] bg-[#1a1b1f] px-3 py-2.5 text-[#9a9da6] transition data-[state=active]:border-[#d9a441] data-[state=active]:text-[#f3e2bd] data-[state=done]:text-[#c9ccd3]">
+          <span class="flex size-6 shrink-0 items-center justify-center rounded border border-[#44464d] text-[11px] group-data-[state=active]/step:border-[#d9a441] group-data-[state=active]/step:text-[#d9a441] group-data-[state=done]/step:border-[#6fcf97] group-data-[state=done]/step:bg-[#6fcf97] group-data-[state=done]/step:text-[#17181b]">03</span>
+          Wait for the green light
+        </li>
+      </ol>
+
+      <form data-passkey-form class="mt-7">
+        <label for="touch-key-user" class="sr-only">Username</label>
+        <input id="touch-key-user" name="username" type="text" autocomplete="username webauthn" placeholder="Username (optional)"
+          class="mb-3 w-full rounded-md border border-[#34353b] bg-[#141518] px-3.5 py-3 font-['IBM_Plex_Mono',monospace] text-sm text-[#e7e8ec] outline-none placeholder:text-[#5d6069] focus:border-[#d9a441]" />
+        <button type="submit"
+          class="flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-md bg-[linear-gradient(180deg,#f0c56a,#c98f2a)] px-4 py-3.5 font-bold text-[#1b1407] shadow-[inset_0_1px_0_#fff5d6,0_8px_24px_-8px_#d9a441] transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f0c56a] disabled:cursor-wait disabled:opacity-80">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5"><rect x="7" y="9" width="10" height="13" rx="3" /><path d="M9 9V3h6v6M12 14v3" /></svg>
+          Sign in with security key
+        </button>
+      </form>
+
+      <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        <a href="#" class="text-[#c9ccd3] underline decoration-[#44464d] underline-offset-4 hover:decoration-[#d9a441] focus-visible:outline-2 focus-visible:outline-[#d9a441]">Use a passkey on this device</a>
+        <a href="#" class="text-[#c9ccd3] underline decoration-[#44464d] underline-offset-4 hover:decoration-[#d9a441] focus-visible:outline-2 focus-visible:outline-[#d9a441]">Sign in with email</a>
+      </div>
+    </div>
+  </div>
+</section>

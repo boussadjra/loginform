@@ -1,0 +1,39 @@
+<section data-face-frame data-state="idle" class="group flex min-h-screen items-center justify-center bg-[#f2f2f7] px-4 py-12 font-['Inter',system-ui,sans-serif] text-[#1c1c1e] antialiased">
+  <div class="w-full max-w-[22rem] rounded-[2.25rem] bg-white px-7 pt-10 pb-7 text-center shadow-[0_1px_2px_rgba(0,0,0,0.04),0_20px_50px_-12px_rgba(0,0,0,0.12)] sm:px-9">
+    <div class="relative mx-auto size-32">
+      <svg aria-hidden="true" viewBox="0 0 100 100" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+        class="absolute inset-0 size-full stroke-[#0a84ff] transition-all duration-500 group-data-[state=idle]:animate-pulse group-data-[state=scanning]:scale-90 group-data-[state=success]:scale-110 group-data-[state=success]:opacity-0">
+        <path d="M6 30V18A12 12 0 0 1 18 6h12M70 6h12a12 12 0 0 1 12 12v12M94 70v12a12 12 0 0 1-12 12H70M30 94H18A12 12 0 0 1 6 82V70" />
+      </svg>
+      <svg aria-hidden="true" viewBox="0 0 100 100" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+        class="absolute inset-0 size-full stroke-[#0a84ff] transition duration-300 group-data-[state=scanning]:animate-pulse group-data-[state=success]:opacity-0">
+        <path d="M34 36v7M66 36v7M50 38v18h-5M38 68c7 6 17 6 24 0" />
+      </svg>
+      <div aria-hidden="true" class="absolute inset-2 flex scale-50 items-center justify-center rounded-full border-[5px] border-[#34c759] opacity-0 transition duration-500 group-data-[state=success]:scale-100 group-data-[state=success]:opacity-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" class="size-14"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+      </div>
+    </div>
+
+    <h1 class="mt-8 text-[1.6rem] leading-tight font-semibold tracking-[-0.02em]">Sign in to Lumen</h1>
+    <p data-status aria-live="polite" class="mt-2 text-[15px] leading-relaxed text-[#6e6e73]">Look at your screen to sign in with Face ID. Your passkey never leaves this device.</p>
+
+    <form data-passkey-form class="mt-7 space-y-3">
+      <div class="rounded-2xl bg-[#f2f2f7] px-4 pt-2 pb-2.5 text-left transition focus-within:bg-white focus-within:shadow-[0_0_0_2px_#0a84ff]">
+        <label for="face-frame-email" class="block text-[11px] font-medium text-[#8e8e93]">Apple ID or email</label>
+        <input id="face-frame-email" name="email" type="email" autocomplete="username webauthn" placeholder="you@icloud.com"
+          class="w-full bg-transparent text-[16px] text-[#1c1c1e] outline-none placeholder:text-[#c7c7cc]" />
+      </div>
+      <button type="submit"
+        class="w-full cursor-pointer rounded-2xl bg-[#0a84ff] px-4 py-3.5 text-[16px] font-semibold text-white transition hover:bg-[#0071e3] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0a84ff] disabled:cursor-wait group-data-[state=success]:bg-[#34c759] group-data-[state=success]:hover:bg-[#34c759]">
+        <span class="group-data-[state=scanning]:hidden group-data-[state=success]:hidden">Sign in with passkey</span>
+        <span class="hidden group-data-[state=scanning]:inline">Scanning…</span>
+        <span class="hidden group-data-[state=success]:inline">Signed in</span>
+      </button>
+    </form>
+
+    <div class="mt-5 flex items-center gap-3 text-[13px] text-[#8e8e93]">
+      <span class="h-px flex-1 bg-[#e5e5ea]"></span>or<span class="h-px flex-1 bg-[#e5e5ea]"></span>
+    </div>
+    <a href="#" class="mt-4 inline-block rounded-lg px-2 py-1 text-[15px] font-medium text-[#0a84ff] hover:underline focus-visible:outline-2 focus-visible:outline-[#0a84ff]">Use email and password</a>
+  </div>
+</section>
