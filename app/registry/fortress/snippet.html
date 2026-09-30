@@ -1,0 +1,57 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#0b1120] px-4 py-12 font-['IBM_Plex_Sans',sans-serif] text-[#e2e8f0]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(50%_40%_at_50%_0%,rgba(16,185,129,0.18),transparent),linear-gradient(rgba(148,163,184,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.06)_1px,transparent_1px)] bg-[size:100%_100%,48px_48px,48px_48px]"></div>
+  <div class="w-full max-w-md">
+    <div class="mb-8 flex flex-col items-center text-center">
+      <span class="relative grid size-14 place-items-center rounded-2xl border border-[#10b981]/30 bg-[#10b981]/10 text-[#34d399] shadow-[0_0_40px_-8px_rgba(16,185,129,0.6)]">
+        <svg aria-hidden="true" class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.3 7.5 9.5 4.4-1.2 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4" stroke-linecap="round"/></svg>
+      </span>
+      <h1 class="mt-5 text-2xl font-semibold tracking-tight text-white sm:text-3xl">Create your Vaultline account</h1>
+      <p class="mt-2 text-sm text-[#94a3b8]">End-to-end encrypted. We cannot see your password, so make it a strong one.</p>
+    </div>
+
+    <form data-fortress-form class="rounded-2xl border border-[#1e293b] bg-[#0f172a]/80 p-6 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.8)] backdrop-blur sm:p-8">
+      <div class="flex flex-col gap-1.5">
+        <label for="fortress-email" class="text-sm font-medium text-[#cbd5e1]">Email</label>
+        <input id="fortress-email" name="email" type="email" autocomplete="email" required placeholder="you@domain.com" class="rounded-lg border border-[#1e293b] bg-[#020617] px-3.5 py-2.5 text-sm text-white outline-none transition placeholder:text-[#475569] focus:border-[#10b981] focus:ring-4 focus:ring-[#10b981]/15" />
+      </div>
+
+      <div class="mt-5 flex flex-col gap-1.5">
+        <label for="fortress-password" class="text-sm font-medium text-[#cbd5e1]">Master password</label>
+        <div class="relative">
+          <input id="fortress-password" data-fortress-password name="password" type="password" autocomplete="new-password" required minlength="12" aria-describedby="fortress-rules" class="w-full rounded-lg border border-[#1e293b] bg-[#020617] py-2.5 pr-16 pl-3.5 font-['IBM_Plex_Mono',monospace] text-sm text-white outline-none transition focus:border-[#10b981] focus:ring-4 focus:ring-[#10b981]/15" />
+          <button type="button" data-fortress-toggle aria-controls="fortress-password" class="absolute inset-y-1 right-1 cursor-pointer rounded-md px-3 font-['IBM_Plex_Mono',monospace] text-xs text-[#94a3b8] transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-[#10b981]">Show</button>
+        </div>
+      </div>
+
+      <div data-fortress-meter data-level="0" class="group mt-4">
+        <div class="flex gap-1.5" aria-hidden="true">
+          <span class="h-1.5 flex-1 rounded-full bg-[#1e293b] transition-colors duration-300 group-data-[level=1]:bg-[#f43f5e] group-data-[level=2]:bg-[#f59e0b] group-data-[level=3]:bg-[#84cc16] group-data-[level=4]:bg-[#10b981]"></span>
+          <span class="h-1.5 flex-1 rounded-full bg-[#1e293b] transition-colors duration-300 group-data-[level=2]:bg-[#f59e0b] group-data-[level=3]:bg-[#84cc16] group-data-[level=4]:bg-[#10b981]"></span>
+          <span class="h-1.5 flex-1 rounded-full bg-[#1e293b] transition-colors duration-300 group-data-[level=3]:bg-[#84cc16] group-data-[level=4]:bg-[#10b981]"></span>
+          <span class="h-1.5 flex-1 rounded-full bg-[#1e293b] transition-colors duration-300 group-data-[level=4]:bg-[#10b981]"></span>
+        </div>
+        <p class="mt-2 flex justify-between font-['IBM_Plex_Mono',monospace] text-xs text-[#64748b]">
+          <span>Strength</span>
+          <span data-fortress-label aria-live="polite" class="group-data-[level=1]:text-[#fb7185] group-data-[level=2]:text-[#fbbf24] group-data-[level=3]:text-[#a3e635] group-data-[level=4]:text-[#34d399]">Enter a password</span>
+        </p>
+      </div>
+
+      <ul id="fortress-rules" class="mt-4 grid gap-2 rounded-xl border border-[#1e293b] bg-[#020617]/60 p-4 text-xs sm:grid-cols-2">
+        <li data-rule="length" data-ok="false" class="group flex items-center gap-2 text-[#64748b] transition data-[ok=true]:text-[#34d399]"><svg aria-hidden="true" class="size-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5" class="group-data-[ok=true]:hidden"/><path d="m4.5 8.5 2.5 2.5 4.5-5.5" class="hidden group-data-[ok=true]:block"/></svg> 12+ characters</li>
+        <li data-rule="case" data-ok="false" class="group flex items-center gap-2 text-[#64748b] transition data-[ok=true]:text-[#34d399]"><svg aria-hidden="true" class="size-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5" class="group-data-[ok=true]:hidden"/><path d="m4.5 8.5 2.5 2.5 4.5-5.5" class="hidden group-data-[ok=true]:block"/></svg> Upper &amp; lowercase</li>
+        <li data-rule="number" data-ok="false" class="group flex items-center gap-2 text-[#64748b] transition data-[ok=true]:text-[#34d399]"><svg aria-hidden="true" class="size-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5" class="group-data-[ok=true]:hidden"/><path d="m4.5 8.5 2.5 2.5 4.5-5.5" class="hidden group-data-[ok=true]:block"/></svg> A number</li>
+        <li data-rule="symbol" data-ok="false" class="group flex items-center gap-2 text-[#64748b] transition data-[ok=true]:text-[#34d399]"><svg aria-hidden="true" class="size-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5" class="group-data-[ok=true]:hidden"/><path d="m4.5 8.5 2.5 2.5 4.5-5.5" class="hidden group-data-[ok=true]:block"/></svg> A symbol (!@#…)</li>
+      </ul>
+
+      <button type="submit" class="mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#10b981] px-4 py-3 text-sm font-semibold text-[#022c22] transition hover:bg-[#34d399] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34d399] disabled:cursor-not-allowed disabled:bg-[#1e293b] disabled:text-[#64748b]">
+        <svg aria-hidden="true" class="size-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+        <span data-fortress-submit>Create secure account</span>
+      </button>
+      <p class="mt-4 flex items-center justify-center gap-2 font-['IBM_Plex_Mono',monospace] text-[11px] text-[#64748b]">
+        <span class="size-1.5 rounded-full bg-[#10b981] shadow-[0_0_8px_#10b981]" aria-hidden="true"></span>
+        AES-256 &middot; zero-knowledge &middot; SOC 2 Type II
+      </p>
+    </form>
+    <p class="mt-6 text-center text-sm text-[#94a3b8]">Already protected? <a href="#" class="font-medium text-[#34d399] hover:underline">Sign in</a></p>
+  </div>
+</section>

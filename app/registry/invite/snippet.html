@@ -1,0 +1,59 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#ecf5f3] px-4 py-12 font-['Plus_Jakarta_Sans',sans-serif] text-[#10231f]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(40%_50%_at_15%_10%,rgba(15,118,110,0.14),transparent),radial-gradient(35%_45%_at_90%_95%,rgba(245,158,11,0.14),transparent)]"></div>
+
+  <div class="w-full max-w-md">
+    <form data-auth-form class="rounded-3xl border border-white bg-white/90 p-6 shadow-[0_1px_2px_rgba(16,35,31,0.06),0_24px_48px_-24px_rgba(19,78,74,0.3)] backdrop-blur sm:p-9">
+      <div class="flex justify-center">
+        <div class="relative">
+          <span aria-hidden="true" class="grid size-16 place-items-center rounded-2xl bg-[#0f766e] shadow-[0_8px_20px_-8px_rgba(15,118,110,0.7)]">
+            <svg class="size-8" viewBox="0 0 32 32" fill="none"><path d="M9 23V9l14 14V9" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="23" cy="9" r="2.5" fill="#5eead4"/></svg>
+          </span>
+          <span aria-hidden="true" class="absolute -right-4 -bottom-3 grid size-10 place-items-center rounded-full bg-[#fbbf24] text-sm font-bold text-[#422006] ring-4 ring-white">MR</span>
+        </div>
+      </div>
+
+      <h1 class="mt-7 text-center text-2xl leading-snug text-balance font-bold tracking-tight sm:text-[26px]"><span class="text-[#0f766e]">Maya Ruiz</span> invited you to join Northwind</h1>
+      <div class="mt-4 flex justify-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-[#cfe5e0] bg-[#f3faf8] py-1 pr-3 pl-1 text-xs font-semibold text-[#134e4a]">
+          <span aria-hidden="true" class="grid size-5 place-items-center rounded-full bg-[#0f766e] text-[10px] text-white">N</span>
+          northwind.team
+          <span class="text-[#8aa39e]">&middot;</span>
+          <span class="font-medium text-[#5b7570]">24 members</span>
+        </span>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-4">
+        <div class="flex flex-col gap-1.5">
+          <label for="invite-email" class="text-sm font-semibold">Email</label>
+          <div class="relative">
+            <input id="invite-email" name="email" type="email" autocomplete="email" value="sam.okoro@northwind.team" readonly aria-describedby="invite-email-hint" class="w-full cursor-not-allowed rounded-xl border border-dashed border-[#cbd8d5] bg-[#f5f8f7] py-3 pr-10 pl-4 text-sm text-[#5b7570] outline-none focus-visible:ring-4 focus-visible:ring-[#0f766e]/15" />
+            <svg aria-hidden="true" class="absolute top-1/2 right-3.5 size-4 -translate-y-1/2 text-[#8aa39e]" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+          </div>
+          <p id="invite-email-hint" class="text-xs text-[#5b7570]">This invite is tied to this address.</p>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="invite-name" class="text-sm font-semibold">Full name</label>
+          <input id="invite-name" name="name" type="text" autocomplete="name" required placeholder="Sam Okoro" class="rounded-xl border border-[#d7e3e0] bg-white px-4 py-3 text-sm outline-none transition placeholder:text-[#9fb3ae] focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15" />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="invite-password" class="text-sm font-semibold">Choose a password</label>
+          <input id="invite-password" name="password" type="password" autocomplete="new-password" required minlength="8" placeholder="8+ characters" class="rounded-xl border border-[#d7e3e0] bg-white px-4 py-3 text-sm outline-none transition placeholder:text-[#9fb3ae] focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15" />
+        </div>
+      </div>
+
+      <button type="submit" class="mt-7 w-full cursor-pointer rounded-xl bg-[#0f766e] px-4 py-3.5 text-sm font-bold text-white shadow-[0_8px_20px_-10px_rgba(15,118,110,0.9)] transition hover:bg-[#115e59] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f766e] disabled:cursor-wait disabled:opacity-70">Accept invite &amp; join</button>
+
+      <div class="mt-7 flex flex-col items-center gap-3 border-t border-[#e6efed] pt-6 sm:flex-row sm:justify-center">
+        <div aria-hidden="true" class="flex -space-x-2">
+          <span class="grid size-8 place-items-center rounded-full bg-[#fde68a] text-[11px] font-bold text-[#713f12] ring-2 ring-white">PK</span>
+          <span class="grid size-8 place-items-center rounded-full bg-[#99f6e4] text-[11px] font-bold text-[#134e4a] ring-2 ring-white">TB</span>
+          <span class="grid size-8 place-items-center rounded-full bg-[#fecaca] text-[11px] font-bold text-[#7f1d1d] ring-2 ring-white">LA</span>
+          <span class="grid size-8 place-items-center rounded-full bg-[#c7d2fe] text-[11px] font-bold text-[#312e81] ring-2 ring-white">JW</span>
+          <span class="grid size-8 place-items-center rounded-full bg-[#134e4a] text-[10px] font-bold text-white ring-2 ring-white">+20</span>
+        </div>
+        <p class="text-xs text-[#5b7570]"><span class="font-semibold text-[#10231f]">Priya, Tom</span> and 22 others are already here</p>
+      </div>
+    </form>
+    <p class="mt-6 text-center text-sm text-[#5b7570]">Not you? <a href="#" class="font-semibold text-[#0f766e] hover:underline">Use a different account</a></p>
+  </div>
+</section>
