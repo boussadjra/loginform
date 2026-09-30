@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-ink: #0d0a14;
+  --color-ink-raised: #16111f;
+  --color-ink-line: #2a2238;
+  --color-bone: #f3efe6;
+  --color-muted: #9b93ab;
+  --color-rose: #c61951;
+  --color-cream: #f8f7aa;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-ink font-sans text-bone antialiased;
+  }
+
+  ::selection {
+    @apply bg-rose text-bone;
+  }
+}

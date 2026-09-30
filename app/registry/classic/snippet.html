@@ -1,0 +1,29 @@
+<div class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#c61951] px-12 py-12 font-['Montserrat',sans-serif]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[#f0f0f0] [clip-path:circle(79%_at_21%_3%)]"></div>
+
+  <div class="w-full max-w-xl bg-[#f0f0f0] shadow-[0_0_73px_#050505]">
+    <div class="bg-[#c61951] pt-3">
+      <h1 class="-ml-9 w-[70%] bg-[#1b083d] p-3 text-center text-3xl text-[#f8f7aa] sm:text-5xl [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)]">
+        Log in
+      </h1>
+      <div aria-hidden="true" class="-ml-9 size-9 bg-[#170731] [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+    </div>
+
+    <form data-auth-form class="flex flex-col gap-5 px-8 pt-6 pb-12 sm:px-[15%]">
+      <label class="sr-only" for="classic-username">User name</label>
+      <input id="classic-username" name="username" type="text" autocomplete="username" required placeholder="User name"
+        class="rounded bg-transparent p-2.5 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none placeholder:text-[#1b083d]/50 focus:shadow-[1px_0_3px_#c61951]" />
+
+      <label class="sr-only" for="classic-password">Password</label>
+      <input id="classic-password" name="password" type="password" autocomplete="current-password" required placeholder="Password"
+        class="rounded bg-transparent p-2.5 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none placeholder:text-[#1b083d]/50 focus:shadow-[1px_0_3px_#c61951]" />
+
+      <a href="#" class="self-center text-xs text-[#1b083d] hover:underline">Forgot your password?</a>
+
+      <button type="submit"
+        class="cursor-pointer rounded bg-[#1b083d] p-3 text-base text-[#e2e2e2] shadow-[1px_2px_5px_#1b1b1b] transition hover:bg-[#2a1160] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c61951] disabled:cursor-wait disabled:opacity-70">
+        Login
+      </button>
+    </form>
+  </div>
+</div>
