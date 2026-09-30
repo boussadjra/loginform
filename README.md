@@ -17,6 +17,10 @@ pnpm dev        # http://localhost:3000
 pnpm generate   # static site in .output/public
 ```
 
+## Deploying to Vercel
+
+Import the repository in Vercel and keep the defaults: `vercel.json` pins the Nuxt preset, pnpm install and `pnpm build`. All pages are prerendered at build time and served from the CDN, so no environment variables are needed.
+
 ## Adding a UI
 
 Create a folder in `app/registry/<slug>/`. The folder name becomes the URL (`/ui/<slug>`).

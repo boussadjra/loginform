@@ -29,5 +29,8 @@
       "esbuild",
       "@parcel/watcher"
     ]
+  },
+  "engines": {
+    "node": ">=20.19"
   }
 }

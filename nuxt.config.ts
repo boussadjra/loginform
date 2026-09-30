@@ -4,6 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-09-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  // Every page is static: prerender them at build time (crawling from /) so Vercel serves them from its CDN.
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
