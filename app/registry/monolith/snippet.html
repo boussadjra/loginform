@@ -1,0 +1,33 @@
+<section data-monolith class="flex min-h-screen flex-col justify-between overflow-hidden bg-[#f1efe8] px-4 py-5 font-['Inter_Tight',sans-serif] text-[#0d0d0d] sm:px-8 sm:py-7">
+  <header class="flex items-center justify-between border-b border-[#0d0d0d] pb-3 text-xs font-medium tracking-[0.12em] uppercase">
+    <span class="flex items-center gap-2"><span aria-hidden="true" class="h-4 w-2 bg-[#0d0d0d]"></span>Obelisk</span>
+    <span class="hidden sm:inline">Passwordless access</span>
+    <a href="#" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0d0d0d]">Create account</a>
+  </header>
+
+  <div class="py-6">
+    <h1 data-monolith-word class="-ml-[0.04em] font-['Anton',sans-serif] text-[62vw] leading-[0.96] tracking-[-0.01em] break-all uppercase sm:text-[39vw] sm:leading-[0.8] sm:break-normal">Enter<span class="text-[#ff3b1f]">.</span></h1>
+  </div>
+
+  <div class="grid gap-6 border-t border-[#0d0d0d] pt-5 sm:grid-cols-12 sm:gap-8">
+    <p class="max-w-xs text-sm leading-snug sm:col-span-4">
+      <span class="font-semibold">01 / Sign in</span><br />
+      One address, one link, no password. We&rsquo;ll email you the way in.
+    </p>
+
+    <form data-monolith-form class="flex flex-col gap-3 sm:col-span-8 sm:flex-row sm:items-stretch sm:gap-0">
+      <label for="monolith-email" class="sr-only">Email address</label>
+      <input id="monolith-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="your@email.com"
+        class="min-w-0 flex-1 rounded-none border-2 border-[#0d0d0d] bg-transparent px-5 py-4 text-xl font-medium outline-none placeholder:text-[#0d0d0d]/35 focus:bg-[#0d0d0d] focus:text-[#f1efe8] focus:placeholder:text-[#f1efe8]/40 sm:text-2xl" />
+      <button type="submit" class="group flex cursor-pointer items-center justify-between gap-6 border-2 border-[#0d0d0d] bg-[#0d0d0d] px-6 py-4 text-sm font-semibold tracking-[0.15em] text-[#f1efe8] uppercase transition hover:bg-[#ff3b1f] hover:border-[#ff3b1f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff3b1f] disabled:cursor-wait sm:justify-center">
+        <span data-monolith-label>Send link</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 transition group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h17m-6-7 7 7-7 7"/></svg>
+      </button>
+    </form>
+
+    <div data-monolith-sent hidden aria-live="polite" class="flex flex-col justify-between gap-4 border-2 border-[#0d0d0d] px-5 py-4 sm:col-span-8 sm:flex-row sm:items-center">
+      <p class="text-lg leading-snug font-medium sm:text-xl">Check <span data-monolith-address class="break-words underline decoration-[#ff3b1f] decoration-2 underline-offset-4">your inbox</span>. The link expires in 15&nbsp;minutes.</p>
+      <button type="button" data-monolith-reset class="shrink-0 cursor-pointer self-start text-sm font-semibold tracking-[0.15em] uppercase underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0d0d0d] sm:self-auto">Change email</button>
+    </div>
+  </div>
+</section>

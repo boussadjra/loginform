@@ -1,0 +1,64 @@
+<section class="flex min-h-screen items-center justify-center bg-[#eef4fb] bg-[radial-gradient(60rem_30rem_at_50%_-10%,#dbe8fb,transparent)] px-4 py-12 font-['Inter',sans-serif] text-[#0f2542]">
+  <div data-inbox class="w-full max-w-[26rem]">
+    <div class="mb-6 flex items-center justify-center gap-2 text-sm font-semibold tracking-tight">
+      <svg aria-hidden="true" viewBox="0 0 24 24" class="size-7 text-[#2f6fed]" fill="currentColor"><path d="M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2v3c-3 0-3 2-6 2s-3-2-6-2-3 2-6 2Z" opacity=".35"/><path d="M3 10c3 0 3-2 6-2s3 2 6 2 3-2 6-2v3c-3 0-3 2-6 2s-3-2-6-2-3 2-6 2Z"/></svg>
+      Harbor
+    </div>
+
+    <div class="rounded-2xl bg-white p-7 shadow-[0_1px_2px_rgba(15,37,66,.06),0_12px_40px_-12px_rgba(47,111,237,.25)] ring-1 ring-[#0f2542]/5 sm:p-9">
+      <form data-inbox-form class="transition duration-300">
+        <h1 class="text-2xl font-semibold tracking-tight">Sign in without a password</h1>
+        <p class="mt-2 text-sm leading-relaxed text-[#5a6b85]">Enter your work email and we&rsquo;ll send you a secure link. One click and you&rsquo;re in.</p>
+
+        <label for="inbox-email" class="mt-7 block text-sm font-medium">Email address</label>
+        <input id="inbox-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="name@company.com"
+          class="mt-2 w-full rounded-xl border border-[#d5e0ef] bg-[#f8fbff] px-4 py-3 text-[15px] outline-none transition placeholder:text-[#9aa9bf] focus:border-[#2f6fed] focus:bg-white focus:ring-4 focus:ring-[#2f6fed]/15" />
+
+        <button type="submit" class="mt-4 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#2f6fed] px-4 py-3 text-[15px] font-semibold text-white shadow-[0_6px_16px_-6px_rgba(47,111,237,.7)] transition hover:bg-[#245fd6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6fed] disabled:cursor-wait disabled:opacity-75">
+          <span data-inbox-label>Email me a sign-in link</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20" class="size-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12m-5-5 5 5-5 5"/></svg>
+        </button>
+
+        <p class="mt-6 flex items-center justify-center gap-2 text-xs text-[#7a8aa3]">
+          <svg aria-hidden="true" viewBox="0 0 20 20" class="size-4" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="9" width="12" height="8" rx="2"/><path d="M7 9V7a3 3 0 0 1 6 0v2"/></svg>
+          Links expire after 10 minutes and work once.
+        </p>
+      </form>
+
+      <div data-inbox-sent hidden aria-live="polite" class="translate-y-2 text-center opacity-0 transition duration-500">
+        <svg aria-hidden="true" viewBox="0 0 160 110" class="mx-auto w-44">
+          <ellipse cx="80" cy="100" rx="56" ry="6" fill="#dbe8fb"/>
+          <path d="M28 44 80 10l52 34v50a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6Z" fill="#c9dbf8"/>
+          <rect x="44" y="22" width="72" height="56" rx="6" fill="#fff" stroke="#d5e0ef"/>
+          <path d="M56 38h48M56 48h36M56 58h42" stroke="#2f6fed" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+          <path d="M28 46v48a6 6 0 0 0 6 6h92a6 6 0 0 0 6-6V46L80 78Z" fill="#e6effc"/>
+          <path d="M28 100 72 70M132 100 88 70" stroke="#c9dbf8" stroke-width="2"/>
+          <circle cx="128" cy="24" r="12" fill="#2f6fed"/>
+          <path d="m123 24 3.5 3.5L133 21" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 26v8M16 30h8M144 62v6M141 65h6" stroke="#9fbcef" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h2 class="mt-4 text-2xl font-semibold tracking-tight">Check your inbox</h2>
+        <p class="mt-2 text-sm leading-relaxed text-[#5a6b85]">We sent a sign-in link to<br /><strong data-inbox-address class="font-semibold break-words text-[#0f2542]">you@company.com</strong></p>
+
+        <div class="mt-7 grid grid-cols-1 gap-3 min-[400px]:grid-cols-2">
+          <a href="https://mail.google.com" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 rounded-xl border border-[#d5e0ef] px-4 py-3 text-sm font-medium transition hover:border-[#2f6fed]/40 hover:bg-[#f5f9ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6fed]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5"><path fill="#4285f4" d="M2 7v11a2 2 0 0 0 2 2h2V9.5Z"/><path fill="#34a853" d="M18 20h2a2 2 0 0 0 2-2V7l-4 2.5Z"/><path fill="#ea4335" d="M6 20V9.5l6 4.5 6-4.5V20h0V6.5L12 11 6 6.5Z"/><path fill="#fbbc04" d="M22 7V6a2 2 0 0 0-3.2-1.6L18 5v4.5Z"/><path fill="#c5221f" d="M2 7V6a2 2 0 0 1 3.2-1.6L6 5v4.5Z"/></svg>
+            Open Gmail
+          </a>
+          <a href="https://outlook.live.com/mail" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 rounded-xl border border-[#d5e0ef] px-4 py-3 text-sm font-medium transition hover:border-[#2f6fed]/40 hover:bg-[#f5f9ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6fed]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5"><rect x="9" y="4" width="13" height="16" rx="2" fill="#28a8ea"/><path d="M9 12h13v6a2 2 0 0 1-2 2H9Z" fill="#0078d4"/><rect x="2" y="7" width="11" height="10" rx="1.5" fill="#0a5cb8"/><ellipse cx="7.5" cy="12" rx="2.6" ry="3" fill="none" stroke="#fff" stroke-width="1.6"/></svg>
+            Open Outlook
+          </a>
+        </div>
+
+        <div class="mt-7 border-t border-[#e6edf6] pt-5 text-sm text-[#5a6b85]">
+          Didn&rsquo;t get it?
+          <button type="button" data-inbox-resend disabled class="cursor-pointer font-semibold text-[#2f6fed] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6fed] disabled:cursor-default disabled:font-medium disabled:text-[#9aa9bf] disabled:no-underline">Resend in 0:30</button>
+        </div>
+        <button type="button" data-inbox-back class="mt-3 cursor-pointer text-sm text-[#5a6b85] underline-offset-4 hover:text-[#0f2542] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f6fed]">Use a different email</button>
+      </div>
+    </div>
+
+    <p class="mt-6 text-center text-xs text-[#7a8aa3]">New to Harbor? <a href="#" class="font-medium text-[#2f6fed] hover:underline">Create a workspace</a></p>
+  </div>
+</section>
