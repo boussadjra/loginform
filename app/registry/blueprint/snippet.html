@@ -1,0 +1,63 @@
+<section class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#1c4f96] bg-[linear-gradient(#ffffff26_1px,transparent_1px),linear-gradient(90deg,#ffffff26_1px,transparent_1px),linear-gradient(#ffffff0f_1px,transparent_1px),linear-gradient(90deg,#ffffff0f_1px,transparent_1px)] bg-size-[100px_100px,100px_100px,20px_20px,20px_20px] px-6 pt-20 pb-14 font-['IBM_Plex_Mono',monospace] text-white sm:px-16">
+  <div aria-hidden="true" class="pointer-events-none absolute inset-3 border border-white/40 sm:inset-5"></div>
+  <p aria-hidden="true" class="absolute top-6 left-6 text-[9px] tracking-[0.12em] text-white/60 sm:text-[10px] sm:tracking-[0.3em] sm:top-9 sm:left-10">DRAFTLINE / AUTH-SYSTEM / SHEET 04 OF 06</p>
+
+  <div class="relative w-full max-w-md">
+    <!-- width dimension -->
+    <div aria-hidden="true" class="absolute inset-x-0 -top-10 flex h-6 items-center border-x border-white/70 px-px text-[#9cc3ff]">
+      <svg viewBox="0 0 8 8" class="size-2 shrink-0 fill-current"><path d="M0 4 8 0v8Z" /></svg>
+      <span class="h-px flex-1 bg-current"></span>
+      <span class="px-2 text-[11px] tracking-widest text-white">MAX 448</span>
+      <span class="h-px flex-1 bg-current"></span>
+      <svg viewBox="0 0 8 8" class="size-2 shrink-0 fill-current"><path d="M8 4 0 0v8Z" /></svg>
+    </div>
+    <!-- height dimension -->
+    <div aria-hidden="true" class="absolute inset-y-0 -right-12 hidden w-6 flex-col items-center border-y border-white/70 py-px text-[#9cc3ff] sm:flex">
+      <svg viewBox="0 0 8 8" class="size-2 shrink-0 fill-current"><path d="M4 0 0 8h8Z" /></svg>
+      <span class="w-px flex-1 bg-current"></span>
+      <span class="py-2 text-[11px] tracking-widest text-white [writing-mode:vertical-rl]">AUTO</span>
+      <span class="w-px flex-1 bg-current"></span>
+      <svg viewBox="0 0 8 8" class="size-2 shrink-0 fill-current"><path d="M4 8 0 0h8Z" /></svg>
+    </div>
+    <!-- callouts -->
+    <div aria-hidden="true" class="absolute top-[51%] -left-80 z-10 hidden w-[22rem] items-center gap-2 font-['Architects_Daughter',cursive] text-[#cfe2ff] lg:flex">
+      <p class="text-right text-sm leading-snug">input: type=email<br />must match account on file</p>
+      <span class="flex flex-1 items-center"><span class="h-px flex-1 bg-[#cfe2ff]"></span><span class="size-2 rounded-full border border-[#cfe2ff]"></span></span>
+    </div>
+    <div aria-hidden="true" class="absolute top-[66%] -right-80 z-10 hidden w-[22rem] items-center gap-2 font-['Architects_Daughter',cursive] text-[#cfe2ff] lg:flex">
+      <span class="flex flex-1 items-center"><span class="size-2 rounded-full bg-[#cfe2ff]"></span><span class="h-px flex-1 bg-[#cfe2ff]"></span></span>
+      <p class="text-sm leading-snug">link expires<br />after 30 min — R.02</p>
+    </div>
+
+    <div class="relative border-2 border-white bg-[#1c4f96]/85 shadow-[8px_8px_0_#123a73]">
+      <span aria-hidden="true" class="absolute -top-2 -left-2 size-4 rounded-full border border-white bg-[linear-gradient(white,white)_center/1px_100%_no-repeat,linear-gradient(white,white)_center/100%_1px_no-repeat]"></span>
+      <span aria-hidden="true" class="absolute -right-2 -bottom-2 size-4 rounded-full border border-white bg-[linear-gradient(white,white)_center/1px_100%_no-repeat,linear-gradient(white,white)_center/100%_1px_no-repeat]"></span>
+
+      <div class="p-6 sm:p-8">
+        <p class="text-[11px] tracking-[0.25em] text-[#9cc3ff]">FIG. 4.1 — ACCOUNT RECOVERY</p>
+        <h1 class="mt-3 text-2xl font-semibold tracking-tight uppercase sm:text-3xl">Reset password</h1>
+        <p class="mt-3 text-sm leading-relaxed text-white/75">Enter the email tied to your Draftline workspace. We will send a single-use link to redraw your credentials.</p>
+
+        <form data-bp-form class="mt-7 flex flex-col gap-5">
+          <div>
+            <label for="blueprint-email" class="mb-2 flex justify-between text-[11px] tracking-[0.2em] text-[#9cc3ff]"><span>A — EMAIL ADDRESS</span><span aria-hidden="true">⌀ REQ.</span></label>
+            <input id="blueprint-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@studio.com"
+              class="w-full border border-dashed border-white/80 bg-[#123a73]/60 px-4 py-3 text-base text-white outline-none transition placeholder:text-white/40 focus:border-solid focus:bg-[#123a73] focus:shadow-[0_0_0_4px_#9cc3ff40]" />
+          </div>
+          <button type="submit"
+            class="group flex cursor-pointer items-center justify-between border-2 border-white bg-white px-5 py-3.5 text-sm font-semibold tracking-[0.2em] text-[#1c4f96] transition hover:bg-[#dbe9ff] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:cursor-wait">
+            <span data-bp-label>SEND RESET LINK</span>
+            <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+          </button>
+          <a href="#" class="self-start text-xs tracking-[0.15em] text-white/80 underline decoration-dashed underline-offset-4 hover:text-white focus-visible:outline-2 focus-visible:outline-white">← RETURN TO SIGN IN</a>
+        </form>
+      </div>
+
+      <dl class="grid grid-cols-3 border-t-2 border-white text-[10px] tracking-widest">
+        <div class="border-r border-white/60 px-3 py-2"><dt class="text-[#9cc3ff]">DWG NO.</dt><dd class="mt-0.5 text-white">PR-0042</dd></div>
+        <div class="border-r border-white/60 px-3 py-2"><dt class="text-[#9cc3ff]">SCALE</dt><dd class="mt-0.5 text-white">1 : 1</dd></div>
+        <div class="px-3 py-2"><dt class="text-[#9cc3ff]">REV.</dt><dd class="mt-0.5 text-white">B</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>

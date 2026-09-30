@@ -1,0 +1,51 @@
+<section class="relative isolate flex min-h-screen flex-col overflow-hidden bg-[#07070b] px-4 py-6 font-['Geist',sans-serif] text-zinc-100 sm:px-10">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(40rem_22rem_at_50%_42%,rgba(139,92,246,.22),transparent_70%)]"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(rgba(255,255,255,.07)_1px,transparent_1px)] bg-[length:28px_28px] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]"></div>
+
+  <header class="flex items-center justify-between text-sm">
+    <span class="flex items-center gap-2 font-medium tracking-tight">
+      <span aria-hidden="true" class="size-3 rounded-full bg-[conic-gradient(#8b5cf6,#22d3ee,#8b5cf6)]"></span> Nocturne
+    </span>
+    <a href="#" class="rounded-full px-3 py-1.5 text-zinc-400 transition hover:text-zinc-100 focus-visible:outline-2 focus-visible:outline-[#8b5cf6]">Need help?</a>
+  </header>
+
+  <div data-spotlight class="flex flex-1 flex-col items-center justify-center py-16 text-center">
+    <p class="font-['Geist_Mono',monospace] text-xs tracking-[0.3em] text-zinc-500 uppercase">Passwordless</p>
+    <h1 class="mt-5 bg-[linear-gradient(180deg,#fafafa_30%,#71717a)] bg-clip-text text-5xl font-semibold tracking-[-0.04em] text-transparent sm:text-7xl">Just your email.</h1>
+    <p class="mt-4 max-w-md text-base text-zinc-400">We&rsquo;ll send a link that signs you in. No password, no codes.</p>
+
+    <form data-spotlight-form class="mt-12 w-full max-w-lg">
+      <div class="group relative">
+        <div aria-hidden="true" class="absolute -inset-2 overflow-hidden rounded-full opacity-70 blur-xl transition group-focus-within:opacity-100">
+          <div class="absolute top-1/2 left-1/2 aspect-square w-[120%] -translate-x-1/2 -translate-y-1/2 animate-spin bg-[conic-gradient(from_0deg,transparent_0deg,#8b5cf6_60deg,#22d3ee_150deg,#8b5cf6_220deg,transparent_280deg)] [animation-duration:5s]"></div>
+        </div>
+        <div class="relative overflow-hidden rounded-full p-[1.5px]">
+          <div aria-hidden="true" class="absolute top-1/2 left-1/2 aspect-square w-[120%] -translate-x-1/2 -translate-y-1/2 animate-spin bg-[conic-gradient(from_0deg,#27272a_0deg,#8b5cf6_60deg,#22d3ee_150deg,#8b5cf6_220deg,#27272a_280deg)] [animation-duration:5s]"></div>
+          <div class="relative flex items-center gap-2 rounded-full bg-[#0c0c12] py-1.5 pr-1.5 pl-5">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 shrink-0 text-zinc-500" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <label for="spotlight-email" class="sr-only">Email address</label>
+            <input id="spotlight-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@studio.com"
+              class="min-w-0 flex-1 bg-transparent py-2.5 text-base text-zinc-100 outline-none placeholder:text-zinc-600 sm:text-lg" />
+            <button type="submit" aria-label="Send sign-in link" class="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-zinc-100 text-[#07070b] transition hover:bg-white hover:shadow-[0_0_24px_rgba(139,92,246,.6)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#22d3ee] disabled:cursor-wait disabled:opacity-70">
+              <svg data-spotlight-icon aria-hidden="true" viewBox="0 0 20 20" class="size-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12m-5-5 5 5-5 5"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5 flex items-center justify-center gap-2 text-xs text-zinc-500">
+        Press <kbd class="rounded-md border border-zinc-700 bg-zinc-900 px-1.5 py-0.5 font-['Geist_Mono',monospace] text-[11px] text-zinc-300 shadow-[0_2px_0_#27272a]">↵ Enter</kbd> to get your link
+      </p>
+    </form>
+
+    <div data-spotlight-sent hidden aria-live="polite" class="mt-12 w-full max-w-lg">
+      <div class="flex items-center gap-4 rounded-full border border-zinc-800 bg-[#0c0c12] py-3 pr-3 pl-5 text-left shadow-[0_0_40px_-8px_rgba(34,211,238,.35)]">
+        <span aria-hidden="true" class="relative flex size-2.5 shrink-0"><span class="absolute inset-0 animate-ping rounded-full bg-[#22d3ee]"></span><span class="relative size-2.5 rounded-full bg-[#22d3ee]"></span></span>
+        <p class="min-w-0 flex-1 truncate text-sm text-zinc-300">Link sent to <span data-spotlight-address class="text-zinc-100">you@studio.com</span></p>
+        <button type="button" data-spotlight-reset class="shrink-0 cursor-pointer rounded-full border border-zinc-700 px-4 py-2 text-xs text-zinc-300 transition hover:border-zinc-500 hover:text-white focus-visible:outline-2 focus-visible:outline-[#22d3ee]">Change</button>
+      </div>
+      <p class="mt-5 text-xs text-zinc-500">Check your inbox. The link works once and expires in 15 minutes.</p>
+    </div>
+  </div>
+
+  <footer class="text-center font-['Geist_Mono',monospace] text-[11px] text-zinc-600">By continuing you agree to the <a href="#" class="underline underline-offset-2 hover:text-zinc-400">Terms</a> and <a href="#" class="underline underline-offset-2 hover:text-zinc-400">Privacy Policy</a>.</footer>
+</section>

@@ -1,0 +1,56 @@
+<section class="relative isolate min-h-screen overflow-hidden bg-white font-['Inter',sans-serif] text-black">
+  <div aria-hidden="true" class="absolute top-0 right-0 -z-10 h-2/5 w-1/3 bg-[#e30613] sm:w-[22%]"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 hidden bg-[linear-gradient(to_right,rgba(0,0,0,0.06)_1px,transparent_1px)] [background-size:calc(100%/12)_100%] lg:block"></div>
+
+  <div class="mx-auto grid min-h-screen max-w-7xl grid-cols-12 content-between gap-x-4 px-5 py-6 sm:px-10 sm:py-8">
+    <header class="col-span-12 grid grid-cols-12 gap-x-4 border-t-4 border-black pt-2 text-[11px] leading-tight font-medium sm:text-xs">
+      <p class="col-span-6 font-bold sm:col-span-3">Raster<br />Type Archive</p>
+      <p class="col-span-3 hidden sm:block">Anmeldung<br />Connexion</p>
+      <p class="col-span-3 hidden lg:block">Zürich<br />Est. 1957</p>
+      <p class="col-span-6 text-right text-white sm:col-span-3 sm:text-black lg:text-white">Mitglieder<br />Members</p>
+    </header>
+
+    <div class="col-span-12 grid grid-cols-12 items-end gap-x-4 gap-y-10 py-10 lg:py-0">
+      <div class="col-span-12 lg:col-span-6">
+        <p aria-hidden="true" class="text-[9rem] leading-[0.78] font-bold tracking-[-0.08em] text-[#e30613] sm:text-[13rem] lg:text-[17rem]">01</p>
+        <h1 class="mt-4 text-6xl leading-[0.85] font-bold tracking-[-0.06em] sm:text-8xl">Sign<br />in.</h1>
+        <p class="mt-6 max-w-xs border-t-2 border-black pt-3 text-sm leading-snug font-medium">Access 4,812 digitised specimens, grids and posters from the archive. Members only.</p>
+      </div>
+
+      <form data-auth-form class="col-span-12 sm:col-span-10 lg:col-span-5 lg:col-start-8">
+        <div class="grid grid-cols-[3rem_1fr] items-baseline border-t-2 border-black pt-3">
+          <span aria-hidden="true" class="text-sm font-bold text-[#e30613]">1.1</span>
+          <div>
+            <label for="swiss-email" class="text-sm font-bold">E-mail</label>
+            <input id="swiss-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="m.bill@raster.ch"
+              class="mt-2 block w-full border-0 border-b-2 border-black/15 bg-transparent px-0 pb-2 text-2xl font-medium tracking-tight outline-none placeholder:text-black/25 focus:border-[#e30613]" />
+          </div>
+        </div>
+        <div class="mt-8 grid grid-cols-[3rem_1fr] items-baseline border-t-2 border-black pt-3">
+          <span aria-hidden="true" class="text-sm font-bold text-[#e30613]">1.2</span>
+          <div>
+            <div class="flex items-baseline justify-between gap-4">
+              <label for="swiss-password" class="text-sm font-bold">Password</label>
+              <a href="#" class="text-sm font-medium underline decoration-2 underline-offset-4 hover:text-[#e30613] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e30613]">Forgot password</a>
+            </div>
+            <input id="swiss-password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••"
+              class="mt-2 block w-full border-0 border-b-2 border-black/15 bg-transparent px-0 pb-2 text-2xl font-medium tracking-tight outline-none placeholder:text-black/25 focus:border-[#e30613]" />
+          </div>
+        </div>
+
+        <button type="submit" data-pending="Signing in" data-done="Willkommen"
+          class="group mt-10 grid w-full grid-cols-[3rem_1fr_auto] items-center bg-black py-5 pr-5 text-left text-white transition-colors hover:bg-[#e30613] focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#e30613] disabled:cursor-wait disabled:opacity-80">
+          <span aria-hidden="true" class="pl-3 text-sm font-bold">→</span>
+          <span data-label class="text-2xl font-bold tracking-tight">Sign in</span>
+          <span aria-hidden="true" class="text-sm font-medium opacity-60 transition-opacity group-hover:opacity-100">Enter ↵</span>
+        </button>
+      </form>
+    </div>
+
+    <footer class="col-span-12 grid grid-cols-12 gap-x-4 gap-y-3 border-t-2 border-black pt-2 text-xs font-medium sm:text-sm">
+      <p class="col-span-12 sm:col-span-6">Not a member yet? <a href="#" class="font-bold underline decoration-2 underline-offset-4 hover:text-[#e30613] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e30613]">Create an account</a></p>
+      <p class="col-span-6 text-black/50 sm:col-span-3">Typeface: Inter</p>
+      <p class="col-span-6 text-right text-black/50 sm:col-span-3">© Raster 2026</p>
+    </footer>
+  </div>
+</section>

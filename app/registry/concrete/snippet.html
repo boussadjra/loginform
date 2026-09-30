@@ -1,0 +1,55 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#ffde59] px-4 py-14 font-['Space_Grotesk',sans-serif] text-[#111111] sm:px-8">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(#111111_1.2px,transparent_1.2px)] [background-size:22px_22px] opacity-20"></div>
+  <div aria-hidden="true" class="absolute top-10 -left-10 -z-10 hidden rotate-[-8deg] border-[3px] border-black bg-[#ff5c8a] px-10 py-3 font-['Archivo_Black',sans-serif] text-2xl tracking-tight shadow-[6px_6px_0_#111] md:block">NO FLUFF</div>
+  <div aria-hidden="true" class="absolute right-12 bottom-14 -z-10 hidden size-28 rotate-12 place-items-center rounded-full border-[3px] border-black bg-[#6ee7ff] text-center font-['Archivo_Black',sans-serif] text-sm leading-tight shadow-[6px_6px_0_#111] md:grid">SHIP<br />DAILY</div>
+
+  <div class="relative w-full max-w-md">
+    <span class="absolute -top-5 left-6 z-10 rotate-[-4deg] border-[3px] border-black bg-[#ff5c8a] px-3 py-1 text-xs font-bold tracking-[0.2em] uppercase shadow-[3px_3px_0_#111]">Slab / v2.4</span>
+
+    <div class="border-4 border-black bg-white p-6 shadow-[10px_10px_0_#111] sm:p-9">
+      <h1 class="mt-3 font-['Archivo_Black',sans-serif] text-4xl leading-[0.95] tracking-tight sm:text-5xl">Log in.<br />Get to work.</h1>
+      <p class="mt-3 text-sm font-medium text-black/70">No account? <a href="#" class="font-bold text-black underline decoration-[3px] decoration-[#ffde59] underline-offset-2 hover:bg-[#ffde59] focus-visible:outline-2 focus-visible:outline-black">Make one in 30s</a></p>
+
+      <div class="mt-6 grid grid-cols-2 gap-3">
+        <button type="button" class="flex items-center justify-center gap-2 border-[3px] border-black bg-white py-2.5 text-sm font-bold shadow-[4px_4px_0_#111] transition-all hover:bg-[#6ee7ff] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black active:translate-x-1 active:translate-y-1 active:shadow-none">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4"><path fill="#EA4335" d="M12 10.2v3.9h5.4c-.2 1.3-1.6 3.8-5.4 3.8-3.2 0-5.9-2.7-5.9-6s2.7-6 5.9-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3.4 14.6 2.4 12 2.4 6.7 2.4 2.4 6.7 2.4 12s4.3 9.6 9.6 9.6c5.5 0 9.2-3.9 9.2-9.4 0-.6-.1-1.1-.2-1.6H12Z"/></svg>
+          Google
+        </button>
+        <button type="button" class="flex items-center justify-center gap-2 border-[3px] border-black bg-white py-2.5 text-sm font-bold shadow-[4px_4px_0_#111] transition-all hover:bg-[#6ee7ff] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black active:translate-x-1 active:translate-y-1 active:shadow-none">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </button>
+      </div>
+
+      <div class="my-6 flex items-center gap-3 text-xs font-bold tracking-[0.2em] uppercase" aria-hidden="true">
+        <span class="h-[3px] flex-1 bg-black"></span>or email<span class="h-[3px] flex-1 bg-black"></span>
+      </div>
+
+      <form data-auth-form class="space-y-5">
+        <div>
+          <label for="concrete-email" class="mb-1.5 inline-block -rotate-1 bg-black px-2 py-0.5 text-xs font-bold tracking-widest text-[#ffde59] uppercase">Email</label>
+          <input id="concrete-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@studio.com"
+            class="block w-full border-[3px] border-black bg-[#fffbea] px-4 py-3 text-base font-medium outline-none placeholder:text-black/40 focus:bg-white focus:shadow-[5px_5px_0_#ff5c8a]" />
+        </div>
+        <div>
+          <div class="mb-1.5 flex items-end justify-between">
+            <label for="concrete-password" class="inline-block rotate-1 bg-black px-2 py-0.5 text-xs font-bold tracking-widest text-[#ffde59] uppercase">Password</label>
+            <a href="#" class="text-xs font-bold underline decoration-2 underline-offset-2 hover:bg-[#ffde59] focus-visible:outline-2 focus-visible:outline-black">Forgot it?</a>
+          </div>
+          <div class="relative">
+            <input id="concrete-password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••"
+              class="block w-full border-[3px] border-black bg-[#fffbea] py-3 pr-20 pl-4 text-base font-medium outline-none placeholder:text-black/40 focus:bg-white focus:shadow-[5px_5px_0_#ff5c8a]" />
+            <button type="button" data-toggle-password aria-controls="concrete-password" aria-pressed="false"
+              class="absolute top-1/2 right-2 -translate-y-1/2 border-2 border-black bg-[#ffde59] px-2 py-1 text-[11px] font-bold tracking-wider uppercase hover:bg-[#6ee7ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">Show</button>
+          </div>
+        </div>
+
+        <button type="submit"
+          class="group flex w-full items-center justify-between border-[3px] border-black bg-black px-5 py-4 font-['Archivo_Black',sans-serif] text-lg tracking-tight text-[#ffde59] uppercase shadow-[6px_6px_0_#ff5c8a] transition-all hover:bg-[#1f1f1f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black active:translate-x-1.5 active:translate-y-1.5 active:shadow-none disabled:cursor-wait disabled:opacity-80">
+          <span data-label>Log in</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-6 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12h15M13 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

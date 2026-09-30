@@ -1,0 +1,51 @@
+<section class="flex min-h-screen items-center justify-center bg-[#e7dcc6] bg-[radial-gradient(rgba(120,90,50,0.12)_1px,transparent_1px)] [background-size:14px_14px] px-4 py-12 font-['Kalam',cursive] text-[#2b3a67]">
+  <div class="relative w-full max-w-xl">
+    <div class="relative -rotate-[0.6deg] rounded-sm bg-[#fffdf6] bg-[repeating-linear-gradient(to_bottom,transparent_0_31px,#b9cff0_31px_32px)] [background-position:0_-5px] pt-16 pr-5 pb-16 pl-16 shadow-[0_1px_0_#e8e2d2,0_2px_0_#fffdf6,0_3px_0_#e8e2d2,0_4px_0_#fffdf6,0_5px_0_#e0d8c4,0_24px_40px_-12px_rgba(60,40,10,0.35)] sm:pr-10 sm:pl-24">
+      <div aria-hidden="true" class="absolute inset-y-0 left-12 w-px bg-[#ef8f8f] shadow-[3px_0_0_#f6c0c0] sm:left-[4.5rem]"></div>
+      <div aria-hidden="true" class="absolute inset-y-0 left-3 flex flex-col justify-around py-10 sm:left-5">
+        <span class="size-5 rounded-full bg-[#e7dcc6] shadow-[inset_1px_2px_3px_rgba(60,40,10,0.35)]"></span>
+        <span class="size-5 rounded-full bg-[#e7dcc6] shadow-[inset_1px_2px_3px_rgba(60,40,10,0.35)]"></span>
+        <span class="size-5 rounded-full bg-[#e7dcc6] shadow-[inset_1px_2px_3px_rgba(60,40,10,0.35)]"></span>
+      </div>
+
+      <p class="-mt-8 h-8 text-right font-['Caveat',cursive] text-xl leading-8 text-[#8a94b3]">Tue, Sept 30</p>
+      <h1 class="h-16 font-['Caveat',cursive] text-5xl leading-[4rem] font-bold text-[#1f2d5c] sm:text-6xl">Welcome back!</h1>
+      <p class="h-8 leading-8 text-[#5a6690]">Sign in to your Scribble sketchbook ✎</p>
+
+      <form data-auth-form class="mt-8">
+        <label for="notebook-email" class="block h-8 font-['Caveat',cursive] text-2xl leading-8 text-[#8a94b3]">my email is…</label>
+        <input id="notebook-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="doodles@scribble.club"
+          class="block h-8 w-full border-0 bg-transparent p-0 text-lg leading-8 text-[#1f2d5c] outline-none placeholder:text-[#2b3a67]/30 focus:bg-[linear-gradient(transparent_40%,rgba(255,236,110,0.7)_40%_85%,transparent_85%)]" />
+
+        <div class="mt-8 flex h-8 items-center justify-between gap-3">
+          <label for="notebook-password" class="font-['Caveat',cursive] text-2xl leading-8 text-[#8a94b3]">and my password…</label>
+          <a href="#" class="shrink-0 font-['Caveat',cursive] text-xl leading-8 text-[#d9534f] underline decoration-wavy decoration-1 underline-offset-4 hover:text-[#b52b27] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-[#d9534f]">forgot it?</a>
+        </div>
+        <input id="notebook-password" name="password" type="password" autocomplete="current-password" required placeholder="shh… it’s a secret"
+          class="block h-8 w-full border-0 bg-transparent p-0 text-lg leading-8 text-[#1f2d5c] outline-none placeholder:text-[#2b3a67]/30 focus:bg-[linear-gradient(transparent_40%,rgba(255,236,110,0.7)_40%_85%,transparent_85%)]" />
+
+        <label class="mt-8 flex h-8 w-fit cursor-pointer items-center gap-3 font-['Caveat',cursive] text-2xl leading-8 select-none">
+          <input type="checkbox" name="remember" class="peer sr-only" />
+          <span aria-hidden="true" class="grid size-5 place-items-center rounded-[3px_6px_2px_5px] border-2 border-[#2b3a67] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#d9534f] [&>svg]:opacity-0 peer-checked:[&>svg]:opacity-100">
+            <svg viewBox="0 0 24 24" class="size-6 -translate-y-1 translate-x-0.5 text-[#d9534f]" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13c2 1 4 3 5 6 3-7 7-12 12-15"/></svg>
+          </span>
+          remember me
+        </label>
+
+        <div class="mt-8 flex h-16 items-center">
+          <button type="submit" data-pending="scribbling…" data-done="you're in! ♥"
+            class="group -rotate-1 rounded-[22px_8px_26px_6px] border-[3px] border-[#1f2d5c] bg-[#fffdf6] px-8 py-1.5 font-['Caveat',cursive] text-3xl font-bold text-[#1f2d5c] shadow-[3px_4px_0_#1f2d5c] transition hover:rotate-1 hover:bg-[#fff3a3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9534f] active:translate-y-0.5 active:shadow-[1px_1px_0_#1f2d5c] disabled:cursor-wait disabled:opacity-80">
+            <span data-label>Sign me in →</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <aside class="relative mx-auto mt-10 w-60 rotate-3 bg-[#fff27a] p-5 pt-6 shadow-[2px_10px_18px_-6px_rgba(60,40,10,0.4)] lg:absolute lg:top-6 lg:-right-52 lg:mt-0">
+      <span aria-hidden="true" class="absolute -top-3 left-1/2 h-6 w-24 -translate-x-1/2 -rotate-6 bg-[#f5f1e4]/70 shadow-[0_1px_2px_rgba(0,0,0,0.12)]"></span>
+      <p class="font-['Caveat',cursive] text-2xl leading-7 text-[#1f2d5c]">Psst… no account yet?</p>
+      <a href="#" class="mt-2 inline-block font-['Caveat',cursive] text-2xl font-bold text-[#d9534f] underline decoration-2 whitespace-nowrap underline-offset-4 hover:text-[#b52b27] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d9534f]">Start a fresh page →</a>
+      <p class="mt-2 text-sm text-[#5a6690]">It's free, forever. Pinky promise.</p>
+    </aside>
+  </div>
+</section>

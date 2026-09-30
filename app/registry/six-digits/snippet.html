@@ -1,0 +1,59 @@
+<section class="flex min-h-screen items-center justify-center bg-[#f4f5f9] bg-[radial-gradient(circle_at_50%_0%,#e0e7ff_0,transparent_55%)] px-4 py-12 font-['Plus_Jakarta_Sans',sans-serif] text-[#0f172a]">
+  <div class="w-full max-w-md rounded-[28px] border border-[#e6e8f0] bg-white p-6 shadow-[0_1px_2px_rgba(15,23,42,.04),0_24px_48px_-24px_rgba(79,70,229,.25)] sm:p-10">
+    <div class="mx-auto flex size-14 items-center justify-center rounded-2xl bg-[#eef2ff] text-[#4f46e5] ring-8 ring-[#eef2ff]/50">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="size-7">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="m4 7 8 6 8-6" />
+      </svg>
+    </div>
+
+    <h1 class="mt-6 text-center text-2xl font-bold tracking-tight">Check your inbox</h1>
+    <p class="mt-2 text-center text-sm leading-6 text-[#64748b]">
+      We sent a 6-digit code to <span class="font-semibold text-[#0f172a]">maya@lumen.app</span>. It expires in 10 minutes.
+    </p>
+
+    <form data-otp="six-digits" class="mt-8" novalidate>
+      <fieldset>
+        <legend class="mb-3 text-xs font-semibold tracking-wide text-[#64748b] uppercase">Verification code</legend>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div class="flex flex-1 gap-2">
+            <label for="six-digits-1" class="sr-only">Digit 1</label>
+            <input id="six-digits-1" data-otp-box type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+            <label for="six-digits-2" class="sr-only">Digit 2</label>
+            <input id="six-digits-2" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+            <label for="six-digits-3" class="sr-only">Digit 3</label>
+            <input id="six-digits-3" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+          </div>
+          <span aria-hidden="true" class="h-0.5 w-3 shrink-0 rounded-full bg-[#cbd5e1]"></span>
+          <div class="flex flex-1 gap-2">
+            <label for="six-digits-4" class="sr-only">Digit 4</label>
+            <input id="six-digits-4" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+            <label for="six-digits-5" class="sr-only">Digit 5</label>
+            <input id="six-digits-5" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+            <label for="six-digits-6" class="sr-only">Digit 6</label>
+            <input id="six-digits-6" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] text-center text-2xl font-bold caret-[#4f46e5] transition outline-none focus:border-[#4f46e5] focus:bg-white focus:ring-4 focus:ring-[#4f46e5]/15" />
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" data-otp-submit
+        class="mt-6 w-full cursor-pointer rounded-xl bg-[#4f46e5] px-4 py-3.5 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(79,70,229,.7)] transition hover:bg-[#4338ca] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4f46e5] disabled:cursor-wait disabled:opacity-70">
+        Verify email
+      </button>
+
+      <p class="mt-6 text-center text-sm text-[#64748b]">
+        Didn't get it?
+        <button type="button" data-otp-resend disabled
+          class="cursor-pointer font-semibold text-[#4f46e5] hover:underline focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4f46e5] disabled:cursor-default disabled:text-[#94a3b8] disabled:no-underline">
+          Resend in <span data-otp-timer class="tabular-nums">0:30</span>
+        </button>
+      </p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,94 @@
+<section class="flex min-h-screen items-center justify-center bg-[#0d0e10] bg-[radial-gradient(circle_at_50%_40%,#23252a_0,transparent_60%)] px-4 py-12 text-[#e9e4d8]">
+  <div class="relative w-full max-w-3xl rounded-[28px] border border-black bg-[repeating-linear-gradient(90deg,rgba(255,255,255,.035)_0_1px,transparent_1px_3px),linear-gradient(160deg,#4a4d53_0%,#2b2d31_45%,#1b1c1f_100%)] p-6 pb-9 shadow-[0_30px_70px_-20px_#000,inset_0_1px_0_rgba(255,255,255,.12),inset_0_0_0_6px_#1a1b1e,inset_0_0_0_7px_rgba(201,162,74,.35)] sm:p-10">
+    <span aria-hidden="true" class="absolute top-4 left-4 size-2.5 rounded-full bg-[radial-gradient(circle_at_35%_35%,#f3d98a,#8a6a24)] shadow-[0_1px_1px_#000]"></span>
+    <span aria-hidden="true" class="absolute top-4 right-4 size-2.5 rounded-full bg-[radial-gradient(circle_at_35%_35%,#f3d98a,#8a6a24)] shadow-[0_1px_1px_#000]"></span>
+    <span aria-hidden="true" class="absolute bottom-4 left-4 size-2.5 rounded-full bg-[radial-gradient(circle_at_35%_35%,#f3d98a,#8a6a24)] shadow-[0_1px_1px_#000]"></span>
+    <span aria-hidden="true" class="absolute right-4 bottom-4 size-2.5 rounded-full bg-[radial-gradient(circle_at_35%_35%,#f3d98a,#8a6a24)] shadow-[0_1px_1px_#000]"></span>
+
+    <div class="grid items-center gap-8 md:grid-cols-[240px_1fr] md:gap-12">
+      <svg aria-hidden="true" viewBox="0 0 200 200" class="mx-auto w-44 drop-shadow-[0_12px_18px_rgba(0,0,0,.7)] md:w-60">
+        <defs>
+          <radialGradient id="vault-steel" cx="40%" cy="35%" r="75%">
+            <stop offset="0" stop-color="#6b6f76" />
+            <stop offset=".6" stop-color="#2e3035" />
+            <stop offset="1" stop-color="#15161a" />
+          </radialGradient>
+          <radialGradient id="vault-brass" cx="35%" cy="30%" r="80%">
+            <stop offset="0" stop-color="#f6df98" />
+            <stop offset=".55" stop-color="#c9a24a" />
+            <stop offset="1" stop-color="#6e531c" />
+          </radialGradient>
+        </defs>
+        <circle cx="100" cy="100" r="97" fill="#17181b" stroke="url(#vault-brass)" stroke-width="3" />
+        <circle cx="100" cy="100" r="84" fill="none" stroke="#9aa0a8" stroke-width="8" stroke-dasharray="1.2 7.596" transform="rotate(-90 100 100)" />
+        <circle cx="100" cy="100" r="84" fill="none" stroke="#c9a24a" stroke-width="12" stroke-dasharray="2.4 41.58" transform="rotate(-90.8 100 100)" />
+        <g fill="#c9a24a" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" text-anchor="middle">
+          <text x="100" y="32">0</text><text x="170" y="103">25</text><text x="100" y="175">50</text><text x="30" y="103">75</text>
+        </g>
+        <circle cx="100" cy="100" r="62" fill="url(#vault-steel)" stroke="#0a0a0b" stroke-width="2" />
+        <circle cx="100" cy="100" r="54" fill="none" stroke="#fff" stroke-opacity=".06" stroke-width="1" />
+        <g stroke="url(#vault-brass)" stroke-width="7" stroke-linecap="round">
+          <path d="M100 100 100 44" /><path d="M100 100 148.5 128" /><path d="M100 100 51.5 128" />
+        </g>
+        <g fill="url(#vault-brass)" stroke="#6e531c">
+          <circle cx="100" cy="42" r="7" /><circle cx="150.2" cy="129" r="7" /><circle cx="49.8" cy="129" r="7" />
+          <circle cx="100" cy="100" r="17" />
+        </g>
+        <circle cx="100" cy="100" r="6" fill="#2b2d31" />
+        <path d="M100 1 106 12H94Z" fill="#f6df98" />
+      </svg>
+
+      <form data-otp="vault" novalidate>
+        <p class="font-['Cinzel',serif] text-xs font-bold tracking-[.35em] text-[#c9a24a]">STERLING &amp; VALE</p>
+        <h1 class="mt-2 font-['Cinzel',serif] text-3xl font-bold text-[#f4efe2] [text-shadow:0_2px_0_#000] sm:text-4xl">Private Vault</h1>
+        <p class="mt-3 max-w-sm text-sm leading-6 text-[#e9e4d8]/65">Enter the 4-digit access code sent to your registered device to release the door.</p>
+
+        <fieldset class="mt-6">
+          <legend class="sr-only">Access code</legend>
+          <div class="flex gap-2 rounded-xl bg-[#0b0b0d] p-2 shadow-[inset_0_3px_8px_#000,0_1px_0_rgba(255,255,255,.08)] sm:gap-3 sm:p-3">
+          <div data-wheel class="relative flex h-32 flex-1 flex-col items-center justify-center overflow-hidden rounded-md border border-black bg-[linear-gradient(180deg,#050505_0%,#2a2c30_22%,#4a4d53_50%,#2a2c30_78%,#050505_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.06),0_2px_0_rgba(255,255,255,.05)] has-[input:focus-visible]:ring-2 has-[input:focus-visible]:ring-[#c9a24a]">
+            <span data-prev aria-hidden="true" class="absolute top-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">9</span>
+            <label for="vault-d1" class="sr-only">Digit 1 of 4</label>
+            <input id="vault-d1" data-otp-box type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required placeholder="0"
+              class="z-10 w-full bg-transparent text-center font-['JetBrains_Mono',monospace] text-5xl font-extrabold text-[#f4efe2] caret-[#c9a24a] outline-none [text-shadow:0_2px_0_#000] placeholder:text-[#e9e4d8]/25" />
+            <span data-next aria-hidden="true" class="absolute bottom-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">1</span>
+            <span aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-1/2 h-12 -translate-y-1/2 border-y border-[#c9a24a]/40"></span>
+          </div>
+          <div data-wheel class="relative flex h-32 flex-1 flex-col items-center justify-center overflow-hidden rounded-md border border-black bg-[linear-gradient(180deg,#050505_0%,#2a2c30_22%,#4a4d53_50%,#2a2c30_78%,#050505_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.06),0_2px_0_rgba(255,255,255,.05)] has-[input:focus-visible]:ring-2 has-[input:focus-visible]:ring-[#c9a24a]">
+            <span data-prev aria-hidden="true" class="absolute top-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">9</span>
+            <label for="vault-d2" class="sr-only">Digit 2 of 4</label>
+            <input id="vault-d2" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="0"
+              class="z-10 w-full bg-transparent text-center font-['JetBrains_Mono',monospace] text-5xl font-extrabold text-[#f4efe2] caret-[#c9a24a] outline-none [text-shadow:0_2px_0_#000] placeholder:text-[#e9e4d8]/25" />
+            <span data-next aria-hidden="true" class="absolute bottom-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">1</span>
+            <span aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-1/2 h-12 -translate-y-1/2 border-y border-[#c9a24a]/40"></span>
+          </div>
+          <div data-wheel class="relative flex h-32 flex-1 flex-col items-center justify-center overflow-hidden rounded-md border border-black bg-[linear-gradient(180deg,#050505_0%,#2a2c30_22%,#4a4d53_50%,#2a2c30_78%,#050505_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.06),0_2px_0_rgba(255,255,255,.05)] has-[input:focus-visible]:ring-2 has-[input:focus-visible]:ring-[#c9a24a]">
+            <span data-prev aria-hidden="true" class="absolute top-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">9</span>
+            <label for="vault-d3" class="sr-only">Digit 3 of 4</label>
+            <input id="vault-d3" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="0"
+              class="z-10 w-full bg-transparent text-center font-['JetBrains_Mono',monospace] text-5xl font-extrabold text-[#f4efe2] caret-[#c9a24a] outline-none [text-shadow:0_2px_0_#000] placeholder:text-[#e9e4d8]/25" />
+            <span data-next aria-hidden="true" class="absolute bottom-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">1</span>
+            <span aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-1/2 h-12 -translate-y-1/2 border-y border-[#c9a24a]/40"></span>
+          </div>
+          <div data-wheel class="relative flex h-32 flex-1 flex-col items-center justify-center overflow-hidden rounded-md border border-black bg-[linear-gradient(180deg,#050505_0%,#2a2c30_22%,#4a4d53_50%,#2a2c30_78%,#050505_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.06),0_2px_0_rgba(255,255,255,.05)] has-[input:focus-visible]:ring-2 has-[input:focus-visible]:ring-[#c9a24a]">
+            <span data-prev aria-hidden="true" class="absolute top-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">9</span>
+            <label for="vault-d4" class="sr-only">Digit 4 of 4</label>
+            <input id="vault-d4" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="0"
+              class="z-10 w-full bg-transparent text-center font-['JetBrains_Mono',monospace] text-5xl font-extrabold text-[#f4efe2] caret-[#c9a24a] outline-none [text-shadow:0_2px_0_#000] placeholder:text-[#e9e4d8]/25" />
+            <span data-next aria-hidden="true" class="absolute bottom-1 font-['JetBrains_Mono',monospace] text-xl font-bold text-[#e9e4d8]/20">1</span>
+            <span aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-1/2 h-12 -translate-y-1/2 border-y border-[#c9a24a]/40"></span>
+          </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" data-otp-submit
+          class="mt-6 w-full cursor-pointer rounded-lg border border-[#6e531c] bg-[linear-gradient(180deg,#f6df98_0%,#c9a24a_50%,#9a7a2e_100%)] px-4 py-3.5 font-['Cinzel',serif] text-sm font-bold tracking-[.25em] text-[#1b1406] shadow-[inset_0_1px_0_rgba(255,255,255,.6),0_6px_14px_-4px_#000] transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f6df98] active:translate-y-px disabled:cursor-wait disabled:opacity-80">
+          UNLOCK VAULT
+        </button>
+        <p class="mt-4 flex justify-between font-['JetBrains_Mono',monospace] text-[11px] tracking-wider text-[#e9e4d8]/45">
+          <span>VAULT 07 · GENEVA</span><span>3 ATTEMPTS LEFT</span>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#f6ece8] bg-[radial-gradient(at_12%_18%,#ffd6c2_0,transparent_45%),radial-gradient(at_88%_12%,#d9c8ff_0,transparent_45%),radial-gradient(at_78%_88%,#bff0dc_0,transparent_45%),radial-gradient(at_18%_92%,#e8d4ff_0,transparent_40%),radial-gradient(at_50%_50%,#fff3ea_0,transparent_60%)] px-4 py-12 font-['Plus_Jakarta_Sans',sans-serif] text-[#2b2140]">
+  <div aria-hidden="true" class="absolute top-[12%] left-[58%] -z-10 size-56 rounded-full bg-[#ffc4a8]/60 blur-3xl"></div>
+  <div aria-hidden="true" class="absolute bottom-[10%] left-[18%] -z-10 size-64 rounded-full bg-[#a8e8cf]/60 blur-3xl"></div>
+
+  <div data-mesh class="w-full max-w-md rounded-3xl bg-white/55 p-8 shadow-[0_30px_80px_-30px_rgba(88,60,140,.35)] ring-1 ring-white/80 backdrop-blur-2xl sm:p-10">
+    <div class="flex items-center gap-2.5">
+      <span aria-hidden="true" class="size-8 rounded-[40%_60%_55%_45%] bg-[conic-gradient(from_200deg,#ffb08a,#c9a8ff,#8fdcbc,#ffb08a)] shadow-[inset_0_0_0_2px_rgba(255,255,255,.6)]"></span>
+      <span class="text-lg font-bold tracking-tight">Kindred</span>
+    </div>
+
+    <form data-mesh-form class="mt-8">
+      <h1 class="text-3xl leading-tight font-bold tracking-tight">Welcome back</h1>
+      <p class="mt-2 text-[15px] leading-relaxed text-[#5d5470]">Pop in your email and we&rsquo;ll send a magic link. No password to remember, ever.</p>
+
+      <label for="mesh-email" class="mt-8 block text-sm font-semibold">Email</label>
+      <div class="mt-2 flex items-center gap-3 rounded-2xl bg-white/80 px-4 ring-1 ring-[#2b2140]/10 transition focus-within:bg-white focus-within:ring-2 focus-within:ring-[#9b7bff]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 shrink-0 text-[#9b8fb0]" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>
+        <input id="mesh-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="sam@kindred.app"
+          class="min-w-0 flex-1 bg-transparent py-3.5 text-[15px] outline-none placeholder:text-[#a79fb8]" />
+      </div>
+
+      <button type="submit" class="mt-4 w-full cursor-pointer rounded-2xl bg-[#2b2140] px-5 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_24px_-10px_rgba(43,33,64,.8)] transition hover:-translate-y-0.5 hover:bg-[#3a2d57] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9b7bff] disabled:cursor-wait disabled:opacity-75">Send magic link</button>
+
+      <div class="my-6 flex items-center gap-3 text-xs font-medium text-[#8a80a0]"><span class="h-px flex-1 bg-[#2b2140]/10"></span>or<span class="h-px flex-1 bg-[#2b2140]/10"></span></div>
+
+      <button type="button" class="flex w-full cursor-pointer items-center justify-center gap-2.5 rounded-2xl bg-white/70 px-5 py-3 text-[15px] font-semibold ring-1 ring-[#2b2140]/10 transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9b7bff]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2-1.9 3.2-4.7 3.2-8Z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 0 1 0-4.3V7.1H2.1a11 11 0 0 0 0 9.9Z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4Z"/></svg>
+        Continue with Google
+      </button>
+    </form>
+
+    <div data-mesh-sent hidden aria-live="polite" class="mt-8 text-center">
+      <div aria-hidden="true" class="mx-auto flex size-20 items-center justify-center rounded-full bg-[radial-gradient(circle_at_30%_30%,#ffd6c2,#d9c8ff_55%,#bff0dc)] shadow-[inset_0_0_0_6px_rgba(255,255,255,.55)]">
+        <svg viewBox="0 0 24 24" class="size-8 text-[#2b2140]" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+      </div>
+      <h2 class="mt-6 text-2xl font-bold tracking-tight">Check your email</h2>
+      <p class="mt-2 text-[15px] leading-relaxed text-[#5d5470]">We sent a magic link to<br /><strong data-mesh-address class="font-semibold break-words text-[#2b2140]">you</strong>.<br />It&rsquo;s good for the next 15 minutes.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button type="button" data-mesh-resend class="flex-1 cursor-pointer rounded-2xl bg-[#2b2140] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#3a2d57] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9b7bff] disabled:cursor-default disabled:opacity-60">Resend link</button>
+        <button type="button" data-mesh-back class="flex-1 cursor-pointer rounded-2xl bg-white/70 px-5 py-3 text-sm font-semibold ring-1 ring-[#2b2140]/10 transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9b7bff]">Use another email</button>
+      </div>
+    </div>
+
+    <p class="mt-8 text-center text-xs text-[#8a80a0]">New here? <a href="#" class="font-semibold text-[#6d4fe0] hover:underline">Create an account</a></p>
+  </div>
+</section>

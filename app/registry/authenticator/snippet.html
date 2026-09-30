@@ -1,0 +1,73 @@
+<section class="flex min-h-screen items-center justify-center bg-[#070d1a] bg-[radial-gradient(circle_at_50%_-10%,rgba(52,211,153,.18)_0,transparent_45%),linear-gradient(rgba(255,255,255,.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.025)_1px,transparent_1px)] bg-[size:auto,32px_32px,32px_32px] px-4 py-12 font-['Manrope',sans-serif] text-[#e2e8f0]">
+  <div class="w-full max-w-md rounded-3xl border border-white/10 bg-[#111a2e]/85 p-6 shadow-[0_30px_80px_-30px_#000,inset_0_1px_0_rgba(255,255,255,.06)] backdrop-blur sm:p-8">
+    <div class="flex items-center gap-4">
+      <div class="relative flex size-14 shrink-0 items-center justify-center rounded-2xl bg-[linear-gradient(145deg,#34d399,#0f766e)] shadow-[0_10px_24px_-10px_#34d399,inset_0_1px_0_rgba(255,255,255,.35)]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-7 text-[#052e22]">
+          <path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-lg font-bold text-white sm:text-xl">Two-factor authentication</h1>
+        <p class="mt-0.5 text-sm text-[#94a3b8]">Open your authenticator app</p>
+      </div>
+    </div>
+
+    <div class="mt-6 flex items-center justify-between gap-3 rounded-2xl border border-white/5 bg-[#0b1324] p-3 pl-4">
+      <div class="min-w-0">
+        <p class="text-[11px] font-semibold tracking-[.18em] text-[#34d399] uppercase">Halcyon</p>
+        <p class="truncate text-sm text-[#cbd5e1]">mara@halcyon.io</p>
+      </div>
+      <div class="relative size-12 shrink-0" role="timer" aria-live="off" aria-label="Seconds until the code refreshes">
+        <svg aria-hidden="true" viewBox="0 0 48 48" class="size-12 -rotate-90">
+          <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="4" />
+          <circle data-totp-ring cx="24" cy="24" r="20" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-dasharray="125.66" stroke-dashoffset="0" class="transition-[stroke] duration-300" />
+        </svg>
+        <span data-totp-seconds class="absolute inset-0 flex items-center justify-center text-sm font-bold text-white tabular-nums">30</span>
+      </div>
+    </div>
+
+    <form data-otp="authenticator" class="mt-6" novalidate>
+      <fieldset>
+        <legend class="mb-3 text-sm font-medium text-[#cbd5e1]">Enter the 6-digit code</legend>
+        <div class="flex items-center gap-3 sm:gap-5">
+          <div class="flex flex-1 gap-2">
+            <label for="authenticator-d1" class="sr-only">Digit 1</label>
+            <input id="authenticator-d1" data-otp-box type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+            <label for="authenticator-d2" class="sr-only">Digit 2</label>
+            <input id="authenticator-d2" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+            <label for="authenticator-d3" class="sr-only">Digit 3</label>
+            <input id="authenticator-d3" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+          </div>
+          <div class="flex flex-1 gap-2">
+            <label for="authenticator-d4" class="sr-only">Digit 4</label>
+            <input id="authenticator-d4" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+            <label for="authenticator-d5" class="sr-only">Digit 5</label>
+            <input id="authenticator-d5" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+            <label for="authenticator-d6" class="sr-only">Digit 6</label>
+            <input id="authenticator-d6" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-14 w-full min-w-0 flex-1 rounded-xl border border-white/10 bg-[#0b1324] text-center text-2xl font-bold text-white caret-[#34d399] transition outline-none focus:border-[#34d399] focus:bg-[#0d1a2c] focus:shadow-[0_0_0_4px_rgba(52,211,153,.15),0_0_24px_-6px_#34d399]" />
+          </div>
+        </div>
+      </fieldset>
+
+      <label class="mt-5 flex cursor-pointer items-center gap-2.5 text-sm text-[#94a3b8] select-none">
+        <input type="checkbox" name="trust" class="size-4 cursor-pointer rounded accent-[#34d399] [color-scheme:dark] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34d399]" />
+        Trust this device for 30 days
+      </label>
+
+      <button type="submit" data-otp-submit
+        class="mt-6 w-full cursor-pointer rounded-xl bg-[#34d399] px-4 py-3.5 text-sm font-bold text-[#052e22] shadow-[0_10px_30px_-10px_#34d399] transition hover:bg-[#6ee7b7] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34d399] disabled:cursor-wait disabled:opacity-70">
+        Verify and continue
+      </button>
+      <p class="mt-5 text-center text-sm text-[#64748b]">
+        Lost your device? <a href="#" class="font-semibold text-[#34d399] hover:underline focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34d399]">Use a recovery code</a>
+      </p>
+    </form>
+  </div>
+</section>

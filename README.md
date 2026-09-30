@@ -36,5 +36,5 @@ The registry picks the folder up automatically. Previews render the snippet in a
 
 ## Roadmap
 
-- More screens: sign-up, magic link, one-time code, passkey, password reset
+- More screens and variants per category
 - Auth integrations: wiring guides for Better Auth, nuxt-auth-utils, Supabase, Clerk, Firebase and generic OIDC

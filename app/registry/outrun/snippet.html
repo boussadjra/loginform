@@ -1,0 +1,59 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[linear-gradient(to_bottom,#0b0120_0%,#1e0645_40%,#4a0d5e_58%,#7a1270_62%,#0b0120_62%)] px-4 py-14 font-['Orbitron',sans-serif] text-white">
+  <div aria-hidden="true" class="absolute inset-0 -z-10">
+    <div class="absolute inset-x-0 top-0 h-3/5 bg-[radial-gradient(#ffffff_1px,transparent_1.2px)] [background-size:48px_48px] opacity-40"></div>
+    <div class="absolute bottom-[38%] left-1/2 size-[24rem] -translate-x-1/2 rounded-full bg-[linear-gradient(to_bottom,#ffe45e_8%,#ff8a3d_48%,#ff2e97_88%)] shadow-[0_0_120px_20px_rgba(255,46,151,0.4)] [mask-image:linear-gradient(to_bottom,#000_0_46%,transparent_46%_49%,#000_49%_58%,transparent_58%_62%,#000_62%_70%,transparent_70%_75%,#000_75%_82%,transparent_82%_89%,#000_89%_100%)] sm:size-[34rem]"></div>
+    <div class="absolute inset-x-0 bottom-0 h-[38%] overflow-hidden">
+      <div class="absolute -bottom-[60%] -left-1/2 h-[260%] w-[200%] bg-[linear-gradient(#ff2e97_2px,transparent_2px),linear-gradient(90deg,#22d3ee_2px,transparent_2px)] [background-size:60px_40px] [background-position:center_bottom] [transform:perspective(220px)_rotateX(62deg)]"></div>
+      <div class="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-[#0b0120] to-transparent"></div>
+    </div>
+  </div>
+
+  <div class="w-full max-w-md">
+    <div class="rounded-2xl border border-[#22d3ee]/60 bg-[#0b0120]/75 p-6 shadow-[0_0_0_1px_rgba(255,46,151,0.35),0_0_40px_-6px_rgba(34,211,238,0.55),inset_0_0_30px_-10px_rgba(34,211,238,0.4)] backdrop-blur-md sm:p-8">
+      <p class="text-center font-['Monoton',sans-serif] text-4xl leading-none text-[#ff5cb3] [text-shadow:0_0_8px_#ff2e97,0_0_24px_#ff2e97] sm:text-5xl">Nightdrive</p>
+      <h1 class="mt-5 bg-[linear-gradient(to_bottom,#ffffff_0%,#c7ecff_45%,#1b1b3a_50%,#ff8ad8_56%,#ffffff_100%)] bg-clip-text text-center text-3xl font-bold tracking-[0.15em] text-transparent uppercase sm:text-4xl">Sign in</h1>
+
+      <p class="mt-2 text-center text-[10px] tracking-[0.45em] text-[#7df9ff] uppercase [text-shadow:0_0_10px_#22d3ee]">Synthwave radio · 24/7</p>
+
+      <form data-auth-form class="mt-7 space-y-5">
+        <div>
+          <label for="outrun-email" class="mb-2 block text-[11px] tracking-[0.3em] text-[#7df9ff] uppercase">Email</label>
+          <input id="outrun-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="player1@nightdrive.fm"
+            class="block w-full rounded-lg border border-[#ff2e97]/50 bg-[#150433] px-4 py-3 font-sans text-sm text-white outline-none placeholder:text-white/30 transition focus:border-[#22d3ee] focus:shadow-[0_0_18px_rgba(34,211,238,0.6)]" />
+        </div>
+        <div>
+          <div class="mb-2 flex items-center justify-between">
+            <label for="outrun-password" class="text-[11px] tracking-[0.3em] text-[#7df9ff] uppercase">Password</label>
+            <a href="#" class="font-sans text-xs text-[#ff8ad8] hover:text-white hover:[text-shadow:0_0_8px_#ff2e97] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-[#22d3ee]">Forgot password?</a>
+          </div>
+          <div class="relative">
+            <input id="outrun-password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••"
+              class="block w-full rounded-lg border border-[#ff2e97]/50 bg-[#150433] py-3 pr-12 pl-4 font-sans text-sm text-white outline-none placeholder:text-white/30 transition focus:border-[#22d3ee] focus:shadow-[0_0_18px_rgba(34,211,238,0.6)]" />
+            <button type="button" data-toggle-password aria-controls="outrun-password" aria-pressed="false" aria-label="Show password"
+              class="group absolute top-1/2 right-2 grid size-8 -translate-y-1/2 place-items-center rounded-md text-[#ff8ad8] hover:text-[#7df9ff] focus-visible:outline-2 focus-visible:outline-[#22d3ee] aria-pressed:text-[#7df9ff]">
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="size-[18px]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16" class="group-aria-pressed:hidden"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" data-pending="Loading…" data-done="Ready player 1"
+          class="w-full rounded-lg bg-[linear-gradient(90deg,#ff2e97,#b537f2,#22d3ee)] px-4 py-3.5 text-sm font-bold tracking-[0.3em] uppercase shadow-[0_0_24px_rgba(255,46,151,0.6)] transition hover:shadow-[0_0_36px_rgba(34,211,238,0.8)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#7df9ff] disabled:cursor-wait disabled:opacity-80">
+          <span data-label>Insert coin</span>
+        </button>
+      </form>
+
+      <div class="mt-6 grid grid-cols-2 gap-3 font-sans text-sm">
+        <button type="button" class="flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/5 py-2.5 transition hover:border-[#22d3ee] hover:bg-[#22d3ee]/10 focus-visible:outline-2 focus-visible:outline-[#22d3ee]">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="#1ed760"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.4a.6.6 0 0 1-.9.2c-2.4-1.5-5.4-1.8-9-1a.6.6 0 1 1-.3-1.2c3.9-.9 7.2-.5 9.9 1.1.3.2.4.6.3.9Zm1.2-2.7a.8.8 0 0 1-1.1.3c-2.7-1.7-6.9-2.2-10.2-1.2a.8.8 0 1 1-.4-1.5c3.7-1.1 8.4-.6 11.5 1.4.4.2.5.7.2 1Zm.1-2.8C14.7 9 9.4 8.8 6.3 9.8a.9.9 0 1 1-.5-1.8c3.5-1.1 9.4-.9 13.1 1.3a.9.9 0 0 1-1 1.6Z"/></svg>
+          Spotify
+        </button>
+        <button type="button" class="flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/5 py-2.5 transition hover:border-[#22d3ee] hover:bg-[#22d3ee]/10 focus-visible:outline-2 focus-visible:outline-[#22d3ee]">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="size-4" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.7-4.1ZM13.9 5c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-3 1.5-.6.7-1.2 1.9-1 3.1 1.1.1 2.3-.6 3-1.4Z"/></svg>
+          Apple
+        </button>
+      </div>
+
+      <p class="mt-6 text-center font-sans text-sm text-white/65">No account? <a href="#" class="font-semibold text-[#7df9ff] hover:[text-shadow:0_0_10px_#22d3ee] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-[#22d3ee]">Start your engine</a></p>
+    </div>
+  </div>
+</section>

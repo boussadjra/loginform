@@ -1,29 +1,72 @@
-<div class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#c61951] px-12 py-12 font-['Montserrat',sans-serif]">
+<div class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#c61951] px-11 py-12 font-['Montserrat',sans-serif] sm:px-12">
   <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[#f0f0f0] [clip-path:circle(79%_at_21%_3%)]"></div>
+  <div aria-hidden="true" class="absolute -right-24 -bottom-24 -z-10 size-72 rounded-full border-[28px] border-[#1b083d]/15"></div>
+  <div aria-hidden="true" class="absolute top-10 right-[12%] -z-10 hidden size-3 rotate-45 bg-[#f8f7aa] shadow-[24px_24px_0_#1b083d,48px_0_0_#f8f7aa] sm:block"></div>
 
   <div class="w-full max-w-xl bg-[#f0f0f0] shadow-[0_0_73px_#050505]">
-    <div class="bg-[#c61951] pt-3">
-      <h1 class="-ml-9 w-[70%] bg-[#1b083d] p-3 text-center text-3xl text-[#f8f7aa] sm:text-5xl [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)]">
-        Log in
-      </h1>
-      <div aria-hidden="true" class="-ml-9 size-9 bg-[#170731] [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+    <div class="flex items-start justify-between bg-[#c61951] pt-3">
+      <div class="w-[70%]">
+        <h1 class="-ml-9 bg-[#1b083d] p-3 text-center text-3xl text-[#f8f7aa] sm:text-5xl [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)]">
+          Log in
+        </h1>
+        <div aria-hidden="true" class="-ml-9 size-9 bg-[#170731] [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+      </div>
+      <p class="px-4 pt-3 text-right text-[10px] font-semibold tracking-[0.25em] text-[#f8f7aa] uppercase sm:px-6 sm:text-xs">Welcome<br>back</p>
     </div>
 
-    <form data-auth-form class="flex flex-col gap-5 px-8 pt-6 pb-12 sm:px-[15%]">
-      <label class="sr-only" for="classic-username">User name</label>
-      <input id="classic-username" name="username" type="text" autocomplete="username" required placeholder="User name"
-        class="rounded bg-transparent p-2.5 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none placeholder:text-[#1b083d]/50 focus:shadow-[1px_0_3px_#c61951]" />
+    <form data-auth-form novalidate class="flex flex-col gap-5 px-6 pt-6 pb-10 sm:px-[15%]">
+      <p data-auth-error role="alert" aria-live="polite" class="hidden rounded border-l-4 border-[#c61951] bg-[#c61951]/10 px-3 py-2 text-xs font-medium text-[#8f0f38]"></p>
 
-      <label class="sr-only" for="classic-password">Password</label>
-      <input id="classic-password" name="password" type="password" autocomplete="current-password" required placeholder="Password"
-        class="rounded bg-transparent p-2.5 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none placeholder:text-[#1b083d]/50 focus:shadow-[1px_0_3px_#c61951]" />
+      <div class="relative">
+        <label class="sr-only" for="classic-username">User name</label>
+        <svg aria-hidden="true" class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-[#1b083d]/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg>
+        <input id="classic-username" name="username" type="text" autocomplete="username" required placeholder="User name"
+          class="w-full rounded bg-transparent py-2.5 pr-3 pl-10 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none transition-shadow placeholder:text-[#1b083d]/50 focus:shadow-[0_0_0_2px_#c61951] aria-[invalid=true]:shadow-[0_0_0_2px_#c61951]" />
+      </div>
 
-      <a href="#" class="self-center text-xs text-[#1b083d] hover:underline">Forgot your password?</a>
+      <div class="relative">
+        <label class="sr-only" for="classic-password">Password</label>
+        <svg aria-hidden="true" class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-[#1b083d]/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="11" width="16" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
+        <input id="classic-password" name="password" type="password" autocomplete="current-password" required minlength="6" placeholder="Password"
+          class="w-full rounded bg-transparent py-2.5 pr-16 pl-10 text-[#1b083d] shadow-[0_0_2px_#1b083d] outline-none transition-shadow placeholder:text-[#1b083d]/50 focus:shadow-[0_0_0_2px_#c61951] aria-[invalid=true]:shadow-[0_0_0_2px_#c61951]" />
+        <button type="button" data-toggle-password aria-controls="classic-password" aria-pressed="false"
+          class="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded px-2 py-1 text-[11px] font-semibold tracking-wider text-[#1b083d]/70 uppercase hover:text-[#c61951] focus-visible:outline-2 focus-visible:outline-[#c61951]">
+          Show
+        </button>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-xs whitespace-nowrap text-[#1b083d]">
+        <label for="classic-remember" class="flex cursor-pointer items-center gap-2 select-none">
+          <input id="classic-remember" name="remember" type="checkbox" class="size-4 cursor-pointer rounded-sm accent-[#c61951]" />
+          Remember me
+        </label>
+        <a href="#" class="font-medium hover:text-[#c61951] hover:underline">Forgot your password?</a>
+      </div>
 
       <button type="submit"
-        class="cursor-pointer rounded bg-[#1b083d] p-3 text-base text-[#e2e2e2] shadow-[1px_2px_5px_#1b1b1b] transition hover:bg-[#2a1160] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c61951] disabled:cursor-wait disabled:opacity-70">
-        Login
+        class="group relative cursor-pointer overflow-hidden rounded bg-[#1b083d] p-3 text-base font-medium text-[#e2e2e2] shadow-[1px_2px_5px_#1b1b1b] transition hover:bg-[#2a1160] active:translate-y-px active:shadow-[0_1px_2px_#1b1b1b] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c61951] disabled:cursor-wait disabled:opacity-80">
+        <span aria-hidden="true" class="absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/10 transition-all duration-700 group-hover:left-[150%]"></span>
+        <span data-label class="relative">Login</span>
       </button>
+
+      <div class="flex items-center gap-3 text-[11px] tracking-[0.2em] text-[#1b083d]/50 uppercase">
+        <span class="h-px flex-1 bg-[#1b083d]/20"></span>or<span class="h-px flex-1 bg-[#1b083d]/20"></span>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <button type="button" class="flex cursor-pointer items-center justify-center gap-2 rounded p-2.5 text-sm font-medium text-[#1b083d] shadow-[0_0_2px_#1b083d] transition hover:bg-white hover:shadow-[0_0_0_2px_#1b083d] focus-visible:outline-2 focus-visible:outline-[#c61951]">
+          <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 0 1-2.4 3.6v3h3.9c2.2-2.1 3.5-5.1 3.5-8.8z" /><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.2-4 1.2-3.1 0-5.7-2.1-6.6-4.9h-4v3.1A12 12 0 0 0 12 24z" /><path fill="#FBBC05" d="M5.4 14.4a7.2 7.2 0 0 1 0-4.7V6.6h-4a12 12 0 0 0 0 10.8l4-3z" /><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8z" /></svg>
+          Google
+        </button>
+        <button type="button" class="flex cursor-pointer items-center justify-center gap-2 rounded p-2.5 text-sm font-medium text-[#1b083d] shadow-[0_0_2px_#1b083d] transition hover:bg-white hover:shadow-[0_0_0_2px_#1b083d] focus-visible:outline-2 focus-visible:outline-[#c61951]">
+          <svg aria-hidden="true" class="size-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z" /></svg>
+          GitHub
+        </button>
+      </div>
+
+      <p class="text-center text-xs text-[#1b083d]/80">
+        New here? <a href="#" class="font-semibold text-[#c61951] hover:underline">Create an account</a>
+      </p>
     </form>
   </div>
 </div>

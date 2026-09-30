@@ -1,0 +1,55 @@
+<section data-orbit data-state="idle" class="group relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#0b0618] px-4 py-12 font-['Sora',sans-serif] text-[#ede9fe]">
+  <div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_45%,#3b1d7a66_0%,transparent_40%),radial-gradient(circle_at_85%_10%,#86198f33_0%,transparent_35%)]"></div>
+  <div aria-hidden="true" class="absolute inset-0 -z-10 opacity-60 bg-[radial-gradient(#c4b5fd_1px,transparent_1px),radial-gradient(#ffffff_1px,transparent_1px),radial-gradient(#f0abfc_1.5px,transparent_1.5px)] bg-[size:113px_97px,173px_151px,263px_229px] bg-[position:0_0,61px_83px,137px_41px]"></div>
+
+  <div class="grid w-full max-w-5xl items-center gap-10 md:grid-cols-2 md:gap-6">
+    <div aria-hidden="true" class="relative mx-auto size-[18rem] sm:size-[24rem]">
+      <div class="absolute inset-0 rounded-full border border-[#8b5cf6]/20"></div>
+      <div class="absolute inset-[17%] rounded-full border border-dashed border-[#8b5cf6]/30"></div>
+      <div class="absolute inset-[33%] rounded-full border border-[#8b5cf6]/40"></div>
+
+      <div class="absolute inset-0 animate-spin [animation-duration:40s] group-data-[state=scanning]:[animation-duration:4s]">
+        <span class="absolute top-0 left-1/2 flex size-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-xl border border-[#8b5cf6]/40 bg-[#160c30] shadow-[0_0_20px_#8b5cf655] animate-spin [animation-direction:reverse] [animation-duration:40s] group-data-[state=scanning]:[animation-duration:4s]">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="size-5"><rect x="4" y="5" width="16" height="11" rx="1.5" /><path d="M2 19h20" /></svg>
+        </span>
+      </div>
+      <div class="absolute inset-[17%] animate-spin [animation-direction:reverse] [animation-duration:28s] group-data-[state=scanning]:[animation-duration:3s]">
+        <span class="absolute bottom-0 left-1/2 flex size-10 -translate-x-1/2 translate-y-1/2 items-center justify-center rounded-xl border border-[#f0abfc]/40 bg-[#160c30] shadow-[0_0_20px_#f0abfc44] animate-spin [animation-duration:28s] group-data-[state=scanning]:[animation-duration:3s]">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f0abfc" stroke-width="1.8" stroke-linecap="round" class="size-5"><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></svg>
+        </span>
+      </div>
+      <div class="absolute inset-[33%] animate-spin [animation-duration:18s] group-data-[state=scanning]:[animation-duration:2s]">
+        <span class="absolute top-1/2 left-0 flex size-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg border border-[#8b5cf6]/50 bg-[#160c30] shadow-[0_0_16px_#8b5cf666] animate-spin [animation-direction:reverse] [animation-duration:18s] group-data-[state=scanning]:[animation-duration:2s]">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="size-4"><rect x="8" y="9" width="8" height="13" rx="2" /><path d="M10 9V3h4v6M12 13v3" /></svg>
+        </span>
+      </div>
+
+      <div class="absolute inset-[41%] rounded-full bg-[#8b5cf6] opacity-30 blur-xl group-data-[state=scanning]:animate-ping"></div>
+      <div class="absolute inset-[41%] flex items-center justify-center rounded-full bg-[radial-gradient(circle_at_35%_30%,#ddd6fe,#8b5cf6_55%,#4c1d95)] shadow-[0_0_40px_#8b5cf6,inset_0_-6px_12px_#2e1065] transition duration-500 group-data-[state=success]:bg-[radial-gradient(circle_at_35%_30%,#f5d0fe,#d946ef_55%,#701a75)]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1e0b3d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="size-1/2 group-data-[state=success]:hidden"><circle cx="8" cy="15" r="4.5" /><path d="M11.5 11.5L20 3m-3.5 3.5l3 3m-6-0.5l2 2" /></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1e0b3d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="hidden size-1/2 group-data-[state=success]:block"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+      </div>
+    </div>
+
+    <div class="mx-auto w-full max-w-md rounded-3xl border border-white/10 bg-white/[0.03] p-7 shadow-[0_30px_80px_-30px_#8b5cf680] backdrop-blur-md sm:p-9">
+      <p class="text-xs font-medium tracking-[0.3em] text-[#a78bfa] uppercase">Halcyon</p>
+      <h1 class="mt-4 text-3xl leading-[1.15] font-semibold tracking-tight sm:text-[2.5rem]">One key.<br /><span class="bg-[linear-gradient(90deg,#c4b5fd,#f0abfc)] bg-clip-text text-transparent">Every device.</span></h1>
+      <p data-status aria-live="polite" class="mt-4 text-sm leading-relaxed text-[#a59bc4]">Your passkey syncs across your laptop, phone and security key. Pick any of them to sign in.</p>
+
+      <form data-passkey-form class="mt-7 space-y-3">
+        <label for="orbit-email" class="sr-only">Email</label>
+        <input id="orbit-email" name="email" type="email" autocomplete="username webauthn" placeholder="you@halcyon.space"
+          class="w-full rounded-2xl border border-white/10 bg-[#120a26] px-4 py-3.5 text-sm text-[#ede9fe] outline-none placeholder:text-[#6b5f8c] focus:border-[#8b5cf6] focus:ring-4 focus:ring-[#8b5cf6]/20" />
+        <button type="submit"
+          class="flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-[linear-gradient(90deg,#7c3aed,#a855f7,#d946ef)] px-4 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_#a855f7] transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c4b5fd] disabled:cursor-wait disabled:opacity-80">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4"><circle cx="8" cy="15" r="4" /><path d="M11 12l9-9m-3 3l3 3" /></svg>
+          <span data-label>Sign in with passkey</span>
+        </button>
+      </form>
+      <div class="mt-6 flex items-center justify-between gap-4 text-xs text-[#8b80ad]">
+        <a href="#" class="hover:text-[#ede9fe] focus-visible:outline-2 focus-visible:outline-[#c4b5fd]">Email me a code instead</a>
+        <a href="#" class="hover:text-[#ede9fe] focus-visible:outline-2 focus-visible:outline-[#c4b5fd]">Lost your devices?</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,67 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#efe8da] px-4 py-12 font-['Nunito_Sans',sans-serif] text-[#2f3a2c] sm:px-8">
+  <div aria-hidden="true" class="absolute -top-24 -left-24 -z-10 size-80 rounded-[62%_38%_46%_54%/60%_44%_56%_40%] bg-[#dfe3cf]"></div>
+  <div aria-hidden="true" class="absolute -right-20 -bottom-28 -z-10 size-96 rounded-[42%_58%_60%_40%/48%_40%_60%_52%] bg-[#ead6c4]"></div>
+
+  <div class="grid w-full max-w-4xl items-center gap-8 rounded-[40px] bg-[#faf6ee] p-5 shadow-[0_30px_60px_-30px_rgba(47,74,52,0.35)] sm:p-8 md:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] md:gap-12 md:p-10">
+    <div class="relative mx-auto h-80 w-full max-w-[18rem] overflow-hidden rounded-t-[9rem] rounded-b-[28px] ring-8 ring-[#efe8da] md:h-[29rem] md:max-w-none md:rounded-t-[11rem]">
+      <svg aria-hidden="true" class="absolute inset-0 size-full" viewBox="0 0 300 480" preserveAspectRatio="xMidYMax slice">
+        <defs><linearGradient id="grove-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d9b8"/><stop offset="1" stop-color="#f3e6cf"/></linearGradient></defs>
+        <rect width="300" height="480" fill="url(#grove-sky)"/>
+        <circle cx="188" cy="236" r="46" fill="#e08a5f"/>
+        <circle cx="188" cy="236" r="66" fill="#e08a5f" opacity="0.18"/>
+        <path d="M60 120h50M80 132h46M190 90h40M176 100h30" stroke="#fbeee0" stroke-width="6" stroke-linecap="round"/>
+        <path d="M0 270c40-30 80-38 120-22s70 20 110-6 60-20 70-14v252H0Z" fill="#b9c79e"/>
+        <path d="M0 320c50-34 100-20 150 0s100 14 150-18v178H0Z" fill="#8fa97a"/>
+        <path d="M0 370c60-10 90-40 150-30s90 34 150 20v120H0Z" fill="#5f7f55"/>
+        <path d="M0 420c70-24 130-20 180 0s90 10 120-4v64H0Z" fill="#2f4a34"/>
+        <g fill="#2f4a34">
+          <path d="M40 480c-6-60 4-110 30-150-4 50-8 100-10 150Z"/>
+          <path d="M62 360c26-6 44 6 50 26-24 4-42-6-50-26Z"/>
+          <path d="M58 400c-24-8-40 0-48 18 22 6 40-2 48-18Z"/>
+          <path d="M66 430c22-10 42-4 52 14-22 8-42 2-52-14Z"/>
+        </g>
+        <g fill="#c0643f">
+          <path d="M262 480c4-50-2-90-20-120 2 40 6 80 6 120Z"/>
+          <path d="M246 380c-20-2-32 10-34 26 18 0 30-10 34-26Z"/>
+          <path d="M250 420c20-6 34 2 38 18-18 4-32-4-38-18Z"/>
+        </g>
+        <path d="M92 196c8-6 14-6 20 0m6 0c6-6 12-6 18 0" stroke="#2f4a34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <form data-auth-form class="flex flex-col px-1 pb-2 md:px-0">
+      <a href="#" class="flex items-center gap-2 text-sm font-bold tracking-[0.18em] text-[#5f7f55] uppercase">
+        <svg aria-hidden="true" class="size-5" viewBox="0 0 20 20" fill="#5f7f55"><path d="M10 18C4 14 3 7 10 2c7 5 6 12 0 16Z"/><path d="M10 6v12" stroke="#faf6ee" stroke-width="1.5"/></svg>
+        Fernway
+      </a>
+      <h1 class="mt-5 font-['Fraunces',serif] text-4xl leading-[1.05] font-semibold tracking-tight text-[#2f4a34] sm:text-5xl">Grow something <em class="font-normal text-[#c0643f]">good</em> this season.</h1>
+      <p class="mt-4 text-[#5d6656]">A gentle garden journal for planting dates, watering reminders and the small wins.</p>
+
+      <div class="mt-7 flex flex-col gap-4">
+        <div class="flex flex-col gap-1.5">
+          <label for="grove-name" class="pl-4 text-sm font-semibold text-[#2f4a34]">Name</label>
+          <input id="grove-name" name="name" type="text" autocomplete="name" required placeholder="Wren Castillo" class="rounded-full border-2 border-[#e2dccd] bg-white px-5 py-3 outline-none transition placeholder:text-[#a9ad9d] focus:border-[#5f7f55] focus:ring-4 focus:ring-[#8fa97a]/25" />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="grove-email" class="pl-4 text-sm font-semibold text-[#2f4a34]">Email</label>
+          <input id="grove-email" name="email" type="email" autocomplete="email" required placeholder="wren@meadow.org" class="rounded-full border-2 border-[#e2dccd] bg-white px-5 py-3 outline-none transition placeholder:text-[#a9ad9d] focus:border-[#5f7f55] focus:ring-4 focus:ring-[#8fa97a]/25" />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label for="grove-password" class="pl-4 text-sm font-semibold text-[#2f4a34]">Password</label>
+          <input id="grove-password" name="password" type="password" autocomplete="new-password" required minlength="8" placeholder="At least 8 characters" class="rounded-full border-2 border-[#e2dccd] bg-white px-5 py-3 outline-none transition placeholder:text-[#a9ad9d] focus:border-[#5f7f55] focus:ring-4 focus:ring-[#8fa97a]/25" />
+        </div>
+      </div>
+
+      <label class="mt-5 flex cursor-pointer items-start gap-3 pl-1 text-sm text-[#5d6656]">
+        <input type="checkbox" name="newsletter" class="mt-0.5 size-4 shrink-0 cursor-pointer accent-[#5f7f55]" checked />
+        Send me the monthly planting calendar for my region.
+      </label>
+
+      <button type="submit" class="mt-7 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#c0643f] px-6 py-3.5 font-bold text-[#faf6ee] shadow-[0_10px_24px_-10px_rgba(192,100,63,0.8)] transition hover:bg-[#a8532f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c0643f] disabled:cursor-wait disabled:opacity-70">
+        Plant my first seed
+        <svg aria-hidden="true" class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 14C3 11 2 6 8 2c6 4 5 9 0 12Z"/></svg>
+      </button>
+      <p class="mt-6 text-center text-sm text-[#5d6656]">Already tending a garden? <a href="#" class="font-bold text-[#2f4a34] underline decoration-[#8fa97a] decoration-2 underline-offset-4">Sign in</a></p>
+    </form>
+  </div>
+</section>

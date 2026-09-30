@@ -1,0 +1,81 @@
+<section class="flex min-h-screen items-center justify-center bg-[#0c0c0c] bg-[radial-gradient(ellipse_at_50%_0%,#1f1f1f_0,transparent_60%)] px-4 py-12 font-['IBM_Plex_Mono',monospace] text-[#f5f5f5]">
+  <div class="w-full max-w-2xl rounded-2xl border border-[#262626] bg-[#141414] p-4 shadow-[0_40px_80px_-30px_#000,inset_0_1px_0_rgba(255,255,255,.05)] sm:p-8">
+    <header class="flex items-center justify-between border-b border-[#262626] pb-4">
+      <div class="flex items-center gap-3">
+        <span class="flex size-9 items-center justify-center rounded bg-[#ffcc00] text-black">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="size-5 rotate-45"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z" /></svg>
+        </span>
+        <div>
+          <p class="text-lg leading-none font-bold tracking-[.2em] text-[#ffcc00] sm:text-xl">DEPARTURES</p>
+          <p class="mt-1 text-[10px] tracking-[.25em] text-[#8a8a8a]">AEROLUX · TERMINAL 2</p>
+        </div>
+      </div>
+      <p class="text-2xl font-bold text-[#f5f5f5] tabular-nums">09:41</p>
+    </header>
+
+    <div class="mt-5 flex flex-wrap items-end gap-x-6 gap-y-4" aria-label="Flight AX204 to Lisbon, gate B14, boarding">
+      <div>
+        <p class="mb-1.5 text-[10px] font-semibold tracking-[.25em] text-[#8a8a8a]">FLIGHT</p>
+        <div class="flex gap-[3px] *:relative *:flex *:h-9 *:w-6 *:items-center *:justify-center *:rounded-[3px] *:bg-[linear-gradient(180deg,#2c2c2c_0_50%,#212121_50%_100%)] *:text-lg *:font-bold *:shadow-[inset_0_1px_0_rgba(255,255,255,.07)] *:after:absolute *:after:inset-x-0 *:after:top-1/2 *:after:h-px *:after:bg-black sm:*:h-10 sm:*:w-7 sm:*:text-xl text-[#f5f5f5]"><span>A</span><span>X</span><span>2</span><span>0</span><span>4</span></div>
+      </div>
+      <div>
+        <p class="mb-1.5 text-[10px] font-semibold tracking-[.25em] text-[#8a8a8a]">DESTINATION</p>
+        <div class="flex gap-[3px] *:relative *:flex *:h-9 *:w-6 *:items-center *:justify-center *:rounded-[3px] *:bg-[linear-gradient(180deg,#2c2c2c_0_50%,#212121_50%_100%)] *:text-lg *:font-bold *:shadow-[inset_0_1px_0_rgba(255,255,255,.07)] *:after:absolute *:after:inset-x-0 *:after:top-1/2 *:after:h-px *:after:bg-black sm:*:h-10 sm:*:w-7 sm:*:text-xl text-[#f5f5f5]"><span>L</span><span>I</span><span>S</span><span>B</span><span>O</span><span>N</span></div>
+      </div>
+      <div>
+        <p class="mb-1.5 text-[10px] font-semibold tracking-[.25em] text-[#8a8a8a]">GATE</p>
+        <div class="flex gap-[3px] *:relative *:flex *:h-9 *:w-6 *:items-center *:justify-center *:rounded-[3px] *:bg-[linear-gradient(180deg,#2c2c2c_0_50%,#212121_50%_100%)] *:text-lg *:font-bold *:shadow-[inset_0_1px_0_rgba(255,255,255,.07)] *:after:absolute *:after:inset-x-0 *:after:top-1/2 *:after:h-px *:after:bg-black sm:*:h-10 sm:*:w-7 sm:*:text-xl text-[#ffcc00]"><span>B</span><span>1</span><span>4</span></div>
+      </div>
+      <p class="flex items-center gap-2 pb-2 text-xs font-bold tracking-[.2em] text-[#4ade80]">
+        <span class="relative flex size-2"><span class="absolute inset-0 animate-ping rounded-full bg-[#4ade80]"></span><span class="relative size-2 rounded-full bg-[#4ade80]"></span></span>
+        BOARDING
+      </p>
+    </div>
+
+    <form data-otp="split-flap" class="mt-8 rounded-xl border border-[#262626] bg-[#0f0f0f] p-4 sm:p-6" novalidate>
+      <fieldset>
+        <legend class="text-xs font-bold tracking-[.25em] text-[#ffcc00]">ENTER BOARDING CODE</legend>
+        <p class="mt-1 text-xs text-[#8a8a8a]">We sent a 6-digit code to +44 •••• 8812</p>
+        <div class="mt-4 flex gap-1.5 sm:gap-2.5">
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d1" class="sr-only">Digit 1</label>
+            <input id="split-flap-d1" data-otp-box type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d2" class="sr-only">Digit 2</label>
+            <input id="split-flap-d2" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d3" class="sr-only">Digit 3</label>
+            <input id="split-flap-d3" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d4" class="sr-only">Digit 4</label>
+            <input id="split-flap-d4" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d5" class="sr-only">Digit 5</label>
+            <input id="split-flap-d5" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+          <div class="relative h-20 min-w-0 flex-1 rounded-md bg-[linear-gradient(180deg,#2e2e2e_0_50%,#1f1f1f_50%_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,.08),0_3px_0_#000] transition after:pointer-events-none after:absolute after:inset-x-0 after:top-1/2 after:h-[2px] after:-translate-y-1/2 after:bg-black has-[input:focus]:ring-2 has-[input:focus]:ring-[#ffcc00] sm:h-24">
+            <label for="split-flap-d6" class="sr-only">Digit 6</label>
+            <input id="split-flap-d6" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required
+              class="h-full w-full bg-transparent text-center text-4xl font-bold text-[#ffcc00] caret-transparent outline-none sm:text-5xl" />
+          </div>
+        </div>
+      </fieldset>
+      <div class="mt-6 flex flex-col-reverse items-stretch gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <button type="button" class="cursor-pointer text-xs font-semibold tracking-[.2em] text-[#8a8a8a] transition hover:text-[#f5f5f5] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffcc00]">RESEND CODE</button>
+        <button type="submit" data-otp-submit
+          class="cursor-pointer rounded-md bg-[#ffcc00] px-6 py-3.5 text-sm font-bold tracking-[.2em] text-black shadow-[0_3px_0_#8a6d00] transition hover:bg-[#ffd633] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffcc00] active:translate-y-0.5 active:shadow-none disabled:cursor-wait disabled:opacity-80">
+          CHECK IN →
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

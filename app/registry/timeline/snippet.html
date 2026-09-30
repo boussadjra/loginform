@@ -1,0 +1,62 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#f4f0ff] px-4 py-12 font-['Plus_Jakarta_Sans',sans-serif] text-[#2a2250]">
+  <div aria-hidden="true" class="absolute -top-40 -left-32 -z-10 size-[28rem] rounded-full bg-[#dcd0ff] blur-3xl"></div>
+  <div aria-hidden="true" class="absolute -right-24 -bottom-40 -z-10 size-[26rem] rounded-full bg-[#ffd9f1] blur-3xl"></div>
+
+  <div class="w-full max-w-lg rounded-[28px] border border-white bg-white/80 p-6 shadow-[0_30px_60px_-30px_#5b3fd466] backdrop-blur sm:p-10">
+    <div class="flex items-center justify-between gap-4">
+      <h1 class="text-2xl font-extrabold tracking-tight sm:text-[1.7rem]">Recover your account</h1>
+      <span data-tl-count class="shrink-0 rounded-full bg-[#efeaff] px-3 py-1 text-xs font-bold text-[#6a4ae8]">Step 1 of 3</span>
+    </div>
+    <p class="mt-2 text-sm text-[#6b6390]">Three quick steps and you're back in Lumen.</p>
+
+    <ol data-tl class="mt-8">
+      <li data-tl-step data-state="current" class="group relative pb-8 pl-12 before:absolute before:top-9 before:bottom-1 before:left-[15px] before:w-0.5 before:rounded-full before:bg-[#e6e0fb] data-[state=done]:before:bg-[#7c5cff]">
+        <span class="absolute top-0 left-0 grid size-8 place-items-center rounded-full border-2 border-[#e0d9fa] bg-white text-sm font-bold text-[#a59cc8] transition group-data-[state=current]:border-[#7c5cff] group-data-[state=current]:text-[#7c5cff] group-data-[state=current]:shadow-[0_0_0_6px_#7c5cff26] group-data-[state=done]:border-[#7c5cff] group-data-[state=done]:bg-[#7c5cff] group-data-[state=done]:text-white">
+          <span class="group-data-[state=done]:hidden">1</span>
+          <svg aria-hidden="true" viewBox="0 0 16 16" class="hidden size-4 group-data-[state=done]:block" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7" /></svg>
+        </span>
+        <h2 class="pt-1 font-bold text-[#a59cc8] group-data-[state=current]:text-[#2a2250] group-data-[state=done]:text-[#2a2250]">Request <span class="ml-1 hidden text-sm font-medium text-[#7c5cff] group-data-[state=done]:inline">· code sent</span></h2>
+        <p class="mt-0.5 text-sm text-[#8d85b3] group-data-[state=current]:hidden group-data-[state=done]:hidden">We email you a 6-digit code.</p>
+        <form data-tl-form class="mt-4 hidden flex-col gap-3 group-data-[state=current]:flex">
+          <label for="timeline-email" class="text-sm font-semibold">Account email</label>
+          <input id="timeline-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="lena@lumen.studio"
+            class="w-full rounded-2xl border border-[#e0d9fa] bg-[#faf8ff] px-4 py-3 text-base outline-none transition placeholder:text-[#b5aed6] focus:border-[#7c5cff] focus:bg-white focus:ring-4 focus:ring-[#7c5cff]/15" />
+          <button type="submit" class="cursor-pointer rounded-2xl bg-[#7c5cff] px-5 py-3 font-bold text-white shadow-[0_10px_20px_-8px_#7c5cff] transition hover:bg-[#6a4ae8] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#7c5cff] disabled:cursor-wait disabled:opacity-70">Send code</button>
+        </form>
+      </li>
+
+      <li data-tl-step data-state="upcoming" class="group relative pb-8 pl-12 before:absolute before:top-9 before:bottom-1 before:left-[15px] before:w-0.5 before:rounded-full before:bg-[#e6e0fb] data-[state=done]:before:bg-[#7c5cff]">
+        <span class="absolute top-0 left-0 grid size-8 place-items-center rounded-full border-2 border-[#e0d9fa] bg-white text-sm font-bold text-[#a59cc8] transition group-data-[state=current]:border-[#7c5cff] group-data-[state=current]:text-[#7c5cff] group-data-[state=current]:shadow-[0_0_0_6px_#7c5cff26] group-data-[state=done]:border-[#7c5cff] group-data-[state=done]:bg-[#7c5cff] group-data-[state=done]:text-white">
+          <span class="group-data-[state=done]:hidden">2</span>
+          <svg aria-hidden="true" viewBox="0 0 16 16" class="hidden size-4 group-data-[state=done]:block" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7" /></svg>
+        </span>
+        <h2 class="pt-1 font-bold text-[#a59cc8] group-data-[state=current]:text-[#2a2250] group-data-[state=done]:text-[#2a2250]">Verify <span class="ml-1 hidden text-sm font-medium text-[#7c5cff] group-data-[state=done]:inline">· confirmed</span></h2>
+        <p class="mt-0.5 text-sm text-[#8d85b3] group-data-[state=current]:hidden group-data-[state=done]:hidden">Prove it's you with that code.</p>
+        <form data-tl-form class="mt-4 hidden flex-col gap-3 group-data-[state=current]:flex">
+          <label for="timeline-code" class="text-sm font-semibold">6-digit code</label>
+          <input id="timeline-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="\d{6}" maxlength="6" required placeholder="••••••"
+            class="w-full rounded-2xl border border-[#e0d9fa] bg-[#faf8ff] px-4 py-3 text-center text-2xl font-bold tracking-[0.6em] indent-[0.6em] outline-none transition placeholder:text-[#c9c2e6] focus:border-[#7c5cff] focus:bg-white focus:ring-4 focus:ring-[#7c5cff]/15" />
+          <button type="submit" class="cursor-pointer rounded-2xl bg-[#7c5cff] px-5 py-3 font-bold text-white shadow-[0_10px_20px_-8px_#7c5cff] transition hover:bg-[#6a4ae8] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#7c5cff] disabled:cursor-wait disabled:opacity-70">Verify code</button>
+        </form>
+      </li>
+
+      <li data-tl-step data-state="upcoming" class="group relative pl-12">
+        <span class="absolute top-0 left-0 grid size-8 place-items-center rounded-full border-2 border-[#e0d9fa] bg-white text-sm font-bold text-[#a59cc8] transition group-data-[state=current]:border-[#7c5cff] group-data-[state=current]:text-[#7c5cff] group-data-[state=current]:shadow-[0_0_0_6px_#7c5cff26] group-data-[state=done]:border-[#7c5cff] group-data-[state=done]:bg-[#7c5cff] group-data-[state=done]:text-white">
+          <span class="group-data-[state=done]:hidden">3</span>
+          <svg aria-hidden="true" viewBox="0 0 16 16" class="hidden size-4 group-data-[state=done]:block" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7" /></svg>
+        </span>
+        <h2 class="pt-1 font-bold text-[#a59cc8] group-data-[state=current]:text-[#2a2250] group-data-[state=done]:text-[#2a2250]">Reset <span class="ml-1 hidden text-sm font-medium text-[#7c5cff] group-data-[state=done]:inline">· all set</span></h2>
+        <p class="mt-0.5 text-sm text-[#8d85b3] group-data-[state=current]:hidden group-data-[state=done]:hidden">Choose a fresh password.</p>
+        <form data-tl-form class="mt-4 hidden flex-col gap-3 group-data-[state=current]:flex">
+          <label for="timeline-password" class="text-sm font-semibold">New password</label>
+          <input id="timeline-password" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="At least 8 characters"
+            class="w-full rounded-2xl border border-[#e0d9fa] bg-[#faf8ff] px-4 py-3 text-base outline-none transition placeholder:text-[#b5aed6] focus:border-[#7c5cff] focus:bg-white focus:ring-4 focus:ring-[#7c5cff]/15" />
+          <button type="submit" class="cursor-pointer rounded-2xl bg-[#7c5cff] px-5 py-3 font-bold text-white shadow-[0_10px_20px_-8px_#7c5cff] transition hover:bg-[#6a4ae8] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#7c5cff] disabled:cursor-wait disabled:opacity-70">Reset password</button>
+        </form>
+        <p class="mt-3 hidden rounded-2xl bg-[#efeaff] px-4 py-3 text-sm font-semibold text-[#5b3fd4] group-data-[state=done]:block">You're back in. Signing you in to Lumen…</p>
+      </li>
+    </ol>
+
+    <p class="mt-8 border-t border-[#eee9fc] pt-5 text-center text-sm text-[#6b6390]">Remembered it? <a href="#" class="font-bold text-[#6a4ae8] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7c5cff]">Back to sign in</a></p>
+  </div>
+</section>

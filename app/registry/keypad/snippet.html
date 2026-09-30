@@ -1,0 +1,73 @@
+<section class="flex min-h-screen items-center justify-center bg-[#0b0a12] bg-[radial-gradient(ellipse_at_20%_10%,#2e1065_0,transparent_45%),radial-gradient(ellipse_at_85%_90%,#1e1b4b_0,transparent_50%)] px-4 py-10 font-['Outfit',sans-serif] text-[#f5f3ff]">
+  <form data-otp="keypad" class="w-full max-w-[340px] rounded-[44px] border border-white/10 bg-[#13111d]/90 px-7 pt-6 pb-8 shadow-[0_40px_80px_-20px_rgba(0,0,0,.8),inset_0_1px_0_rgba(255,255,255,.06)] backdrop-blur" novalidate>
+    <div aria-hidden="true" class="mx-auto h-6 w-24 rounded-full bg-black"></div>
+
+    <div class="mt-8 flex flex-col items-center text-center">
+      <div class="flex size-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#a78bfa,#6d28d9)] shadow-[0_10px_30px_-8px_#7c3aed]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6 text-white">
+          <rect x="5" y="11" width="14" height="9" rx="2" />
+          <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+        </svg>
+      </div>
+      <h1 class="mt-4 text-xl font-medium">Enter your code</h1>
+      <p data-keypad-hint class="mt-1 text-sm text-white/55">Sent to your phone ending in 0427</p>
+    </div>
+
+    <div class="relative mx-auto mt-7 flex w-fit justify-center gap-4 rounded-full px-4 py-3 has-[input:focus-visible]:ring-2 has-[input:focus-visible]:ring-[#a78bfa]/60">
+      <label for="keypad-code" class="sr-only">6-digit code</label>
+      <input id="keypad-code" data-keypad-input type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required
+        class="absolute inset-0 cursor-pointer rounded-full bg-transparent text-transparent caret-transparent outline-none selection:bg-transparent" />
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+      <span data-keypad-dot aria-hidden="true" class="size-3.5 rounded-full border-2 border-white/35 transition duration-200"></span>
+    </div>
+
+    <div class="mt-7 grid grid-cols-3 gap-x-5 gap-y-4">
+      <button type="button" data-key="1" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">1</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">&nbsp;</span>
+      </button>
+      <button type="button" data-key="2" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">2</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">ABC</span>
+      </button>
+      <button type="button" data-key="3" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">3</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">DEF</span>
+      </button>
+      <button type="button" data-key="4" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">4</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">GHI</span>
+      </button>
+      <button type="button" data-key="5" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">5</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">JKL</span>
+      </button>
+      <button type="button" data-key="6" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">6</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">MNO</span>
+      </button>
+      <button type="button" data-key="7" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">7</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">PQRS</span>
+      </button>
+      <button type="button" data-key="8" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">8</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">TUV</span>
+      </button>
+      <button type="button" data-key="9" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">9</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">WXYZ</span>
+      </button>
+      <span aria-hidden="true"></span>
+      <button type="button" data-key="0" class="flex aspect-square w-full max-w-[76px] cursor-pointer flex-col items-center justify-center justify-self-center rounded-full bg-white/[.07] text-[#f5f3ff] ring-1 ring-white/5 transition select-none hover:bg-white/[.12] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95 active:bg-[#a78bfa]/40">
+        <span class="text-[28px] leading-none font-light">0</span><span class="mt-1 text-[9px] font-semibold tracking-[.2em] text-white/45">+</span>
+      </button>
+      <button type="button" data-key="del" aria-label="Delete last digit" class="flex aspect-square w-full max-w-[76px] cursor-pointer items-center justify-center justify-self-center rounded-full text-white/70 transition hover:bg-white/[.07] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#a78bfa] active:scale-95">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="size-7">
+          <path d="M21 5H9l-6 7 6 7h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z" />
+          <path d="m12 9 6 6m0-6-6 6" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mt-7 flex items-center justify-between text-sm">
+      <button type="button" class="cursor-pointer text-white/55 transition hover:text-white focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#a78bfa]">Resend code</button>
+      <button type="submit" class="cursor-pointer font-medium text-[#c4b5fd] transition hover:text-white focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#a78bfa]">Verify</button>
+    </div>
+  </form>
+</section>

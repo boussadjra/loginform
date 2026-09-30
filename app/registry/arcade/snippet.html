@@ -1,0 +1,57 @@
+<section class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#05010d] bg-[radial-gradient(ellipse_at_center,#1a0b2e_0,#05010d_70%)] px-4 py-12 font-['Press_Start_2P',monospace] text-[#e0f2fe]">
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-20 bg-[repeating-linear-gradient(0deg,rgba(0,0,0,.45)_0_1px,transparent_1px_3px)]"></div>
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(0,0,0,.75)_100%)]"></div>
+
+  <div class="w-full max-w-xl bg-black p-5 shadow-[0_-6px_0_0_#22d3ee,0_6px_0_0_#22d3ee,-6px_0_0_0_#22d3ee,6px_0_0_0_#22d3ee,0_0_60px_10px_rgba(34,211,238,.25)] sm:p-10">
+    <div class="flex justify-between gap-2 text-[8px] leading-relaxed sm:text-[10px]">
+      <p><span class="text-[#f87171]">1UP</span><br />004820</p>
+      <p class="text-center"><span class="text-[#f87171]">HI-SCORE</span><br />999990</p>
+      <p class="text-right"><span class="text-[#f87171]">TIME</span><br /><span data-arcade-time>30</span></p>
+    </div>
+
+    <h1 class="mt-8 text-center text-2xl leading-tight text-[#22d3ee] [text-shadow:3px_3px_0_#c026d3,0_0_18px_rgba(34,211,238,.8)] sm:text-4xl">ENTER<br />CODE</h1>
+    <p class="mt-5 text-center text-[8px] leading-loose text-[#facc15] sm:text-[10px]">A 6-DIGIT CODE WAS BEAMED<br />TO P1@PIXELPOST.GG</p>
+
+    <ol aria-label="High scores" class="mx-auto mt-6 grid w-fit gap-2 text-[8px] sm:text-[10px]">
+      <li class="flex gap-4 text-[#f0abfc]"><span>1ST</span><span>ACE</span><span>999990</span></li>
+      <li class="flex gap-4 text-[#a5f3fc]"><span>2ND</span><span>ZED</span><span>874300</span></li>
+      <li class="flex gap-4 text-[#facc15]"><span>3RD</span><span>YOU</span><span class="animate-pulse">??????</span></li>
+    </ol>
+
+    <form data-otp="arcade" class="mt-8" novalidate>
+      <fieldset>
+        <legend class="sr-only">6-digit code</legend>
+        <div class="flex gap-3 px-1 sm:gap-5">
+          <label for="arcade-d1" class="sr-only">Digit 1</label>
+          <input id="arcade-d1" data-otp-box type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+          <label for="arcade-d2" class="sr-only">Digit 2</label>
+          <input id="arcade-d2" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+          <label for="arcade-d3" class="sr-only">Digit 3</label>
+          <input id="arcade-d3" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+          <label for="arcade-d4" class="sr-only">Digit 4</label>
+          <input id="arcade-d4" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+          <label for="arcade-d5" class="sr-only">Digit 5</label>
+          <input id="arcade-d5" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+          <label for="arcade-d6" class="sr-only">Digit 6</label>
+          <input id="arcade-d6" data-otp-box type="text" inputmode="numeric" maxlength="1" pattern="[0-9]*" required placeholder="_"
+            class="h-12 w-full min-w-0 flex-1 bg-black text-center text-lg text-[#facc15] caret-transparent shadow-[0_-4px_0_0_#f0abfc,0_4px_0_0_#f0abfc,-4px_0_0_0_#f0abfc,4px_0_0_0_#f0abfc] outline-none [text-shadow:0_0_8px_#facc15] placeholder:text-[#f0abfc]/60 focus:bg-[#1a0b2e] focus:shadow-[0_-4px_0_0_#22d3ee,0_4px_0_0_#22d3ee,-4px_0_0_0_#22d3ee,4px_0_0_0_#22d3ee,0_0_24px_4px_rgba(34,211,238,.45)] focus:placeholder:text-[#22d3ee] sm:h-16 sm:text-2xl" />
+        </div>
+      </fieldset>
+
+      <button type="submit" data-otp-submit
+        class="mx-auto mt-10 block cursor-pointer bg-[#4ade80] px-6 py-4 text-xs text-black shadow-[0_-4px_0_0_#052e16,0_4px_0_0_#052e16,-4px_0_0_0_#052e16,4px_0_0_0_#052e16,inset_-4px_-4px_0_0_#16a34a] transition hover:bg-[#86efac] focus-visible:outline-4 focus-visible:outline-offset-8 focus-visible:outline-[#facc15] active:translate-y-1 disabled:cursor-wait sm:text-sm">
+        PRESS START
+      </button>
+      <div class="mt-8 flex items-center justify-between gap-3 text-[8px] sm:text-[10px]">
+        <button type="button" data-arcade-resend class="cursor-pointer text-[#a5f3fc] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#facc15]"><svg aria-hidden="true" viewBox="0 0 4 7" class="mr-1 inline h-[1em] w-[.6em] fill-current align-[-.1em]"><path d="M0 0h1v1h1v1h1v1h1v1H3v1H2v1H1v1H0Z" /></svg>RESEND</button>
+        <p class="animate-pulse text-[#f0abfc]">INSERT COIN</p>
+        <p class="text-[#a5f3fc]">CREDIT 01</p>
+      </div>
+    </form>
+  </div>
+</section>

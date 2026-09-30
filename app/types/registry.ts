@@ -5,6 +5,7 @@ export const UI_CATEGORIES = {
   'otp': 'One-time code',
   'passkey': 'Passkey',
   'reset': 'Password reset',
+  'social': 'Social login',
 } as const
 
 export type UiCategory = keyof typeof UI_CATEGORIES

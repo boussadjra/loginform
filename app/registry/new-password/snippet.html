@@ -1,0 +1,75 @@
+<section class="flex min-h-screen items-center justify-center bg-[#f3f5f9] bg-[radial-gradient(#d9dee8_1px,transparent_1px)] bg-size-[22px_22px] px-4 py-12 font-['Manrope',sans-serif] text-[#0f172a]">
+  <div class="w-full max-w-md rounded-3xl border border-[#e3e7ef] bg-white p-6 shadow-[0_1px_2px_#0f172a0d,0_20px_50px_-24px_#0f172a40] sm:p-9">
+    <div class="mb-6 flex items-center gap-3">
+      <span class="grid size-11 place-items-center rounded-2xl bg-[#0f172a] text-white">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4" /><path d="M10.8 12.2 20 3M16 7l3 3M14 9l2 2" /></svg>
+      </span>
+      <span class="text-sm font-semibold text-[#64748b]">Ledgerly · Account security</span>
+    </div>
+    <h1 class="text-[1.75rem] leading-tight font-extrabold tracking-tight">Set a new password</h1>
+    <p class="mt-2 text-[15px] text-[#64748b]">Resetting for <span class="font-semibold text-[#0f172a]">maya@ledgerly.app</span>. Choose something you haven't used here before.</p>
+
+    <form data-np-form class="mt-7 flex flex-col gap-5">
+      <div>
+        <label for="new-password-new" class="mb-1.5 block text-sm font-bold">New password</label>
+        <div class="relative">
+          <input id="new-password-new" name="password" type="password" autocomplete="new-password" required aria-describedby="new-password-rules"
+            class="w-full rounded-xl border border-[#d6dce6] bg-[#f8fafc] py-3 pr-12 pl-4 text-base outline-none transition focus:border-[#0f172a] focus:bg-white focus:ring-4 focus:ring-[#0f172a]/8" />
+          <button type="button" data-np-toggle="new-password-new" aria-pressed="false" aria-label="Show password"
+            class="group absolute inset-y-0 right-1.5 my-auto grid size-9 cursor-pointer place-items-center rounded-lg text-[#64748b] transition hover:bg-[#eef2f7] hover:text-[#0f172a] focus-visible:outline-2 focus-visible:outline-[#0f172a]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 group-aria-pressed:hidden" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-5 group-aria-pressed:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A17 17 0 0 0 2 12s3.5 7 10 7a9.8 9.8 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2" /></svg>
+          </button>
+        </div>
+        <div aria-hidden="true" class="mt-3 grid grid-cols-4 gap-1.5">
+          <span data-np-bar class="h-1.5 rounded-full bg-[#e5e9f0] transition-colors duration-300"></span>
+          <span data-np-bar class="h-1.5 rounded-full bg-[#e5e9f0] transition-colors duration-300"></span>
+          <span data-np-bar class="h-1.5 rounded-full bg-[#e5e9f0] transition-colors duration-300"></span>
+          <span data-np-bar class="h-1.5 rounded-full bg-[#e5e9f0] transition-colors duration-300"></span>
+        </div>
+      </div>
+
+      <div>
+        <label for="new-password-confirm" class="mb-1.5 block text-sm font-bold">Confirm password</label>
+        <div class="relative">
+          <input id="new-password-confirm" name="confirm" type="password" autocomplete="new-password" required
+            class="w-full rounded-xl border border-[#d6dce6] bg-[#f8fafc] py-3 pr-12 pl-4 text-base outline-none transition focus:border-[#0f172a] focus:bg-white focus:ring-4 focus:ring-[#0f172a]/8" />
+          <button type="button" data-np-toggle="new-password-confirm" aria-pressed="false" aria-label="Show password"
+            class="group absolute inset-y-0 right-1.5 my-auto grid size-9 cursor-pointer place-items-center rounded-lg text-[#64748b] transition hover:bg-[#eef2f7] hover:text-[#0f172a] focus-visible:outline-2 focus-visible:outline-[#0f172a]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="size-5 group-aria-pressed:hidden" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24" class="hidden size-5 group-aria-pressed:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A17 17 0 0 0 2 12s3.5 7 10 7a9.8 9.8 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2" /></svg>
+          </button>
+        </div>
+      </div>
+
+      <ul id="new-password-rules" class="grid gap-2.5 rounded-2xl bg-[#f8fafc] p-4 text-sm font-semibold text-[#64748b] sm:grid-cols-2">
+        <li data-np-rule="length" class="group flex items-center gap-2.5 transition-colors data-ok:text-[#047857]">
+          <span class="grid size-5 shrink-0 place-items-center rounded-full border-2 border-[#cbd3df] transition group-data-ok:border-[#10b981] group-data-ok:bg-[#10b981]">
+            <svg aria-hidden="true" viewBox="0 0 12 12" class="size-3 scale-0 text-white transition group-data-ok:scale-100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.5l4.5-5" /></svg>
+          </span>12+ characters
+        </li>
+        <li data-np-rule="number" class="group flex items-center gap-2.5 transition-colors data-ok:text-[#047857]">
+          <span class="grid size-5 shrink-0 place-items-center rounded-full border-2 border-[#cbd3df] transition group-data-ok:border-[#10b981] group-data-ok:bg-[#10b981]">
+            <svg aria-hidden="true" viewBox="0 0 12 12" class="size-3 scale-0 text-white transition group-data-ok:scale-100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.5l4.5-5" /></svg>
+          </span>One number
+        </li>
+        <li data-np-rule="symbol" class="group flex items-center gap-2.5 transition-colors data-ok:text-[#047857]">
+          <span class="grid size-5 shrink-0 place-items-center rounded-full border-2 border-[#cbd3df] transition group-data-ok:border-[#10b981] group-data-ok:bg-[#10b981]">
+            <svg aria-hidden="true" viewBox="0 0 12 12" class="size-3 scale-0 text-white transition group-data-ok:scale-100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.5l4.5-5" /></svg>
+          </span>One symbol (!@#…)
+        </li>
+        <li data-np-rule="match" class="group flex items-center gap-2.5 transition-colors data-ok:text-[#047857]">
+          <span class="grid size-5 shrink-0 place-items-center rounded-full border-2 border-[#cbd3df] transition group-data-ok:border-[#10b981] group-data-ok:bg-[#10b981]">
+            <svg aria-hidden="true" viewBox="0 0 12 12" class="size-3 scale-0 text-white transition group-data-ok:scale-100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.5l4.5-5" /></svg>
+          </span>Passwords match
+        </li>
+      </ul>
+
+      <button type="submit" disabled
+        class="cursor-pointer rounded-xl bg-[#0f172a] px-5 py-3.5 font-bold text-white transition hover:bg-[#1e293b] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#0f172a] disabled:cursor-not-allowed disabled:bg-[#cbd3df] disabled:text-[#64748b]">
+        Update password
+      </button>
+      <p data-np-status role="status" class="-mt-1 text-center text-sm font-semibold text-[#047857] empty:hidden"></p>
+    </form>
+  </div>
+</section>

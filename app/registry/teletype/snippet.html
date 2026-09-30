@@ -1,0 +1,43 @@
+<section class="flex min-h-screen items-center justify-center bg-[#2e3a36] bg-[radial-gradient(ellipse_at_top,#3b4a45,transparent_60%)] px-4 py-12 font-['Courier_Prime',monospace] text-[#2a2418] uppercase">
+  <div data-teletype class="flex w-full max-w-2xl bg-[#efe4c8] shadow-[0_30px_60px_-20px_rgba(0,0,0,.6)]">
+    <div aria-hidden="true" class="w-6 shrink-0 border-r border-dashed border-[#2a2418]/25 bg-[radial-gradient(circle,#2e3a36_4.5px,transparent_5px)] bg-[length:24px_24px] bg-repeat-y sm:w-8 sm:bg-[length:32px_28px]"></div>
+
+    <div class="min-w-0 flex-1 px-5 py-7 sm:px-10 sm:py-9">
+      <div class="flex flex-wrap items-end justify-between gap-2 border-b-2 border-[#2a2418] pb-3">
+        <h1 class="font-['Special_Elite',monospace] text-4xl tracking-[0.12em] sm:text-5xl">Telegram</h1>
+        <p class="text-left text-[10px] leading-4 tracking-[0.2em] sm:text-right text-[#2a2418]/70">Relay Wire Co.<br />No. 0417 &middot; Priority</p>
+      </div>
+      <div class="grid grid-cols-3 border-b border-[#2a2418]/30 text-[9px] tracking-[0.06em] sm:text-[10px] sm:tracking-[0.15em] text-[#2a2418]/70">
+        <p class="border-r border-[#2a2418]/30 py-1.5">Class: <span class="text-[#2a2418]">Full rate</span></p>
+        <p class="border-r border-[#2a2418]/30 py-1.5 pl-2">Words: <span class="text-[#2a2418]">14</span></p>
+        <p class="py-1.5 pl-2">Filed: <span class="text-[#2a2418]">16:04</span></p>
+      </div>
+
+      <div class="mt-7 space-y-2.5 font-['Special_Elite',monospace] text-sm leading-6 sm:text-base">
+        <p class="w-fit -rotate-[0.6deg] bg-[#f2d27a] px-3 py-0.5 shadow-[0_1px_2px_rgba(0,0,0,.25)]">Sign-in requested <span class="text-[#b3261e]">stop</span></p>
+        <p class="w-fit rotate-[0.4deg] bg-[#f2d27a] px-3 py-0.5 shadow-[0_1px_2px_rgba(0,0,0,.25)]">No password required <span class="text-[#b3261e]">stop</span></p>
+        <p class="w-fit -rotate-[0.3deg] bg-[#f2d27a] px-3 py-0.5 shadow-[0_1px_2px_rgba(0,0,0,.25)]">Wire your address for a link <span class="text-[#b3261e]">stop</span></p>
+      </div>
+
+      <form data-teletype-form class="mt-8">
+        <label for="teletype-email" class="text-[11px] tracking-[0.3em] text-[#2a2418]/70">Deliver to (email address)</label>
+        <div class="mt-2 border-y-2 border-dashed border-[#2a2418]/40 bg-[#f2d27a]/50 py-1 focus-within:border-solid focus-within:border-[#b3261e] focus-within:bg-[#f2d27a]">
+          <input id="teletype-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="ADA@LOVELACE.DEV" spellcheck="false"
+            class="w-full bg-transparent px-3 py-2 font-['Special_Elite',monospace] text-lg tracking-[0.12em] text-[#2a2418] uppercase outline-none placeholder:text-[#2a2418]/35" />
+        </div>
+        <div class="mt-7 flex flex-wrap items-center justify-between gap-4">
+          <p class="text-[10px] tracking-[0.2em] text-[#2a2418]/60">Link expires 15 min &middot; single use</p>
+          <button type="submit" class="cursor-pointer border-2 border-[#2a2418] bg-[#2a2418] px-6 py-3 text-sm font-bold tracking-[0.35em] text-[#efe4c8] uppercase transition hover:bg-[#b3261e] hover:border-[#b3261e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b3261e] disabled:cursor-wait disabled:opacity-80">Transmit &#9656;</button>
+        </div>
+      </form>
+
+      <div data-teletype-sent hidden aria-live="polite" class="mt-8 border-t-2 border-dashed border-[#2a2418]/40 pt-6">
+        <p class="text-[11px] tracking-[0.3em] text-[#b3261e]">&#9632; Incoming reply</p>
+        <p data-teletype-tape class="mt-3 min-h-16 w-full bg-[#f2d27a] px-4 py-3 font-['Special_Elite',monospace] text-sm leading-7 tracking-[0.08em] break-words shadow-[0_1px_2px_rgba(0,0,0,.25)] sm:text-base"></p>
+        <button type="button" data-teletype-reset class="mt-5 cursor-pointer text-xs uppercase tracking-[0.3em] underline decoration-dotted underline-offset-4 hover:text-[#b3261e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b3261e]">Wire a different address</button>
+      </div>
+    </div>
+
+    <div aria-hidden="true" class="w-6 shrink-0 border-l border-dashed border-[#2a2418]/25 bg-[radial-gradient(circle,#2e3a36_4.5px,transparent_5px)] bg-[length:24px_24px] bg-repeat-y sm:w-8 sm:bg-[length:32px_28px]"></div>
+  </div>
+</section>
